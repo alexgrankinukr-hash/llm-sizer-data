@@ -1,6 +1,6 @@
 # LLM Sizer — Methodology & Assumptions
 
-**Version 0.1 · 2026-09-02 · Status: pre-launch draft.** This is the public, plain-language explanation of every number LLM Sizer shows. It is the single source of truth: the tool's About page and the open-data repo's `FORMULAS.md` are generated from it, and **any change to a formula, constant, or data source in the tool must be reflected here first** (that rule is part of the project's definition of done). Comments and corrections: the feedback form in the tool, or an issue on the open-data repository. Changelog at the bottom.
+**Version 0.2 · 2026-09-02 · Status: pre-launch draft.** This is the public, plain-language explanation of every number LLM Sizer shows. It is the single source of truth: the tool's About page renders it and the open-data repo's `FORMULAS.md` is a nightly copy of it, and **any change to a formula, constant, or data source in the tool must be reflected here first** (that rule is part of the project's definition of done). Comments and corrections: the feedback form in the tool, or an issue on the open-data repository. Changelog at the bottom.
 
 ---
 
@@ -25,12 +25,14 @@ It does **not** run a benchmark on your machine, judge model quality (we show qu
 
 | Data | Source | Refresh |
 |---|---|---|
-| Model weight sizes per quantization | The exact file sizes published on Hugging Face by the quantizers people use (Unsloth, Bartowski, LM Studio community, mlx-community) and by the model makers, read through the Hugging Face API | daily |
-| Model architecture (layers, attention type, experts, context maximum, MTP heads) | Each model's `config.json` on Hugging Face; a small hand-maintained overrides file for facts the config can't express (licenses, "ships 4-bit only") | daily |
-| Machines (memory options, bandwidth, GPU cores, prices) | Apple's and NVIDIA's published specifications, with the source link per row | by hand, when products change |
+| Model weight sizes per quantization | The exact file sizes published on Hugging Face by the quantizers people use (Unsloth, Bartowski, LM Studio community, mlx-community, and llama.cpp's own ggml-org) and by the model makers, read through the Hugging Face API | nightly |
+| Model architecture (layers, attention type, experts, context maximum, MTP heads) | Each model's `config.json` on Hugging Face; a small hand-maintained overrides file for facts the config can't express (license thresholds, "ships 4-bit only", published active-parameter counts) | nightly |
+| Machines (memory options, bandwidth, GPU cores, prices) | Apple's and NVIDIA's published specifications, with the source link per row; one row per chip bin where bandwidth differs (for example the M5 Max 32-core at 460 GB/s and 40-core at 614 GB/s) | by hand, when products change |
 | Measured speeds used for calibration | The community llama.cpp Apple-silicon benchmark table (M1 → M5 Max, updated 2026-08-25), published MLX / MTP / DFlash measurements, and later community submissions through the tool | as available; each row carries its source |
 
-The data date is shown on the page. A model released today is normally in the tool tomorrow, with its real file sizes.
+**How models get in.** Every night a job lists what the five quantizer organisations above published or updated, finds the maker's original repository for each (from the quantizer's own "base model" note, otherwise by name), and reads that model's `config.json` and file list. It keeps everything from the last twelve months that has at least a billion parameters and a thousand downloads; the ~25 **featured** models (hand-picked, current releases only) are always refreshed. Repositories that are edited variants — uncensored or "abliterated" builds, mixed-precision experiments, draft models — are skipped by name and logged. A model released today is normally in the tool tomorrow, with its real file sizes.
+
+**What can go wrong, and the safety net.** Before new data goes live it is compared with what is live now: if a featured model lost its quantizations, a known file changed size by more than a tenth, a model's architecture could suddenly not be read, or the catalog shrank, the update is held and a person looks at it. The page always shows the date of the data it is using. The full export (search index, one file per model, machines, benchmarks, factors, this document) is mirrored nightly to the public data repository.
 
 ## 4. How much memory is actually available for AI
 
@@ -65,7 +67,7 @@ needed = weights + context cache + working buffers
 | Partial-attention hybrids — only some layers keep a cache (`layer_types` lists linear/full layers, or `full_attention_interval`) | classic formula on the attention layers only; linear layers keep a small constant state | Qwen 3.8 27B: 16 of 64 layers → **≈ 4 GB** |
 | Compressed / latent attention (MLA: `kv_lora_rank`; DeepSeek V4: one 512-wide KV head) | `(latent_width + rope_width) × bytes` | GLM-5.2 (78 layers): **≈ 6 GB**; DeepSeek V4 Flash: ≈ 3 GB; GLM-5.3 Flash: ≈ 0.7 GB |
 | Sliding-window layers (`sliding_window`, Gemma-style) | classic formula, but the window (e.g. 1,024 tokens) caps the length | negligible |
-| Key = Value sharing (`attention_k_eq_v`, Gemma 4) | halves the classic formula | — |
+| Key = Value sharing (`attention_k_eq_v`, Gemma 4) | halves the classic formula; Gemma 4's few global layers use their own wider heads (`num_global_key_value_heads × global_head_dim`) | Gemma 4 26B-A4B: 5 global layers → **≈ 0.7 GB** at 128K |
 
 `bytes` is the cache precision: **8-bit by default** (1 byte), FP16 (2 bytes) or 4-bit (0.5) selectable in Advanced. Most 2026 models use compressed or hybrid attention, so long context is far cheaper than older fit charts assumed. Models whose design we can't read from the config are marked **"architecture assumed conventional"** and use the classic formula — the pessimistic choice.
 
@@ -84,17 +86,17 @@ bytes per token = active_params × bytes per weight (quant) + cache bytes per to
 decode tok/s    = bandwidth × efficiency ÷ bytes per token
 ```
 
-**Efficiency** is measured, not assumed, from the community llama.cpp table (same model, every chip):
+**Efficiency** is measured, not assumed: `calibrate.py` reads every plain llama.cpp row in `benchmarks.json`, computes `measured tok/s ÷ (bandwidth ÷ weights)` per chip, and writes the result to `factors.json` (median per chip, then the median per tier as the fallback):
 
-| Chip tier | Efficiency | Evidence |
+| Chip tier | Efficiency (tier median) | Measured chips |
 |---|---|---|
-| Apple base chips (M1–M5) | **≈ 0.78** | 0.76–0.83 measured |
-| Apple Pro | **≈ 0.75** | 0.69–0.82 |
-| Apple Max | **≈ 0.62** (M5 Max: **0.74**) | 0.58–0.74 |
-| Apple Ultra | **≈ 0.43** | 0.40–0.45 — the two-die design pays a consistent penalty |
-| NVIDIA DGX Spark (CUDA, unified) | ≈ 0.40 | dense 70B measurement |
+| Apple base chips (M1–M5) | **0.79** | 0.76–0.83 |
+| Apple Pro | **0.74** | 0.69–0.82 (M5 Pro 0.82) |
+| Apple Max | **0.63** | 0.58–0.82 (M5 Max **0.82**, three rows) |
+| Apple Ultra | **0.45** | 0.40–0.58 (M3 Ultra 0.58, three rows) — the multi-die design pays a consistent penalty |
+| NVIDIA DGX Spark (CUDA, unified) | **0.40** | one dense-70B measurement |
 
-Chips without a measured row (M5 Ultra, M6 at launch) inherit their tier's factor and are labeled **"estimate — unmeasured."** Because the context cache is in the formula, speed visibly falls as the context grows — more for classic-attention models, barely for hybrids.
+A chip with its own measured rows uses its own value (so an M5 Max is 0.82, not the tier's 0.63). Chips without a measured row inherit the tier median and are labeled **"estimate — unmeasured"**: M6 and M6 Pro take the base and Pro medians. **M5 Ultra is the one explicit assumption:** the M5 generation measured about 1.27× its predecessor on the Max tier (M5 Max 0.82 vs M4 Max 0.65), so the M5 Ultra is set to the Ultra median × that lift, **0.57**, capped at 0.6, until a measured row exists. The exact numbers, their sample sizes and ranges are in `factors.json`, which is regenerated whenever `benchmarks.json` changes. Because the context cache is in the formula, speed visibly falls as the context grows — more for classic-attention models, barely for hybrids.
 
 ### 6.2 Runtime: GGUF (llama.cpp / LM Studio) vs MLX
 The baseline above is llama.cpp with a GGUF file. Apple's MLX runtime (MLX files, used by LM Studio's MLX engine, Ollama's MLX backend, mlx-lm) is faster on Apple silicon; the gap depends on the model:
@@ -112,9 +114,11 @@ Some models can write several tokens per step. Two ways: **MTP** (multi-token-pr
 
 | Method | Factor | Evidence |
 |---|---|---|
-| MTP (native heads) | **1.6–2.6×** | 9B on M4 mini 14.4 → 23.0; Qwen 3.8 27B on M4 Pro 7 → 18; 2.24× on M5 Max (MTPLX) |
-| DFlash / DSpark draft, dense model | **2.0–3.6×** | Qwen 3.8 27B 4-bit on M4 Pro 14.7 → 33.8; 8-bit 8.4 → 30.5; Gemma 4 12B 17.8 → 49.4 (mlx-dspark) |
-| DFlash / DSpark draft, MoE with a small active set | **1.1–1.3×** | Qwen3.6-35B-A3B 86.9 → 114.5 — little to gain when the model is already fast |
+| MTP (native heads) | **1.6–2.6×** (median 2.1) | 9B on M4 mini 14.4 → 23.0; Qwen 3.8 27B on M4 Pro 7 → 18.3 (MTPLX) |
+| DFlash / DSpark draft, dense model | **2.0–3.6×** (median 2.8) | Qwen 3.8 27B 4-bit on M4 Pro 14.7 → 33.8; 8-bit 8.4 → 30.5; Gemma 4 12B 17.8 → 49.4; Qwen3-8B 13.7 → 45.8 (mlx-dspark, mlx-dflash) |
+| DFlash / DSpark draft, MoE with under ~6B active | **1.1–1.3×** | Qwen3.6-35B-A3B 86.9 → 114.5 — little to gain when the model is already fast |
+
+These ranges are computed by `calibrate.py` from the paired rows in `benchmarks.json` (each accelerated row records the unaccelerated speed of the same setup), so they move as measurements are added.
 
 Gains depend on the task (code and math accept longer drafts than chat) and on quant (8-bit targets accept more than 4-bit).
 
@@ -157,12 +161,13 @@ One sentence to remember: **memory adds up across cards and boxes; speed doesn't
 
 **A. 32 GB Mac mini (M6), used for work, Qwen 3.8 27B at Q4, 32K context.** Available = min(32 × 0.67, 32 − 6 − 16) = **10 GB**. Needed = 17.1 (weights) + 1.1 (cache: 32 KB/token × 32K) + 1 (buffers) = **19.2 GB** → doesn't fit while you work. Toggle "work machine" off: available 21.4 GB → **runs** (90 % rule: 19.2 ≤ 19.3 — tight). The ring says: *"runs if you close your apps."*
 
-**B. 256 GB Mac Studio (M5 Ultra), GLM-5.3 Flash at Q4, 128K context.** Available with the default GPU limit = 192 GB; needed = 199.7 + 0.7 (cache) + 10 (buffers) = **210 GB** → ring: *"needs the macOS memory-limit override"*; with the override, available = 250 GB → runs. Speed: 18B active × 0.56 bytes ≈ 10 GB per token; 1,200 × 0.50 (M5 Ultra, tier estimate) ÷ 10 ≈ **60 tok/s**, labeled estimate; with MLX ≈ 1.9× for MoE → up to ~110; with its MTP heads, more.
+**B. 256 GB Mac Studio (M5 Ultra), GLM-5.3 Flash at Q4, 128K context.** Available with the default GPU limit = 192 GB; needed = 199.7 + 0.7 (cache) + 10 (buffers) = **210 GB** → ring: *"needs the macOS memory-limit override"*; with the override, available = 250 GB → runs. Speed: 18B active × 0.56 bytes ≈ 10 GB per token; 1,200 × 0.57 (M5 Ultra, unmeasured estimate) ÷ 10 ≈ **67 tok/s**, labeled estimate; with MLX ≈ 1.9× for MoE → up to ~130; with its MTP heads, more. The same model on a DGX Spark: 273 × 0.40 ÷ 10 ≈ **11 tok/s** (our earlier video graphic said ~14, using a 0.48 efficiency that the calibration did not support for the Spark).
 
 **C. 512 GB Mac Studio, GLM-5.2 at Q4, 128K context.** Needed = 467 + 5.9 (cache — compressed attention) + 16 (buffers, capped) = **489 GB**; available with override = 506 GB → **runs, tight** — and a Reddit user measured ~473 GB in use on exactly this setup, which is the kind of confirmation that turns an estimate into a measurement.
 
 ## 10. Changelog
 
+- **0.2 — 2026-09-02.** Data pipeline built. Section 3 now describes how models are discovered (five quantizer organisations, twelve-month window, featured list, name-based exclusions) and the publish-time safety net. Efficiency constants are now generated by `calibrate.py` from `benchmarks.json` into `factors.json` (tier medians 0.79 / 0.74 / 0.63 / 0.45 / 0.40; measured chips use their own value, M5 Max 0.82); M5 Ultra documented as an explicit 0.57 assumption. Acceleration ranges computed from paired rows. Gemma 4 cache corrected to its global-layer heads (≈ 0.7 GB at 128K, not 1.3). Machines catalog: one row per bandwidth bin (M5 Max 460 vs 614 GB/s; M6 mini 153 GB/s at 16 GB vs 170 at 24/32 GB). Spark speed in example B corrected from ~14 to ~11 tok/s.
 - **0.1 — 2026-09-02.** First draft, written from the Phase 0 research spike: efficiency by chip tier from the community llama.cpp table (M1–M5 Max), context-cache formulas by attention design read from model configs, MLX runtime factors from 2026 community reports, MTP/DFlash factors from MTPLX and mlx-dspark measurements.
 
 ## 11. How to correct us

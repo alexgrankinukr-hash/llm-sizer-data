@@ -1,0 +1,1109 @@
+{
+ "schema": "llm-sizer/models v1",
+ "generated_at": "2026-09-02T20:48:32+00:00",
+ "count": 27,
+ "featured_count": 23,
+ "models": [
+  {
+   "id": "qwen3.8-27b",
+   "name": "Qwen 3.8 27B",
+   "provider": "Qwen",
+   "hf_repo": "Qwen/Qwen3.8-27B",
+   "released": "2026-08-05",
+   "params_total_b": 27.78,
+   "params_active_b": 27.78,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 1,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 32768,
+   "sizes": {
+    "min_gb": 6.19,
+    "q4_gb": 16.81,
+    "q8_gb": 29.05,
+    "native_gb": 55.56
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 72,
+   "four_bit_native": false,
+   "detail_sha": "b579f8c058ec440b"
+  },
+  {
+   "id": "qwen3.6-35b-a3b",
+   "name": "Qwen 3.6 35B-A3B",
+   "provider": "Qwen",
+   "hf_repo": "Qwen/Qwen3.6-35B-A3B",
+   "released": "2026-04-15",
+   "params_total_b": 35.95,
+   "params_active_b": 3.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 2,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 10240,
+   "sizes": {
+    "min_gb": 9.42,
+    "q4_gb": 21.17,
+    "q8_gb": 36.9,
+    "native_gb": 71.9
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 72,
+   "four_bit_native": false,
+   "detail_sha": "51d39e51112534a4"
+  },
+  {
+   "id": "gemma-4-12b",
+   "name": "Gemma 4 12B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-12B-it",
+   "released": "2026-05-23",
+   "params_total_b": 11.96,
+   "params_active_b": 11.96,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 3,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": true,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 4096,
+   "sizes": {
+    "min_gb": 4.21,
+    "q4_gb": 7.38,
+    "q8_gb": 12.67,
+    "native_gb": 23.92
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 67,
+   "four_bit_native": false,
+   "detail_sha": "1e6cd8d5caeeee2e"
+  },
+  {
+   "id": "gemma-4-26b-a4b",
+   "name": "Gemma 4 26B-A4B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-26B-A4B-it",
+   "released": "2026-03-11",
+   "params_total_b": 25.81,
+   "params_active_b": 4.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 4,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 5120,
+   "sizes": {
+    "min_gb": 9.66,
+    "q4_gb": 16.8,
+    "q8_gb": 26.86,
+    "native_gb": 51.61
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 70,
+   "four_bit_native": false,
+   "detail_sha": "0aac17cacf402015"
+  },
+  {
+   "id": "gemma-4-e4b",
+   "name": "Gemma 4 E4B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-E4B-it",
+   "released": "2026-03-02",
+   "params_total_b": 8.0,
+   "params_active_b": 8.0,
+   "context_max": 131072,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 5,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 7168,
+   "sizes": {
+    "min_gb": 3.55,
+    "q4_gb": 5.34,
+    "q8_gb": 8.03,
+    "native_gb": 15.99
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 66,
+   "four_bit_native": false,
+   "detail_sha": "9f24a06307a6aa41"
+  },
+  {
+   "id": "gpt-oss-20b",
+   "name": "gpt-oss-20b",
+   "provider": "openai",
+   "hf_repo": "openai/gpt-oss-20b",
+   "released": "2025-08-04",
+   "params_total_b": 20.91,
+   "params_active_b": 3.6,
+   "context_max": 131072,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 6,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 12288,
+   "sizes": {
+    "min_gb": 11.46,
+    "q4_gb": 11.62,
+    "q8_gb": 12.11,
+    "native_gb": 27.52
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 49,
+   "four_bit_native": true,
+   "detail_sha": "e9d113bf0c935a32"
+  },
+  {
+   "id": "muse-glimmer-30b",
+   "name": "Muse Glimmer 30B",
+   "provider": "meta-models",
+   "hf_repo": "meta-models/Muse-Glimmer-30B",
+   "released": "2026-08-09",
+   "params_total_b": 29.78,
+   "params_active_b": 29.78,
+   "context_max": 131072,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 7,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": true,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 6656,
+   "sizes": {
+    "min_gb": 8.92,
+    "q4_gb": 16.76,
+    "q8_gb": 29.61,
+    "native_gb": 59.55
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 54,
+   "four_bit_native": false,
+   "detail_sha": "e43cd893f2a9b9e7"
+  },
+  {
+   "id": "gemma-4-31b",
+   "name": "Gemma 4 31B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-31B-it",
+   "released": "2026-03-11",
+   "params_total_b": 31.27,
+   "params_active_b": 31.27,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 8,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 20480,
+   "sizes": {
+    "min_gb": 8.53,
+    "q4_gb": 18.69,
+    "q8_gb": 32.64,
+    "native_gb": 62.55
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 72,
+   "four_bit_native": false,
+   "detail_sha": "ca0ca3636e698e03"
+  },
+  {
+   "id": "qwen3-coder-next",
+   "name": "Qwen3-Coder-Next",
+   "provider": "Qwen",
+   "hf_repo": "Qwen/Qwen3-Coder-Next",
+   "released": "2026-01-30",
+   "params_total_b": 79.67,
+   "params_active_b": 4.03,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 9,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": true,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 12288,
+   "sizes": {
+    "min_gb": 16.58,
+    "q4_gb": 48.49,
+    "q8_gb": 84.81,
+    "native_gb": 159.36
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 88,
+   "four_bit_native": false,
+   "detail_sha": "e0c6ce1607634f22"
+  },
+  {
+   "id": "gpt-oss-120b",
+   "name": "gpt-oss-120b",
+   "provider": "openai",
+   "hf_repo": "openai/gpt-oss-120b",
+   "released": "2025-08-04",
+   "params_total_b": 116.83,
+   "params_active_b": 5.1,
+   "context_max": 131072,
+   "featured": true,
+   "tier": "studio",
+   "rank": 10,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 18432,
+   "sizes": {
+    "min_gb": 62.56,
+    "q4_gb": 62.77,
+    "q8_gb": 63.39,
+    "native_gb": 130.5
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 40,
+   "four_bit_native": true,
+   "detail_sha": "27f25aa82420c4a0"
+  },
+  {
+   "id": "mistral-small-4-119b-2603",
+   "name": "Mistral Small 4 (119B)",
+   "provider": "mistralai",
+   "hf_repo": "mistralai/Mistral-Small-4-119B-2603",
+   "released": "2026-01-23",
+   "params_total_b": 119.4,
+   "params_active_b": 7.97,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "studio",
+   "rank": 11,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "mla",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 11520,
+   "sizes": {
+    "min_gb": 26.88,
+    "q4_gb": 72.16,
+    "q8_gb": 126.47,
+    "native_gb": 120.92
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 60,
+   "four_bit_native": false,
+   "detail_sha": "94098bb859ad71fe"
+  },
+  {
+   "id": "nvidia-nemotron-3-super-120b-a12b",
+   "name": "Nemotron 3 Super 120B-A12B",
+   "provider": "nvidia",
+   "hf_repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+   "released": "2026-03-10",
+   "params_total_b": 123.61,
+   "params_active_b": 12.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 12,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 4096,
+   "sizes": {
+    "min_gb": 46.38,
+    "q4_gb": 86.05,
+    "q8_gb": 128.47,
+    "native_gb": 247.23
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 62,
+   "four_bit_native": false,
+   "detail_sha": "4957320bdb4496f0"
+  },
+  {
+   "id": "mistral-medium-3.5-128b",
+   "name": "Mistral Medium 3.5 (128B)",
+   "provider": "mistralai",
+   "hf_repo": "mistralai/Mistral-Medium-3.5-128B",
+   "released": "2026-03-31",
+   "params_total_b": 127.7,
+   "params_active_b": 127.7,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 13,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 180224,
+   "sizes": {
+    "min_gb": 34.94,
+    "q4_gb": 74.9,
+    "q8_gb": 132.85,
+    "native_gb": 133.61
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 54,
+   "four_bit_native": false,
+   "detail_sha": "131ec387caeb5bde"
+  },
+  {
+   "id": "qwen3.8-flash-next",
+   "name": "Qwen 3.8 Flash Next",
+   "provider": "Qwen",
+   "hf_repo": "Qwen/Qwen3.8-Flash-Next",
+   "released": "2026-08-24",
+   "params_total_b": 180.0,
+   "params_active_b": 7.64,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 14,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 12288,
+   "sizes": {
+    "min_gb": 70.1,
+    "q4_gb": 119.15,
+    "q8_gb": 188.22,
+    "native_gb": 360.0
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 47,
+   "four_bit_native": false,
+   "detail_sha": "08373864906be908"
+  },
+  {
+   "id": "deepseek-v4-flash-0731",
+   "name": "DeepSeek V4 Flash (0731)",
+   "provider": "deepseek-ai",
+   "hf_repo": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "released": "2026-07-31",
+   "params_total_b": 304.18,
+   "params_active_b": 17.29,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "studio",
+   "rank": 15,
+   "gated": "false",
+   "status": "active",
+   "license": "mit",
+   "commercial": true,
+   "arch": "latent",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 24768,
+   "sizes": {
+    "min_gb": 82.54,
+    "q4_gb": 155.1,
+    "q8_gb": 161.87,
+    "native_gb": 166.89
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 19,
+   "four_bit_native": false,
+   "detail_sha": "95717d3ee3440af9"
+  },
+  {
+   "id": "glm-5.3-flash",
+   "name": "GLM-5.3 Flash",
+   "provider": "zai-org",
+   "hf_repo": "zai-org/GLM-5.3-Flash",
+   "released": "2026-08-25",
+   "params_total_b": 321.32,
+   "params_active_b": 18.0,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "studio",
+   "rank": 16,
+   "gated": "false",
+   "status": "active",
+   "license": "mit",
+   "commercial": true,
+   "arch": "mla",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 5632,
+   "sizes": {
+    "min_gb": 93.09,
+    "q4_gb": 199.71,
+    "q8_gb": 340.98,
+    "native_gb": 328.34
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 15,
+   "four_bit_native": false,
+   "detail_sha": "072738c05dbd7596"
+  },
+  {
+   "id": "qwen3.5-397b-a17b",
+   "name": "Qwen 3.5 397B-A17B",
+   "provider": "Qwen",
+   "hf_repo": "Qwen/Qwen3.5-397B-A17B",
+   "released": "2026-02-16",
+   "params_total_b": 403.4,
+   "params_active_b": 17.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 17,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 15360,
+   "sizes": {
+    "min_gb": 88.73,
+    "q4_gb": 240.59,
+    "q8_gb": 421.51,
+    "native_gb": 806.8
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 71,
+   "four_bit_native": false,
+   "detail_sha": "be6b1b0bb14d5d17"
+  },
+  {
+   "id": "minimax-m3",
+   "name": "MiniMax M3",
+   "provider": "MiniMaxAI",
+   "hf_repo": "MiniMaxAI/MiniMax-M3",
+   "released": "2026-06-02",
+   "params_total_b": 427.04,
+   "params_active_b": 49.39,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "studio",
+   "rank": 18,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": true,
+   "assumed": true,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 61440,
+   "sizes": {
+    "min_gb": 90.53,
+    "q4_gb": 261.28,
+    "q8_gb": 452.71,
+    "native_gb": 854.18
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 50,
+   "four_bit_native": false,
+   "detail_sha": "3cbb5dbc31b11dfc"
+  },
+  {
+   "id": "nvidia-nemotron-3-ultra-550b-a55b",
+   "name": "Nemotron 3 Ultra 550B-A55B",
+   "provider": "nvidia",
+   "hf_repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+   "released": "2026-06-03",
+   "params_total_b": 560.52,
+   "params_active_b": 55.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "frontier",
+   "rank": 19,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 6144,
+   "sizes": {
+    "min_gb": 188.03,
+    "q4_gb": 360.16,
+    "q8_gb": 584.26,
+    "native_gb": 1121.06
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 25,
+   "four_bit_native": false,
+   "detail_sha": "e9f7e528b85a814c"
+  },
+  {
+   "id": "glm-5.2",
+   "name": "GLM-5.2",
+   "provider": "zai-org",
+   "hf_repo": "zai-org/GLM-5.2",
+   "released": "2026-06-16",
+   "params_total_b": 753.33,
+   "params_active_b": 54.03,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "frontier",
+   "rank": 20,
+   "gated": "false",
+   "status": "active",
+   "license": "mit",
+   "commercial": true,
+   "arch": "mla",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 44928,
+   "sizes": {
+    "min_gb": 216.72,
+    "q4_gb": 467.29,
+    "q8_gb": 801.36,
+    "native_gb": 1506.67
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 28,
+   "four_bit_native": false,
+   "detail_sha": "eff559dfa250de4d"
+  },
+  {
+   "id": "kimi-k2.6",
+   "name": "Kimi K2.6",
+   "provider": "moonshotai",
+   "hf_repo": "moonshotai/Kimi-K2.6",
+   "released": "2026-04-14",
+   "params_total_b": 1026.88,
+   "params_active_b": 32.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "frontier",
+   "rank": 21,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "mla",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 35136,
+   "sizes": {
+    "min_gb": 207.4,
+    "q4_gb": 583.71,
+    "q8_gb": 594.54,
+    "native_gb": 595.18
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 21,
+   "four_bit_native": false,
+   "detail_sha": "939a94dbee33d891"
+  },
+  {
+   "id": "deepseek-v4-pro-0813",
+   "name": "DeepSeek V4 Pro (0813)",
+   "provider": "deepseek-ai",
+   "hf_repo": "deepseek-ai/DeepSeek-V4-Pro-0813",
+   "released": "2026-08-13",
+   "params_total_b": 1650.5,
+   "params_active_b": 67.67,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "frontier",
+   "rank": 22,
+   "gated": "false",
+   "status": "active",
+   "license": "mit",
+   "commercial": true,
+   "arch": "latent",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 35136,
+   "sizes": {
+    "min_gb": 849.68,
+    "q4_gb": 849.68,
+    "q8_gb": 873.45,
+    "native_gb": 892.74
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 3,
+   "four_bit_native": false,
+   "detail_sha": "b2ebcf921e3f8de8"
+  },
+  {
+   "id": "kimi-k3",
+   "name": "Kimi K3",
+   "provider": "moonshotai",
+   "hf_repo": "moonshotai/Kimi-K3",
+   "released": "2026-06-13",
+   "params_total_b": 2779.93,
+   "params_active_b": 164.99,
+   "context_max": 1048576,
+   "featured": true,
+   "tier": "frontier",
+   "rank": 23,
+   "gated": "false",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "mla",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 13824,
+   "sizes": {
+    "min_gb": 466.37,
+    "q4_gb": 1508.67,
+    "q8_gb": 1561.16,
+    "native_gb": 1560.94
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 8,
+   "four_bit_native": true,
+   "detail_sha": "0c35313c8202e706"
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "name": "DeepSeek-V4-Flash",
+   "provider": "deepseek-ai",
+   "hf_repo": "deepseek-ai/DeepSeek-V4-Flash",
+   "released": "2026-04-22",
+   "params_total_b": 290.94,
+   "params_active_b": 17.29,
+   "context_max": 1048576,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "false",
+   "status": "superseded",
+   "license": "mit",
+   "commercial": true,
+   "arch": "latent",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 24768,
+   "sizes": {
+    "min_gb": 82.54,
+    "q4_gb": 155.1,
+    "q8_gb": 155.1,
+    "native_gb": 159.62
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 30,
+   "four_bit_native": false,
+   "detail_sha": "f0977336430e8b73"
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "name": "DeepSeek-V4-Pro",
+   "provider": "deepseek-ai",
+   "hf_repo": "deepseek-ai/DeepSeek-V4-Pro",
+   "released": "2026-04-22",
+   "params_total_b": 1598.84,
+   "params_active_b": 67.67,
+   "context_max": 1048576,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "false",
+   "status": "superseded",
+   "license": "mit",
+   "commercial": true,
+   "arch": "latent",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": true,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 35136,
+   "sizes": {
+    "min_gb": 837.01,
+    "q4_gb": 837.01,
+    "q8_gb": 849.68,
+    "native_gb": 864.72
+   },
+   "formats": [
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 4,
+   "four_bit_native": false,
+   "detail_sha": "5755a08c2614154a"
+  },
+  {
+   "id": "devstral-small-2-24b-2512",
+   "name": "Devstral-Small-2-24B-Instruct-2512",
+   "provider": "mistralai",
+   "hf_repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+   "released": "2025-11-28",
+   "params_total_b": 24.01,
+   "params_active_b": 24.01,
+   "context_max": 393216,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 81920,
+   "sizes": {
+    "min_gb": 5.56,
+    "q4_gb": 14.33,
+    "q8_gb": 25.06,
+    "native_gb": 25.79
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 65,
+   "four_bit_native": false,
+   "detail_sha": "ff689a268e273e24"
+  },
+  {
+   "id": "llama-4-maverick-17b-128e",
+   "name": "Llama-4-Maverick-17B-128E-Instruct",
+   "provider": "meta-llama",
+   "hf_repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+   "released": "2025-04-01",
+   "params_total_b": 401.58,
+   "params_active_b": 35.01,
+   "context_max": 1048576,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "manual",
+   "status": "active",
+   "license": "other",
+   "commercial": null,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 98304,
+   "sizes": {
+    "min_gb": 120.77,
+    "q4_gb": 242.77,
+    "q8_gb": 425.82,
+    "native_gb": 803.17
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 31,
+   "four_bit_native": false,
+   "detail_sha": "45b666b03f31ca06"
+  }
+ ],
+ "sha": "df0e975818760b10"
+}
