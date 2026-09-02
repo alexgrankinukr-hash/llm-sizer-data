@@ -1,0 +1,57 @@
+{
+  "schema": "llm-sizer/machines v0 — see tool-architecture.md §6.1; hand-curated; Phase 1 scaffold (3 rows), full table lands in Phase 2a",
+  "data_as_of": "2026-09-02",
+  "machines": [
+    {
+      "id": "mac-mini-m6",
+      "kind": "mac",
+      "family": "Mac mini",
+      "chip": "M6",
+      "generation": "M6",
+      "year": 2026,
+      "memory_options_gb": [16, 24, 32],
+      "memory_kind": "unified",
+      "bandwidth_gbs": 170,
+      "gpu_cores": [12],
+      "platform": "apple",
+      "interconnect": "thunderbolt4",
+      "price_usd": { "16": 899, "24": 1099, "32": 1299 },
+      "notes": "First 2nm Apple chip; neural accelerators in every GPU core; Thunderbolt 4 (no multi-unit clustering).",
+      "sources": ["https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/"]
+    },
+    {
+      "id": "mac-studio-m5-ultra",
+      "kind": "mac",
+      "family": "Mac Studio",
+      "chip": "M5 Ultra",
+      "generation": "M5",
+      "year": 2026,
+      "memory_options_gb": [96, 256, 512],
+      "memory_kind": "unified",
+      "bandwidth_gbs": 1200,
+      "gpu_cores": [64, 80],
+      "platform": "apple",
+      "interconnect": "thunderbolt5",
+      "price_usd": { "96": 5499, "256": 9499, "512": null },
+      "notes": "512GB configuration: late October 2026, price not announced. 96→256GB upgrade +$4,000.",
+      "sources": ["https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/"]
+    },
+    {
+      "id": "dgx-spark",
+      "kind": "prebuilt",
+      "family": "NVIDIA DGX Spark",
+      "chip": "GB10 Grace Blackwell",
+      "generation": "GB10",
+      "year": 2025,
+      "memory_options_gb": [128],
+      "memory_kind": "unified",
+      "bandwidth_gbs": 273,
+      "gpu_cores": [],
+      "platform": "cuda",
+      "interconnect": "connectx7-200gbe",
+      "price_usd": { "128": 4699 },
+      "notes": "128GB LPDDR5x unified; ConnectX-7 links two units without a switch; price raised from $3,999 on 2026-02-23 citing memory supply.",
+      "sources": ["https://intuitionlabs.ai/articles/nvidia-dgx-spark-review"]
+    }
+  ]
+}
