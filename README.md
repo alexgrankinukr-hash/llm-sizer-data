@@ -7,9 +7,14 @@ Everything the tool shows traces to a file here:
 | File | What it is | How it's maintained |
 |---|---|---|
 | `FORMULAS.md` | Every formula, constant, assumption and limitation, in plain language, with worked examples and a changelog | Hand-written; updated whenever the tool's math changes (it's part of the definition of done) |
-| `machines.json` | Machines the tool knows: memory options, bandwidth, GPU cores, prices, sources | Hand-curated; Phase 1 scaffold (3 rows) — the full table lands with the launch |
-| `benchmarks.json` | Measured tokens/sec used to calibrate the speed estimates, one row per source | Seeded from community measurements; grows with accepted submissions |
-| `models/` | Per-model records (quantization sizes, architecture, acceleration flags) exported nightly from the Hugging Face API | Automated from launch onward |
+| `machines.json` | Machines the tool knows: memory options, bandwidth, GPU cores, prices, sources; one row per chip bin where bandwidth differs | Hand-curated from Apple's and NVIDIA's spec pages; updated when products change |
+| `benchmarks.json` | Measured tokens/sec used to calibrate the speed estimates, one row per source; accelerated rows carry the unaccelerated baseline | Seeded from community measurements; grows with accepted submissions |
+| `factors.json` | The efficiency, runtime and acceleration factors the speed formula uses, with sample sizes and ranges | Generated from `benchmarks.json` by the calibration script; never edited by hand |
+| `models.overrides.json` | The featured list and the few hand facts the Hugging Face API cannot express (license thresholds, "ships 4-bit only", published active-parameter counts) | Hand-maintained, reviewed on every change |
+| `models/index.json` | The search index: one lean row per model (sizes at the reference 4-bit and 8-bit quants, architecture summary, acceleration flags, license) | Exported nightly from the tool's database, which is filled from the Hugging Face API |
+| `models/<id>.json` | One full record per model: every quantization with its exact file size and source repository, the architecture fields behind the context-cache formula, draft-model availability, notes | Exported nightly; the `sha` field changes when the content does |
+
+Mirror cadence: the tool's nightly job pushes every file above after its own sanity checks pass, so this repository's commit history is the change log of the data.
 
 ## Correcting a number
 
