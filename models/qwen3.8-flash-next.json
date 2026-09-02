@@ -8,8 +8,8 @@
  "variant": "instruct",
  "released": "2026-08-24",
  "params_total": 179999981459,
- "params_active": 7641497600,
- "params_active_source": "estimated",
+ "params_active": 6000000000,
+ "params_active_source": "override",
  "context_max": 262144,
  "native_bits": 16.0,
  "license": {
@@ -34,7 +34,7 @@
  "status": "active",
  "superseded_by": null,
  "notes": [
-  "Includes an n-gram table that can page from SSD; memory need depends on the runtime."
+  "125B main model plus a 51B n-gram table; 6B parameters active per token (Qwen's release notes). The n-gram table can page from SSD, so the memory need depends on the runtime."
  ],
  "four_bit_native": false,
  "architecture": {
@@ -681,15 +681,46 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Qwen3.8-Flash-Next-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/Qwen3.8-Flash-Next-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Qwen3.8-Flash-Next-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Qwen/Qwen3.8-Flash-Next",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [
+  {
+   "label": "4-bit, n-gram table paged from SSD",
+   "resident_gb": 45.8,
+   "disk_gb": 82,
+   "format": "gguf",
+   "bits": 4,
+   "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
+   "note": "Community build; measured 36 tok/s on a 64 GB MacBook Pro with vision working (Atomic Chat, Aug 2026).",
+   "measured_tok_s": 36,
+   "measured_on": "64 GB MacBook Pro"
+  }
+ ],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:24:51.887134+00:00",
-  "last_checked": "2026-09-02T20:47:17.873909+00:00",
+  "last_checked": "2026-09-02T21:32:22.203260+00:00",
   "last_changed": "2026-09-02T20:24:51.887134+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "08373864906be908"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "ea5d818928bcbdd9"
 }

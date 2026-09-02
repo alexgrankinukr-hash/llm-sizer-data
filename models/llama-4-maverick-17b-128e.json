@@ -413,19 +413,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
-   "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.3,
-   "size_gb": 416.76,
-   "size_bytes": 416755504016,
-   "quantizer": "official",
-   "file_count": 84,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct-FP8",
    "url": "https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct-FP8",
    "format": "safetensors",
@@ -434,6 +421,19 @@
    "size_gb": 416.76,
    "size_bytes": 416755504016,
    "quantizer": "unsloth",
+   "file_count": 84,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+   "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.3,
+   "size_gb": 416.76,
+   "size_bytes": 416755504016,
+   "quantizer": "official",
    "file_count": 84,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -491,15 +491,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Llama-4-Maverick-17B-128E-Instruct-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:43.803720+00:00",
-  "last_checked": "2026-09-02T20:48:26.786702+00:00",
+  "last_checked": "2026-09-02T21:35:04.576029+00:00",
   "last_changed": "2026-09-02T20:30:43.803720+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "45b666b03f31ca06"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "18340826f6afb523"
 }

@@ -912,15 +912,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+   "label": "FP8"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:56.995437+00:00",
-  "last_checked": "2026-09-02T20:48:29.333180+00:00",
+  "last_checked": "2026-09-02T21:35:10.210347+00:00",
   "last_changed": "2026-09-02T20:30:56.995437+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "ff689a268e273e24"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "7e7b46e323e1bdef"
 }

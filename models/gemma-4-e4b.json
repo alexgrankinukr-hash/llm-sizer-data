@@ -928,15 +928,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/gemma-4-E4B-it-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/gemma-4-E4B-it-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "lmstudio-community/gemma-4-E4B-it-MLX-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "google/gemma-4-E4B-it",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-09-02T20:47:41.950171+00:00",
+  "last_checked": "2026-09-02T21:33:22.253689+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "9f24a06307a6aa41"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "67ac0cedc3e4ff87"
 }

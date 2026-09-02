@@ -944,15 +944,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/gemma-4-12B-it-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/gemma-4-12B-it-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "lmstudio-community/gemma-4-12B-it-MLX-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "google/gemma-4-12B-it",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "williamliao/gemma-4-12B-it-DFlash-GGUF",
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:23.565073+00:00",
-  "last_checked": "2026-09-02T20:47:24.365838+00:00",
+  "last_checked": "2026-09-02T21:32:35.476279+00:00",
   "last_changed": "2026-09-02T20:25:23.565073+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "1e6cd8d5caeeee2e"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "2d98a8bfda9f8797"
 }

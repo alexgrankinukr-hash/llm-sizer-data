@@ -396,19 +396,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "meta-models/Muse-Glimmer-30B-GGUF",
-   "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_M",
-   "bits": 4.5,
-   "size_gb": 16.76,
-   "size_bytes": 16756683904,
-   "quantizer": "official",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
    "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
    "format": "gguf",
@@ -417,6 +404,19 @@
    "size_gb": 16.76,
    "size_bytes": 16756683904,
    "quantizer": "lmstudio-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "meta-models/Muse-Glimmer-30B-GGUF",
+   "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 4.5,
+   "size_gb": 16.76,
+   "size_bytes": 16756683904,
+   "quantizer": "official",
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -773,15 +773,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/Muse-Glimmer-30B-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Muse-Glimmer-30B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "meta-models/Muse-Glimmer-30B",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Muse-Glimmer-30B-DFlash2-GGUF",
   "dspark": "DaoCloud/Muse-Glimmer-30B-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:49.678978+00:00",
-  "last_checked": "2026-09-02T20:47:48.211006+00:00",
+  "last_checked": "2026-09-02T21:33:39.629795+00:00",
   "last_changed": "2026-09-02T20:27:49.678978+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "e43cd893f2a9b9e7"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "788ccceb0f51ed60"
 }

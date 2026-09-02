@@ -343,15 +343,31 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/Kimi-K2.6-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "unsloth/Kimi-K2.6-GGUF",
+   "label": "UD-Q8_K_XL"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "moonshotai/Kimi-K2.6",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Kimi-K2.6-DFlash",
   "dspark": "novita/kimi-k2.6-dspark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:48.095518+00:00",
-  "last_checked": "2026-09-02T20:47:58.440102+00:00",
+  "last_checked": "2026-09-02T21:34:05.172552+00:00",
   "last_changed": "2026-09-02T20:28:48.095518+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "939a94dbee33d891"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "6dbbba27c7943c4b"
 }

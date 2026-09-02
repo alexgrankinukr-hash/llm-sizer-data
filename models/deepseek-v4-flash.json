@@ -231,7 +231,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_XS",
+   "label": "UD-IQ4_NL",
    "bits": 3.79,
    "size_gb": 137.9,
    "size_bytes": 137903959808,
@@ -244,7 +244,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_NL",
+   "label": "UD-IQ4_XS",
    "bits": 3.79,
    "size_gb": 137.9,
    "size_bytes": 137903959808,
@@ -462,15 +462,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/DeepSeek-V4-Flash-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "mlx-community/DeepSeek-V4-Flash-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/DeepSeek-V4-Flash-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "deepseek-ai/DeepSeek-V4-Flash",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": "deepseek-ai/DeepSeek-V4-Flash-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:11.883557+00:00",
-  "last_checked": "2026-09-02T20:48:20.298854+00:00",
+  "last_checked": "2026-09-02T21:34:51.535558+00:00",
   "last_changed": "2026-09-02T20:30:11.883557+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "f0977336430e8b73"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "189e3b777200710e"
 }

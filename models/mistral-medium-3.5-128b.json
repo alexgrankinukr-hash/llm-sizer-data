@@ -792,15 +792,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Mistral-Medium-3.5-128B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "mistralai/Mistral-Medium-3.5-128B",
+   "label": "FP8"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:11.752358+00:00",
-  "last_checked": "2026-09-02T20:47:52.066825+00:00",
+  "last_checked": "2026-09-02T21:33:49.009167+00:00",
   "last_changed": "2026-09-02T20:28:11.752358+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "131ec387caeb5bde"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "52a8972f0625f06b"
 }

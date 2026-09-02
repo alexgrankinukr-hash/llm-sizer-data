@@ -111,15 +111,31 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/DeepSeek-V4-Pro-0813-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "unsloth/DeepSeek-V4-Pro-0813-GGUF",
+   "label": "UD-Q8_K_XL"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "deepseek-ai/DeepSeek-V4-Pro-0813",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:19.117449+00:00",
-  "last_checked": "2026-09-02T20:47:22.990028+00:00",
+  "last_checked": "2026-09-02T21:32:33.684964+00:00",
   "last_changed": "2026-09-02T20:25:19.117449+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "b2ebcf921e3f8de8"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "6f0f5803099840bc"
 }

@@ -5,7 +5,7 @@
   "_formula": "decode tok/s = bandwidth_gbs × efficiency ÷ gigabytes read per token (active weights at the quant's bits + context cache per token)",
   "_resolve": "exact chip if present in by_chip, else assumed[chip] if present, else the tier median (tier from the chip name: base | Pro | Max | Ultra; DGX Spark = spark)",
   "by_chip": {
-   "DGX Spark (GB10)": {
+   "DGX Spark": {
     "value": 0.396,
     "n": 1,
     "measured": true,
@@ -138,14 +138,14 @@
     ]
    },
    "M3 Ultra": {
-    "value": 0.575,
+    "value": 0.438,
     "n": 3,
     "measured": true,
     "tier": "ultra",
     "generation": "M3",
     "range": [
      0.438,
-     8.838
+     0.575
     ]
    },
    "M4": {
@@ -217,11 +217,11 @@
   },
   "assumed": {
    "M5 Ultra": {
-    "value": 0.567,
+    "value": 0.554,
     "measured": false,
     "tier": "ultra",
     "generation": "M5",
-    "note": "ultra-tier median 0.448 × M5 generation lift 1.265 (M5 Max vs M4 Max); replace when measured"
+    "note": "ultra-tier median 0.438 × M5 generation lift 1.265 (M5 Max vs M4 Max); replace when measured"
    },
    "M6": {
     "value": 0.791,
@@ -264,11 +264,11 @@
     ]
    },
    "ultra": {
-    "value": 0.448,
+    "value": 0.438,
     "n_chips": 3,
     "range": [
      0.398,
-     0.575
+     0.448
     ]
    },
    "spark": {
@@ -444,23 +444,28 @@
  "feels_like": [
   {
    "max_tok_s": 5,
-   "label": "painful"
+   "label": "painful",
+   "description": "slower than reading"
   },
   {
    "max_tok_s": 12,
-   "label": "usable for short answers"
+   "label": "usable",
+   "description": "usable for short answers"
   },
   {
    "max_tok_s": 30,
-   "label": "comfortable chat"
+   "label": "comfortable",
+   "description": "comfortable chat"
   },
   {
    "max_tok_s": 60,
-   "label": "fast"
+   "label": "fast",
+   "description": "agents and coding feel fine"
   },
   {
    "max_tok_s": null,
-   "label": "cloud-like"
+   "label": "cloud-like",
+   "description": "as fast as a hosted model"
   }
  ],
  "sources": [

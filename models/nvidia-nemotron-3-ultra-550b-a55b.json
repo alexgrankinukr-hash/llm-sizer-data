@@ -246,19 +246,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-   "format": "safetensors",
-   "label": "NVFP4",
-   "bits": 5.03,
-   "size_gb": 352.31,
-   "size_bytes": 352308689576,
-   "quantizer": "official",
-   "file_count": 113,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
    "format": "safetensors",
@@ -267,6 +254,19 @@
    "size_gb": 352.31,
    "size_bytes": 352308689576,
    "quantizer": "unsloth",
+   "file_count": 113,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+   "format": "safetensors",
+   "label": "NVFP4",
+   "bits": 5.03,
+   "size_gb": 352.31,
+   "size_bytes": 352308689576,
+   "quantizer": "official",
    "file_count": 113,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -415,15 +415,31 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:37:51.627382+00:00",
-  "last_checked": "2026-09-02T20:48:06.936939+00:00",
+  "last_checked": "2026-09-02T21:34:21.449480+00:00",
   "last_changed": "2026-09-02T20:37:51.627382+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "e9f7e528b85a814c"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "3718542612894dc3"
 }

@@ -728,15 +728,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "bartowski/MiniMax-M3-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/MiniMax-M3-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/MiniMax-M3-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "MiniMaxAI/MiniMax-M3",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": "nvidia/MiniMax-M3-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:22:40.749158+00:00",
-  "last_checked": "2026-09-02T20:46:54.149570+00:00",
+  "last_checked": "2026-09-02T21:31:23.587717+00:00",
   "last_changed": "2026-09-02T20:22:40.749158+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "3cbb5dbc31b11dfc"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "e95939e2e5d62a2e"
 }

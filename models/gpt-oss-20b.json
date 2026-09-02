@@ -145,7 +145,7 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "IQ2_XS",
+   "label": "IQ2_XXS",
    "bits": 4.4,
    "size_gb": 11.51,
    "size_bytes": 11510341696,
@@ -158,7 +158,7 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "IQ2_XXS",
+   "label": "IQ2_XS",
    "bits": 4.4,
    "size_gb": 11.51,
    "size_bytes": 11510341696,
@@ -223,33 +223,20 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "Q2_K",
-   "bits": 4.42,
-   "size_gb": 11.56,
-   "size_bytes": 11559002176,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
-   "repo": "bartowski/openai_gpt-oss-20b-GGUF",
-   "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
-   "format": "gguf",
-   "label": "IQ3_M",
-   "bits": 4.42,
-   "size_gb": 11.56,
-   "size_bytes": 11559002176,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
-   "repo": "bartowski/openai_gpt-oss-20b-GGUF",
-   "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
-   "format": "gguf",
    "label": "IQ3_XS",
+   "bits": 4.42,
+   "size_gb": 11.56,
+   "size_bytes": 11559002176,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "bartowski/openai_gpt-oss-20b-GGUF",
+   "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+   "format": "gguf",
+   "label": "Q2_K",
    "bits": 4.42,
    "size_gb": 11.56,
    "size_bytes": 11559002176,
@@ -275,6 +262,19 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
+   "label": "IQ3_M",
+   "bits": 4.42,
+   "size_gb": 11.56,
+   "size_bytes": 11559002176,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "bartowski/openai_gpt-oss-20b-GGUF",
+   "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
+   "format": "gguf",
    "label": "Q3_K_M",
    "bits": 4.42,
    "size_gb": 11.56,
@@ -288,7 +288,7 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "IQ4_XS",
    "bits": 4.42,
    "size_gb": 11.56,
    "size_bytes": 11561214016,
@@ -301,7 +301,7 @@
    "repo": "bartowski/openai_gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "IQ4_XS",
+   "label": "IQ4_NL",
    "bits": 4.42,
    "size_gb": 11.56,
    "size_bytes": 11561214016,
@@ -548,7 +548,7 @@
    "repo": "unsloth/gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "Q6_K",
+   "label": "UD-Q6_K_XL",
    "bits": 4.61,
    "size_gb": 12.04,
    "size_bytes": 12041000128,
@@ -561,7 +561,7 @@
    "repo": "unsloth/gpt-oss-20b-GGUF",
    "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
    "format": "gguf",
-   "label": "UD-Q6_K_XL",
+   "label": "Q6_K",
    "bits": 4.61,
    "size_gb": 12.04,
    "size_bytes": 12041000128,
@@ -714,15 +714,31 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/gpt-oss-20b-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/gpt-oss-20b-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "openai/gpt-oss-20b",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/gpt-oss-20b-DFlash",
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:30.926829+00:00",
-  "last_checked": "2026-09-02T20:48:12.720092+00:00",
+  "last_checked": "2026-09-02T21:34:34.038207+00:00",
   "last_changed": "2026-09-02T20:29:30.926829+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "e9d113bf0c935a32"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "b4015c95f45abf3f"
 }

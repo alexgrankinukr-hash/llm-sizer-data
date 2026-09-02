@@ -184,7 +184,7 @@
    "repo": "bartowski/openai_gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "IQ3_M",
+   "label": "Q2_K",
    "bits": 4.29,
    "size_gb": 62.71,
    "size_bytes": 62706284224,
@@ -197,7 +197,7 @@
    "repo": "bartowski/openai_gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "Q2_K",
+   "label": "IQ3_M",
    "bits": 4.29,
    "size_gb": 62.71,
    "size_bytes": 62706284224,
@@ -597,15 +597,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/gpt-oss-120b-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "unsloth/gpt-oss-120b-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/gpt-oss-120b-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "openai/gpt-oss-120b",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/gpt-oss-120b-DFlash",
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:11.269631+00:00",
-  "last_checked": "2026-09-02T20:48:09.672576+00:00",
+  "last_checked": "2026-09-02T21:34:26.183320+00:00",
   "last_changed": "2026-09-02T20:29:11.269631+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "27f25aa82420c4a0"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "87501ecf4d9a62b0"
 }

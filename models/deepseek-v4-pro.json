@@ -122,15 +122,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/DeepSeek-V4-Pro-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": {
+   "repo": "mlx-community/DeepSeek-V4-Pro-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/DeepSeek-V4-Pro-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "deepseek-ai/DeepSeek-V4-Pro",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": "deepseek-ai/DeepSeek-V4-Pro-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:34.968343+00:00",
-  "last_checked": "2026-09-02T20:48:24.841716+00:00",
+  "last_checked": "2026-09-02T21:35:00.851312+00:00",
   "last_changed": "2026-09-02T20:30:34.968343+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "5755a08c2614154a"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "4d5e8b6c826adf8f"
 }

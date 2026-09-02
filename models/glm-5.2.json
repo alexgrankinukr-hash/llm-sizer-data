@@ -434,15 +434,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/GLM-5.2-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "unsloth/GLM-5.2-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/GLM-5.2-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "zai-org/GLM-5.2",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": "siro1/glm-5.2-dspark-spec-v1"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:51.274032+00:00",
-  "last_checked": "2026-09-02T20:48:15.857957+00:00",
+  "last_checked": "2026-09-02T21:34:43.037962+00:00",
   "last_changed": "2026-09-02T20:29:51.274032+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "eff559dfa250de4d"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "39101449a4eecd4a"
 }

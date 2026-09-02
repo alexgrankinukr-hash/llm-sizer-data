@@ -904,19 +904,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "Qwen/Qwen3.8-27B-FP8",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.89,
-   "size_gb": 30.87,
-   "size_bytes": 30866866928,
-   "quantizer": "official",
-   "file_count": 66,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/Qwen3.8-27B-FP8",
    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-FP8",
    "format": "safetensors",
@@ -925,6 +912,19 @@
    "size_gb": 30.87,
    "size_bytes": 30866866928,
    "quantizer": "unsloth",
+   "file_count": 66,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "Qwen/Qwen3.8-27B-FP8",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.89,
+   "size_gb": 30.87,
+   "size_bytes": 30866866928,
+   "quantizer": "official",
    "file_count": 66,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -1008,15 +1008,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Qwen3.8-27B-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/Qwen3.8-27B-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "lmstudio-community/Qwen3.8-27B-MLX-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Qwen/Qwen3.8-27B",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Qwen3.8-27B-DFlash2-GGUF",
   "dspark": "RadixArk/Qwen3.8-27B-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:18:39.014131+00:00",
-  "last_checked": "2026-09-02T20:47:12.957120+00:00",
+  "last_checked": "2026-09-02T21:32:09.307223+00:00",
   "last_changed": "2026-09-02T20:18:39.014131+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "b579f8c058ec440b"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "1ced8c572ca547ac"
 }

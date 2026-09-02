@@ -247,7 +247,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ3_XXS",
+   "label": "UD-IQ3_S",
    "bits": 3.67,
    "size_gb": 56.63,
    "size_bytes": 56631805792,
@@ -260,7 +260,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ3_S",
+   "label": "UD-IQ3_XXS",
    "bits": 3.67,
    "size_gb": 56.63,
    "size_bytes": 56631805792,
@@ -338,7 +338,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_XS",
+   "label": "UD-IQ4_NL",
    "bits": 4.17,
    "size_gb": 64.48,
    "size_bytes": 64484689760,
@@ -351,7 +351,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_NL",
+   "label": "UD-IQ4_XS",
    "bits": 4.17,
    "size_gb": 64.48,
    "size_bytes": 64484689760,
@@ -517,19 +517,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
-   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
-   "format": "safetensors",
-   "label": "NVFP4",
-   "bits": 5.2,
-   "size_gb": 80.32,
-   "size_bytes": 80317948856,
-   "quantizer": "unsloth",
-   "file_count": 17,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
    "format": "safetensors",
@@ -538,6 +525,19 @@
    "size_gb": 80.32,
    "size_bytes": 80317948856,
    "quantizer": "official",
+   "file_count": 17,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+   "format": "safetensors",
+   "label": "NVFP4",
+   "bits": 5.2,
+   "size_gb": 80.32,
+   "size_bytes": 80317948856,
+   "quantizer": "unsloth",
    "file_count": 17,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -790,19 +790,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.31,
-   "size_gb": 128.35,
-   "size_bytes": 128350001680,
-   "quantizer": "official",
-   "file_count": 26,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "format": "safetensors",
@@ -811,6 +798,19 @@
    "size_gb": 128.35,
    "size_bytes": 128350001680,
    "quantizer": "unsloth",
+   "file_count": 26,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.31,
+   "size_gb": 128.35,
+   "size_bytes": 128350001680,
+   "quantizer": "official",
    "file_count": 26,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -894,15 +894,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:02.768696+00:00",
-  "last_checked": "2026-09-02T20:48:01.865377+00:00",
+  "last_checked": "2026-09-02T21:34:11.530512+00:00",
   "last_changed": "2026-09-02T20:29:02.768696+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "4957320bdb4496f0"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "89d43dc7992a7a72"
 }

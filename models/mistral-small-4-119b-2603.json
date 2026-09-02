@@ -871,15 +871,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Mistral-Small-4-119B-2603-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/Mistral-Small-4-119B-2603-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Mistral-Small-4-119B-2603-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "mistralai/Mistral-Small-4-119B-2603",
+   "label": "FP8"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": null,
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:27.519783+00:00",
-  "last_checked": "2026-09-02T20:47:54.693391+00:00",
+  "last_checked": "2026-09-02T21:33:56.175507+00:00",
   "last_changed": "2026-09-02T20:28:27.519783+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "94098bb859ad71fe"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "5eb6e141aaad1d71"
 }

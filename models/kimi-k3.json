@@ -177,15 +177,31 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "unsloth/Kimi-K3-GGUF",
+   "label": "UD-Q4_K_XL"
+  },
+  "q8": {
+   "repo": "unsloth/Kimi-K3-GGUF",
+   "label": "UD-Q8_K_XL"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "moonshotai/Kimi-K3",
+   "label": "FP4"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "modal-labs/Kimi-K3-DFlash",
   "dspark": "RadixArk/Kimi-K3-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:57.198926+00:00",
-  "last_checked": "2026-09-02T20:48:00.400709+00:00",
+  "last_checked": "2026-09-02T21:34:09.145054+00:00",
   "last_changed": "2026-09-02T20:28:57.198926+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "0c35313c8202e706"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "c0888e64423c4ead"
 }

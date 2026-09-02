@@ -329,7 +329,7 @@
    "note": "Dave2D run; 448GB wired-limit override required"
   },
   {
-   "chip": "DGX Spark (GB10)",
+   "chip": "DGX Spark",
    "bandwidth_gbs": 273,
    "memory_gb": 128,
    "platform": "cuda",

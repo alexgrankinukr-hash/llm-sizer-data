@@ -1216,15 +1216,34 @@
    "first_seen": "2026-09-02"
   }
  ],
+ "reference": {
+  "q4": {
+   "repo": "lmstudio-community/Qwen3-Coder-Next-GGUF",
+   "label": "Q4_K_M"
+  },
+  "q8": {
+   "repo": "lmstudio-community/Qwen3-Coder-Next-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": {
+   "repo": "lmstudio-community/Qwen3-Coder-Next-MLX-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Qwen/Qwen3-Coder-Next",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Qwen3-Coder-Next-DFlash",
   "dspark": null
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:22:58.099177+00:00",
-  "last_checked": "2026-09-02T20:46:57.929558+00:00",
+  "last_checked": "2026-09-02T21:31:31.390325+00:00",
   "last_changed": "2026-09-02T20:22:58.099177+00:00"
  },
- "generated_at": "2026-09-02T20:48:32+00:00",
- "sha": "e0c6ce1607634f22"
+ "generated_at": "2026-09-02T21:35:20+00:00",
+ "sha": "0ca438b9904577b2"
 }
