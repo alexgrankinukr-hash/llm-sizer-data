@@ -1,6 +1,6 @@
 # LLM Sizer — Methodology & Assumptions
 
-**Version 0.3 · 2026-09-02 · Status: pre-launch draft.** This is the public, plain-language explanation of every number LLM Sizer shows. It is the single source of truth: the tool's About page renders it and the open-data repo's `FORMULAS.md` is a nightly copy of it, and **any change to a formula, constant, or data source in the tool must be reflected here first** (that rule is part of the project's definition of done). Comments and corrections: the feedback form in the tool, or an issue on the open-data repository. Changelog at the bottom.
+**Version 0.5 · 2026-09-03 · Status: pre-launch draft.** This is the public, plain-language explanation of every number LLM Sizer shows. It is the single source of truth: the tool's About page renders it and the open-data repo's `FORMULAS.md` is a nightly copy of it, and **any change to a formula, constant, or data source in the tool must be reflected here first** (that rule is part of the project's definition of done). Comments and corrections: the feedback form in the tool, or an issue on the open-data repository. Changelog at the bottom.
 
 ---
 
@@ -9,6 +9,20 @@
 LLM Sizer answers three questions for a machine you own or are considering: **which open AI models fit in its memory, how fast they will write answers, and what you'd have to change to make a model fit.** Every answer is a calculation from published data, calibrated against real measurements, and every estimate is labeled as one.
 
 It does **not** run a benchmark on your machine, judge model quality (we show quantization-quality notes where quantizers publish them, nothing more), or cover image/video generation models (those are compute-bound and need a different method).
+
+### How to read the table
+
+Machines are rows (one row per memory size, grouped by model line: "Mac mini · M6" covers the 16, 24 and 32 GB configurations), models are columns (one column per model at a chosen quantization and context length). Each cell is one of three marks:
+
+- **Gold sphere: runs.** The whole configuration fits in the memory available for AI with at least 10 % headroom. The sheet behind the cell says how much of the available memory it uses.
+- **Gold ring: runs with a compromise.** Something has to give, and the cell already picked the cheapest concession by our ranking (section 5): close the apps you reserved memory for, raise the macOS memory limit, shorten the context, or drop to a smaller build, in that order of preference. A cell that fits with under 10 % headroom is also a ring, labelled *tight*. The sheet lists the chosen fix, up to three alternatives (never "an earlier option plus something extra"), and applies any of them to the column with one tap.
+- **Grey bar: doesn't fit.** Nothing at or above the quality floor (2-bit builds by label, adjustable in Advanced) fits even with every concession. The sheet shows the nearest miss: the smallest allowed build and how much memory it would still need.
+
+Two switches sit above the table. **"I'll also use it for work"** reserves 16 GB for your own apps (adjustable in Advanced); it is off by default, so the default table is the best case with nothing else running. **"macOS memory limit"** shows the share of RAM macOS lets the GPU use (67 % under 36 GB, 75 % from 36 GB); the sheet's fix and Advanced can lift it to the override (section 4). Speed numbers are always for the configuration that fits: a ring's speed is the speed of its fix, not of the build you asked for. Column headers carry the model's total and active parameters ("180B · 6B active" for a mixture-of-experts model), the build (Q4 by default, exact file labels in Advanced) and the context length (32K by default; chips for 8K / 32K / 128K / 256K).
+
+Every table state is a link (`?s=`), the share image is rendered from the same math on the server, and a custom model or machine you type in travels inside the link so the person you send it to sees exactly your table.
+
+Every number in the sheet behind a cell links to its source: the weights to the file's repository on Hugging Face, the machine to its row in the sources table (bandwidth, prices, spec pages), the context cache and the available memory to the sections of this page that compute them, and the speed to the factor it used, with a sentence saying whether that factor was measured on this chip, assumed, or taken from the chip's tier.
 
 ## 2. Words we use
 
@@ -181,6 +195,8 @@ All numbers below come from the live data (file sizes read from Hugging Face, fa
 
 ## 10. Changelog
 
+- **0.5 — 2026-09-03.** The About page (`/tools/llm-sizer/about`) renders this document with a FAQ and the sources behind every machine, benchmark row and factor; every number in a cell's sheet now links to its source (section 1). Correction recipe by file (section 11). Colours inside the tool darkened for contrast (the video's palette stays on the filming canvas). Cross-check against the charts that aired in the Apple-Macs video (2026-08-29), reproduced through the tool's own table path and kept as a test: the tool disagrees in 14 of 108 cells, none from a formula error. The reasons: the chart drew "does not fit at Q4" as a dash where the tool shows the cheapest compromise as a ring (a 2-bit or 3-bit build, a shorter context, the memory-limit override, or closing your apps in the realistic chart); the chart assumed the three-quarters memory limit on a 32 GB Mac where macOS allows two thirds (Qwen 3.8 27B at Q4 + 128K needs 22.2 GB against 21.4); Qwen 3.8 Flash Next's Q4 file is 119 GB (the n-gram table is inside it), not the ≈ 85 GB the chart assumed; GLM-5.3 Flash at Q4 needs the override on a 256 GB Studio once buffers count; GLM-5.2's 2-bit build does not fit 256 GB with its cache and buffers, and on 512 GB it needs the override and lands at 97 % (tight, a ring); and the speed table's flat 0.48 efficiency is now per chip (section 6.1). No formula or constant changed.
+- **0.4 — 2026-09-03.** The app. New "How to read the table" subsection (section 1): the three marks, the two switches, tight cells as rings, speed shown for the configuration that fits, links and custom entries. Fix descriptions now separate the tight note with a semicolon instead of a dash; the alternatives list never contains a superset of an earlier alternative. No formula or constant changed.
 - **0.3 — 2026-09-02.** The engine. Verdicts now have four states (runs / tight / compromise / doesn't fit) with the fix search's costs written down; the 2-bit quality floor (by label) and hand-maintained special builds added; MLX factor fades 24K → 36K instead of dropping at 30K; efficiency computed on active weights for mixture-of-experts benchmark rows (Ultra tier 0.44, M5 Ultra assumption 0.55); chip names matched without their GPU bin; ROCm machines get no speed number. Worked examples rewritten from the live data: Qwen Q4 is 16.8 GB (LM Studio's file), GLM-5.3 Flash ≈ 59 tok/s at 8K on the M5 Ultra, its Q4 does not fit the DGX Spark (the 2-bit build runs ≈ 17 tok/s), GLM-5.2 on 256 GB is a dash once buffers are counted, Kimi K3 and Flash Next examples added.
 - **0.2 — 2026-09-02.** Data pipeline built. Section 3 now describes how models are discovered (five quantizer organisations, twelve-month window, featured list, name-based exclusions) and the publish-time safety net. Efficiency constants are now generated by `calibrate.py` from `benchmarks.json` into `factors.json` (tier medians 0.79 / 0.74 / 0.63 / 0.45 / 0.40; measured chips use their own value, M5 Max 0.82); M5 Ultra documented as an explicit 0.57 assumption. Acceleration ranges computed from paired rows. Gemma 4 cache corrected to its global-layer heads (≈ 0.7 GB at 128K, not 1.3). Machines catalog: one row per bandwidth bin (M5 Max 460 vs 614 GB/s; M6 mini 153 GB/s at 16 GB vs 170 at 24/32 GB). Spark speed in example B corrected from ~14 to ~11 tok/s.
 - **0.1 — 2026-09-02.** First draft, written from the Phase 0 research spike: efficiency by chip tier from the community llama.cpp table (M1–M5 Max), context-cache formulas by attention design read from model configs, MLX runtime factors from 2026 community reports, MTP/DFlash factors from MTPLX and mlx-dspark measurements.
@@ -188,3 +204,10 @@ All numbers below come from the live data (file sizes read from Hugging Face, fa
 ## 11. How to correct us
 
 Use the feedback form in the tool (it attaches your exact configuration) or open an issue on the open-data repository, ideally with: machine, model, quant, context, runtime, and the number you measured. Accepted measurements go into the calibration data with your handle as the source, and the relevant row above changes with a changelog entry.
+
+File by file, in the open-data repository:
+
+- **A machine fact** (memory options, bandwidth, price, status): edit the row in `machines.json` and add the page you are citing to its `sources`.
+- **A speed you measured**: add a row to `benchmarks.json` with `chip`, `bandwidth_gbs`, `memory_gb`, `model`, `quant`, `weights_gb`, `runtime` (gguf or mlx), `accel` (none, mtp, dflash, dspark), `tg` (writing tokens per second), `pp` (prefill, optional), `source` (a public link) and `date`; accelerated rows also carry `baseline_tg`, the same setup without the acceleration. Do not edit `factors.json`: it is regenerated from the rows.
+- **A model fact** the Hugging Face API cannot express (a published active-parameter count, a licence threshold, a hand-maintained build): `models.overrides.json`.
+- **A formula or constant**: open an issue. `FORMULAS.md` is a nightly copy of this document and is not edited in the data repository.
