@@ -18,7 +18,16 @@ Mirror cadence: the tool's nightly job pushes every file above after its own san
 
 ## Correcting a number
 
-Open an issue or a pull request here with: machine, model, quantization, context length, runtime (GGUF/MLX), and the number you measured or the source you're citing. Accepted corrections change the file and get a changelog entry in `FORMULAS.md` with your handle as the source. Or use the feedback form in the tool — it attaches your exact configuration.
+Open an issue or a pull request here with: machine, model, quantization, context length, runtime (GGUF/MLX), and the number you measured or the source you're citing. Accepted corrections change the file and get a changelog entry in `FORMULAS.md` with your handle as the source. Or use the feedback form in the tool — it attaches your exact configuration. The tool's [About page](https://theaibridges.com/tools/llm-sizer/about) shows every row of these files next to the numbers they produce.
+
+File by file:
+
+- **A machine fact** (memory options, bandwidth, price, status): edit the row in `machines.json` and add the page you are citing to its `sources` list.
+- **A speed you measured**: add a row to `benchmarks.json` with `chip`, `bandwidth_gbs`, `memory_gb`, `model`, `quant`, `weights_gb`, `runtime` (`gguf` or `mlx`), `accel` (`none`, `mtp`, `dflash`, `dspark`), `tg` (writing tokens per second), `pp` (prefill tokens per second, optional), `source` (a public link) and `date`. Accelerated rows also carry `baseline_tg`, the same setup without the acceleration. Do not edit `factors.json`: the calibration script regenerates it from the rows.
+- **A model fact** the Hugging Face API cannot express (a published active-parameter count, a licence threshold, a hand-maintained build): `models.overrides.json`.
+- **A formula or constant**: open an issue. `FORMULAS.md` is mirrored nightly from the tool and is not edited here.
+
+The nightly mirror rewrites every data file and `FORMULAS.md`; it never touches this README.
 
 ## Licenses
 
