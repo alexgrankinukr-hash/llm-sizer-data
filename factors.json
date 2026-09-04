@@ -14,7 +14,12 @@
     "range": [
      0.596,
      0.873
-    ]
+    ],
+    "t0_ms": 2.56,
+    "b_eff_gbs": 257.8,
+    "b_eff_ratio": 0.944,
+    "fit_n": 2,
+    "fit_max_err_pct": 0.0
    },
    "M1": {
     "value": 0.791,
@@ -25,7 +30,12 @@
     "range": [
      0.791,
      0.791
-    ]
+    ],
+    "t0_ms": 8.36,
+    "b_eff_gbs": 61.0,
+    "b_eff_ratio": 0.897,
+    "fit_n": 2,
+    "fit_max_err_pct": 0.0
    },
    "M1 Max": {
     "value": 0.581,
@@ -36,7 +46,12 @@
     "range": [
      0.581,
      0.581
-    ]
+    ],
+    "t0_ms": 6.44,
+    "b_eff_gbs": 362.7,
+    "b_eff_ratio": 0.907,
+    "fit_n": 6,
+    "fit_max_err_pct": 8.2
    },
    "M1 Pro": {
     "value": 0.692,
@@ -47,7 +62,12 @@
     "range": [
      0.692,
      0.692
-    ]
+    ],
+    "t0_ms": 7.22,
+    "b_eff_gbs": 189.9,
+    "b_eff_ratio": 0.95,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.9
    },
    "M1 Ultra": {
     "value": 0.398,
@@ -58,7 +78,12 @@
     "range": [
      0.398,
      0.398
-    ]
+    ],
+    "t0_ms": 5.78,
+    "b_eff_gbs": 639.1,
+    "b_eff_ratio": 0.799,
+    "fit_n": 3,
+    "fit_max_err_pct": 2.0
    },
    "M2": {
     "value": 0.833,
@@ -69,7 +94,12 @@
     "range": [
      0.833,
      0.833
-    ]
+    ],
+    "t0_ms": 5.27,
+    "b_eff_gbs": 94.0,
+    "b_eff_ratio": 0.94,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.1
    },
    "M2 Max": {
     "value": 0.627,
@@ -80,7 +110,12 @@
     "range": [
      0.627,
      0.627
-    ]
+    ],
+    "t0_ms": 5.13,
+    "b_eff_gbs": 381.3,
+    "b_eff_ratio": 0.953,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.4
    },
    "M2 Pro": {
     "value": 0.738,
@@ -91,7 +126,12 @@
     "range": [
      0.738,
      0.738
-    ]
+    ],
+    "t0_ms": 5.77,
+    "b_eff_gbs": 190.7,
+    "b_eff_ratio": 0.954,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.2
    },
    "M2 Ultra": {
     "value": 0.448,
@@ -102,7 +142,12 @@
     "range": [
      0.448,
      0.448
-    ]
+    ],
+    "t0_ms": 5.0,
+    "b_eff_gbs": 700.2,
+    "b_eff_ratio": 0.875,
+    "fit_n": 3,
+    "fit_max_err_pct": 1.8
    },
    "M3": {
     "value": 0.811,
@@ -113,7 +158,12 @@
     "range": [
      0.811,
      0.811
-    ]
+    ],
+    "t0_ms": 8.15,
+    "b_eff_gbs": 98.2,
+    "b_eff_ratio": 0.982,
+    "fit_n": 2,
+    "fit_max_err_pct": 0.0
    },
    "M3 Max": {
     "value": 0.63,
@@ -124,7 +174,12 @@
     "range": [
      0.63,
      0.63
-    ]
+    ],
+    "t0_ms": 5.19,
+    "b_eff_gbs": 390.4,
+    "b_eff_ratio": 0.976,
+    "fit_n": 3,
+    "fit_max_err_pct": 1.1
    },
    "M3 Pro": {
     "value": 0.779,
@@ -135,7 +190,12 @@
     "range": [
      0.779,
      0.779
-    ]
+    ],
+    "t0_ms": 5.9,
+    "b_eff_gbs": 141.6,
+    "b_eff_ratio": 0.944,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.6
    },
    "M3 Ultra": {
     "value": 0.438,
@@ -146,7 +206,12 @@
     "range": [
      0.438,
      0.575
-    ]
+    ],
+    "t0_ms": 5.15,
+    "b_eff_gbs": 677.0,
+    "b_eff_ratio": 0.827,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.9
    },
    "M4": {
     "value": 0.763,
@@ -157,7 +222,12 @@
     "range": [
      0.763,
      0.763
-    ]
+    ],
+    "t0_ms": 4.87,
+    "b_eff_gbs": 104.1,
+    "b_eff_ratio": 0.868,
+    "fit_n": 3,
+    "fit_max_err_pct": 0.3
    },
    "M4 Max": {
     "value": 0.645,
@@ -168,7 +238,12 @@
     "range": [
      0.578,
      0.713
-    ]
+    ],
+    "t0_ms": 4.18,
+    "b_eff_gbs": 493.8,
+    "b_eff_ratio": 0.904,
+    "fit_n": 3,
+    "fit_max_err_pct": 1.4
    },
    "M4 Pro": {
     "value": 0.706,
@@ -179,7 +254,12 @@
     "range": [
      0.706,
      0.706
-    ]
+    ],
+    "t0_ms": 4.32,
+    "b_eff_gbs": 251.2,
+    "b_eff_ratio": 0.92,
+    "fit_n": 3,
+    "fit_max_err_pct": 1.3
    },
    "M5": {
     "value": 0.787,
@@ -190,7 +270,12 @@
     "range": [
      0.787,
      0.787
-    ]
+    ],
+    "t0_ms": 5.75,
+    "b_eff_gbs": 148.3,
+    "b_eff_ratio": 0.97,
+    "fit_n": 2,
+    "fit_max_err_pct": 0.0
    },
    "M5 Max": {
     "value": 0.816,
@@ -201,7 +286,12 @@
     "range": [
      0.742,
      0.849
-    ]
+    ],
+    "t0_ms": 0.53,
+    "b_eff_gbs": 515.6,
+    "b_eff_ratio": 0.84,
+    "fit_n": 3,
+    "fit_max_err_pct": 5.6
    },
    "M5 Pro": {
     "value": 0.821,
@@ -212,7 +302,12 @@
     "range": [
      0.821,
      0.821
-    ]
+    ],
+    "t0_ms": 2.62,
+    "b_eff_gbs": 308.9,
+    "b_eff_ratio": 1.006,
+    "fit_n": 3,
+    "fit_max_err_pct": 1.0
    }
   },
   "assumed": {
@@ -221,21 +316,27 @@
     "measured": false,
     "tier": "ultra",
     "generation": "M5",
-    "note": "ultra-tier median 0.438 × M5 generation lift 1.265 (M5 Max vs M4 Max); replace when measured"
+    "note": "ultra-tier median 0.438 × M5 generation lift 1.265 (M5 Max vs M4 Max); replace when measured; fixed-cost model: unmeasured: 85 % of spec bandwidth (the Ultra tier's share) and the M5 generation's fixed cost; replace when measured",
+    "t0_ms": 1.5,
+    "b_eff_ratio": 0.85
    },
    "M6": {
     "value": 0.791,
     "measured": false,
     "tier": "base",
     "generation": "M6",
-    "note": "base-tier median until measured"
+    "note": "base-tier median until measured",
+    "t0_ms": 5.75,
+    "b_eff_ratio": 0.94
    },
    "M6 Pro": {
     "value": 0.738,
     "measured": false,
     "tier": "pro",
     "generation": "M6",
-    "note": "pro-tier median until measured"
+    "note": "pro-tier median until measured",
+    "t0_ms": 5.77,
+    "b_eff_ratio": 0.95
    }
   },
   "by_tier": {
@@ -245,7 +346,9 @@
     "range": [
      0.763,
      0.833
-    ]
+    ],
+    "t0_ms": 5.75,
+    "b_eff_ratio": 0.94
    },
    "pro": {
     "value": 0.738,
@@ -253,7 +356,9 @@
     "range": [
      0.692,
      0.821
-    ]
+    ],
+    "t0_ms": 5.77,
+    "b_eff_ratio": 0.95
    },
    "max": {
     "value": 0.63,
@@ -261,7 +366,9 @@
     "range": [
      0.581,
      0.816
-    ]
+    ],
+    "t0_ms": 5.13,
+    "b_eff_ratio": 0.907
    },
    "ultra": {
     "value": 0.438,
@@ -269,7 +376,9 @@
     "range": [
      0.398,
      0.448
-    ]
+    ],
+    "t0_ms": 5.15,
+    "b_eff_ratio": 0.827
    },
    "spark": {
     "value": 0.748,
@@ -277,7 +386,9 @@
     "range": [
      0.748,
      0.748
-    ]
+    ],
+    "t0_ms": 2.56,
+    "b_eff_ratio": 0.944
    }
   },
   "m5_generation_lift": 1.265
@@ -313,6 +424,184 @@
    "note": "2026 community MLX-vs-llama.cpp reports; applied in full up to 24K context and fading linearly to 1.0 at 36K",
    "measured_here": false
   }
+ },
+ "speed_model": {
+  "kind": "floor",
+  "_formula": "ms per token = GB read per token ÷ (b_eff_ratio × spec bandwidth) × 1000 × read_factor[quant family] (the K-quant factor on the platforms it lists: Apple silicon) + (t0_ms + architecture_cost_ms[class]) × mlx overhead_factor[group] (GGUF: 1) + (attention_ms_per_32k[attention] + mlx attention_ms_per_32k) × context ÷ 32768; tok/s = 1000 ÷ ms",
+  "_classes": "dense | moe (mixture of experts) | moe_hybrid (mixture of experts with linear-attention layers) | moe_latent (mixture of experts with MLA or latent attention) | deepseek_v4 (per-model override)",
+  "_groups": "MLX overhead groups: dense | small_active_moe_m4plus (under 6B active, M4 generation and newer) | small_active_moe_pre_m4 | moe_other",
+  "read_factor": {
+   "q4_0": {
+    "value": 1.0,
+    "source": "definition"
+   },
+   "q8_0": {
+    "value": 1.0,
+    "source": "definition"
+   },
+   "f16": {
+    "value": 1.0,
+    "source": "definition"
+   },
+   "mxfp4": {
+    "value": 1.0,
+    "source": "definition"
+   },
+   "mlx": {
+    "value": 1.0,
+    "source": "definition"
+   },
+   "gguf_kquant": {
+    "value": 1.25,
+    "n": 1,
+    "source": "assumed",
+    "platforms": [
+     "apple"
+    ]
+   }
+  },
+  "architecture_cost_ms": {
+   "dense": {
+    "value": 0.0,
+    "n": 0,
+    "source": "definition"
+   },
+   "moe": {
+    "value": 1.7,
+    "n": 16,
+    "source": "fitted",
+    "range": [
+     0.0,
+     4.4
+    ]
+   },
+   "moe_hybrid": {
+    "value": 5.8,
+    "n": 2,
+    "source": "fitted",
+    "range": [
+     5.2,
+     6.4
+    ]
+   },
+   "moe_latent": {
+    "value": 11.7,
+    "n": 2,
+    "source": "fitted",
+    "range": [
+     11.0,
+     12.4
+    ]
+   },
+   "deepseek_v4": {
+    "value": 17.0,
+    "n": 3,
+    "source": "fitted",
+    "range": [
+     13.3,
+     32.7
+    ]
+   }
+  },
+  "attention_ms_per_32k": {
+   "gqa": {
+    "value": 0.0,
+    "n": 0,
+    "source": "definition"
+   },
+   "mla": {
+    "value": 5.0,
+    "n": 0,
+    "source": "assumed"
+   },
+   "latent": {
+    "value": 5.0,
+    "n": 0,
+    "source": "assumed"
+   }
+  },
+  "mlx": {
+   "overhead_factor": {
+    "dense": {
+     "value": 0.99,
+     "n": 5,
+     "source": "fitted",
+     "range": [
+      0.81,
+      1.18
+     ]
+    },
+    "small_active_moe_m4plus": {
+     "value": 0.5,
+     "n": 1,
+     "source": "assumed"
+    },
+    "small_active_moe_pre_m4": {
+     "value": 1.2,
+     "n": 3,
+     "source": "fitted",
+     "range": [
+      0.95,
+      1.56
+     ]
+    },
+    "moe_other": {
+     "value": 0.77,
+     "n": 10,
+     "source": "fitted",
+     "range": [
+      0.54,
+      1.18
+     ]
+    }
+   },
+   "attention_ms_per_32k": {
+    "value": 6.4,
+    "n": 14,
+    "source": "fitted",
+    "range": [
+     0.0,
+     32.7
+    ]
+   }
+  },
+  "validation": {
+   "holdout_rule": "family == gemma-4 or contributor == omlx, by submission_id",
+   "n_train": 73,
+   "n_holdout": 19,
+   "train_median_err": 0.062,
+   "train_p90_err": 0.255,
+   "holdout_median_err": 0.133,
+   "holdout_p90_err": 0.258,
+   "multiplier_holdout_median_err": 0.188,
+   "multiplier_train_median_err": 0.288,
+   "gate": {
+    "holdout_median_max": 0.223,
+    "no_worse_than_multiplier_by": 0.262,
+    "holdout_median": 0.133,
+    "rows_worse": [],
+    "passed": true
+   },
+   "fitted_at": "2026-09-05"
+  },
+  "bin_checks": [
+   {
+    "chip": "M3 Max",
+    "bandwidth_gbs": 300.0,
+    "own_ratio": 0.964,
+    "profile_ratio": 0.976,
+    "own_t0_ms": 4.42,
+    "profile_t0_ms": 5.19
+   },
+   {
+    "chip": "M4 Max",
+    "bandwidth_gbs": 410.0,
+    "own_ratio": 0.875,
+    "profile_ratio": 0.904,
+    "own_t0_ms": 3.31,
+    "profile_t0_ms": 4.18
+   }
+  ]
  },
  "acceleration": {
   "mtp": {
@@ -356,83 +645,83 @@
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M1": {
-   "pp_times_weights_gb": 448.248,
-   "n": 1,
+   "pp_times_weights_gb": 646.224,
+   "n": 2,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M1 Max": {
-   "pp_times_weights_gb": 2014.228,
-   "n": 1,
+   "pp_times_weights_gb": 3869.064,
+   "n": 5,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M1 Pro": {
-   "pp_times_weights_gb": 1011.75,
-   "n": 1,
+   "pp_times_weights_gb": 1946.664,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M1 Ultra": {
-   "pp_times_weights_gb": 3914.152,
-   "n": 1,
+   "pp_times_weights_gb": 7509.24,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M2": {
-   "pp_times_weights_gb": 682.366,
-   "n": 1,
+   "pp_times_weights_gb": 1306.08,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M2 Max": {
-   "pp_times_weights_gb": 2550.978,
-   "n": 1,
+   "pp_times_weights_gb": 4880.952,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M2 Pro": {
-   "pp_times_weights_gb": 1296.522,
-   "n": 1,
+   "pp_times_weights_gb": 2480.4,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M2 Ultra": {
-   "pp_times_weights_gb": 4706.224,
-   "n": 1,
+   "pp_times_weights_gb": 8989.848,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M3": {
-   "pp_times_weights_gb": 709.65,
-   "n": 1,
+   "pp_times_weights_gb": 1029.897,
+   "n": 2,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M3 Max": {
-   "pp_times_weights_gb": 2886.86,
-   "n": 1,
+   "pp_times_weights_gb": 5455.008,
+   "n": 5,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M3 Pro": {
-   "pp_times_weights_gb": 1298.346,
-   "n": 1,
+   "pp_times_weights_gb": 2481.552,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M3 Ultra": {
-   "pp_times_weights_gb": 8150.392,
-   "n": 2,
+   "pp_times_weights_gb": 10710.072,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M4": {
-   "pp_times_weights_gb": 840.902,
-   "n": 1,
+   "pp_times_weights_gb": 1610.208,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M4 Max": {
-   "pp_times_weights_gb": 4893.776,
-   "n": 2,
+   "pp_times_weights_gb": 6421.968,
+   "n": 5,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M4 Pro": {
-   "pp_times_weights_gb": 1671.164,
-   "n": 1,
+   "pp_times_weights_gb": 3237.264,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M5": {
-   "pp_times_weights_gb": 2746.602,
-   "n": 1,
+   "pp_times_weights_gb": 3948.813,
+   "n": 2,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M5 Max": {
@@ -441,8 +730,8 @@
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   },
   "M5 Pro": {
-   "pp_times_weights_gb": 6158.432,
-   "n": 1,
+   "pp_times_weights_gb": 11187.792,
+   "n": 3,
    "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
   }
  },

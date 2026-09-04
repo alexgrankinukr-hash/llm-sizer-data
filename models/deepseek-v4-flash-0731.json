@@ -69,7 +69,8 @@
   "source": "config",
   "config_sha": "bd2c2daff7fb54a2",
   "notes": [],
-  "kv_cache_gb_at_128k_8bit": 3.25
+  "kv_cache_gb_at_128k_8bit": 3.25,
+  "arch_cost_class": "deepseek_v4"
  },
  "quants": [
   {
@@ -219,7 +220,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_NL",
+   "label": "UD-IQ4_XS",
    "bits": 3.59,
    "size_gb": 136.66,
    "size_bytes": 136662446656,
@@ -232,7 +233,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_XS",
+   "label": "UD-IQ4_NL",
    "bits": 3.59,
    "size_gb": 136.66,
    "size_bytes": 136662446656,
@@ -342,9 +343,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:08.769191+00:00",
-  "last_checked": "2026-09-04T21:56:46.669296+00:00",
+  "last_checked": "2026-09-04T22:43:37.720869+00:00",
   "last_changed": "2026-09-02T20:25:08.769191+00:00"
  },
- "generated_at": "2026-09-04T21:59:39+00:00",
- "sha": "efa918f6975569f1"
+ "generated_at": "2026-09-04T22:45:48+00:00",
+ "sha": "85ae243608c46b17"
 }

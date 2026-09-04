@@ -68,7 +68,8 @@
   "source": "config",
   "config_sha": "f4fcd46531916788",
   "notes": [],
-  "kv_cache_gb_at_128k_8bit": 4.61
+  "kv_cache_gb_at_128k_8bit": 4.61,
+  "arch_cost_class": "deepseek_v4"
  },
  "quants": [
   {
@@ -133,9 +134,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:19.117449+00:00",
-  "last_checked": "2026-09-04T21:56:51.123054+00:00",
+  "last_checked": "2026-09-04T22:43:40.755612+00:00",
   "last_changed": "2026-09-02T20:25:19.117449+00:00"
  },
- "generated_at": "2026-09-04T21:59:39+00:00",
- "sha": "6de00fc63cac72fb"
+ "generated_at": "2026-09-04T22:45:48+00:00",
+ "sha": "4148ae9bdc4d4c1a"
 }

@@ -210,7 +210,8 @@
     "deepseek-v4-flash-0731": {
       "notes": [
         "Attention weights FP8, experts FP4 natively."
-      ]
+      ],
+      "arch_cost_class": "deepseek_v4"
     },
     "deepseek-v4-flash": {
       "superseded_by": "deepseek-v4-flash-0731"
@@ -218,7 +219,8 @@
     "deepseek-v4-pro-0813": {
       "notes": [
         "Attention weights FP8, experts FP4 natively."
-      ]
+      ],
+      "arch_cost_class": "deepseek_v4"
     },
     "deepseek-v4-pro": {
       "superseded_by": "deepseek-v4-pro-0813"

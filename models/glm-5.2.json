@@ -343,19 +343,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "unsloth/GLM-5.2-FP8",
-   "url": "https://huggingface.co/unsloth/GLM-5.2-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.02,
-   "size_gb": 755.63,
-   "size_bytes": 755632050320,
-   "quantizer": "unsloth",
-   "file_count": 141,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "zai-org/GLM-5.2-FP8",
    "url": "https://huggingface.co/zai-org/GLM-5.2-FP8",
    "format": "safetensors",
@@ -364,6 +351,19 @@
    "size_gb": 755.63,
    "size_bytes": 755632050320,
    "quantizer": "official",
+   "file_count": 141,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "unsloth/GLM-5.2-FP8",
+   "url": "https://huggingface.co/unsloth/GLM-5.2-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.02,
+   "size_gb": 755.63,
+   "size_bytes": 755632050320,
+   "quantizer": "unsloth",
    "file_count": 141,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -459,9 +459,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:51.274032+00:00",
-  "last_checked": "2026-09-04T21:59:01.789446+00:00",
+  "last_checked": "2026-09-04T22:45:19.421481+00:00",
   "last_changed": "2026-09-02T20:29:51.274032+00:00"
  },
- "generated_at": "2026-09-04T21:59:39+00:00",
- "sha": "9da10d45c67936c2"
+ "generated_at": "2026-09-04T22:45:48+00:00",
+ "sha": "c91e89b8e8fac339"
 }
