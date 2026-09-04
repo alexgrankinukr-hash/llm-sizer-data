@@ -1,6 +1,6 @@
 {
   "schema": "llm-sizer/models.overrides v1 — hand-maintained facts the Hugging Face API cannot express. Reviewed on every change; applied after discovery, so these values win.",
-  "updated": "2026-09-02",
+  "updated": "2026-09-05",
   "featured": [
     {
       "id": "qwen3.8-27b",
@@ -238,8 +238,15 @@
           "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
           "note": "Community build; measured 36 tok/s on a 64 GB MacBook Pro with vision working (Atomic Chat, Aug 2026).",
           "measured_tok_s": 36,
-          "measured_on": "64 GB MacBook Pro"
+          "measured_on": "64 GB MacBook Pro",
+          "measured_machine": { "platform": "apple", "memory_gb": 64 }
         }
+      ]
+    },
+    "mistral-small-4-119b-2603": {
+      "params_active": 6500000000,
+      "notes": [
+        "6.5B active parameters per the model card (the config-derived estimate was 8.0B)."
       ]
     },
     "meta-llama-llama-4-maverick-17b-128e": {

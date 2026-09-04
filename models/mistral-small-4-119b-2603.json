@@ -8,8 +8,8 @@
  "variant": "instruct",
  "released": "2026-01-23",
  "params_total": 119401317952,
- "params_active": 7967049280,
- "params_active_source": "estimated",
+ "params_active": 6500000000,
+ "params_active_source": "override",
  "context_max": 1048576,
  "native_bits": 8.0,
  "license": {
@@ -56,7 +56,9 @@
  "gated": "false",
  "status": "active",
  "superseded_by": null,
- "notes": [],
+ "notes": [
+  "6.5B active parameters per the model card (the config-derived estimate was 8.0B)."
+ ],
  "four_bit_native": false,
  "architecture": {
   "model_type": "mistral4",
@@ -896,9 +898,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:27.519783+00:00",
-  "last_checked": "2026-09-04T07:54:34.715148+00:00",
+  "last_checked": "2026-09-04T21:58:19.396197+00:00",
   "last_changed": "2026-09-02T20:28:27.519783+00:00"
  },
- "generated_at": "2026-09-04T07:54:59+00:00",
- "sha": "16bf8f1676bc98ae"
+ "generated_at": "2026-09-04T21:59:39+00:00",
+ "sha": "8c9b1cbf26ebb0db"
 }

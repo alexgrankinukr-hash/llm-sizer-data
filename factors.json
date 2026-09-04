@@ -1,19 +1,19 @@
 {
  "schema": "llm-sizer/factors v1 — derived by scripts/llm-sizer/calibrate.py from benchmarks.json; do not edit by hand",
- "data_as_of": "2026-09-02",
+ "data_as_of": "2026-09-05",
  "efficiency": {
   "_formula": "decode tok/s = bandwidth_gbs × efficiency ÷ gigabytes read per token (active weights at the quant's bits + context cache per token)",
   "_resolve": "exact chip if present in by_chip, else assumed[chip] if present, else the tier median (tier from the chip name: base | Pro | Max | Ultra; DGX Spark = spark)",
   "by_chip": {
    "DGX Spark": {
-    "value": 0.396,
-    "n": 1,
+    "value": 0.748,
+    "n": 5,
     "measured": true,
     "tier": "spark",
     "generation": null,
     "range": [
-     0.396,
-     0.396
+     0.596,
+     0.873
     ]
    },
    "M1": {
@@ -272,11 +272,11 @@
     ]
    },
    "spark": {
-    "value": 0.396,
+    "value": 0.748,
     "n_chips": 1,
     "range": [
-     0.396,
-     0.396
+     0.748,
+     0.748
     ]
    }
   },
@@ -309,8 +309,8 @@
      3.0
     ]
    },
-   "flatten_above_context": 30000,
-   "note": "2026 community MLX-vs-llama.cpp reports; the factor is applied up to 30K context and 1.0 above it",
+   "flatten_above_context": 36000,
+   "note": "2026 community MLX-vs-llama.cpp reports; applied in full up to 24K context and fading linearly to 1.0 at 36K",
    "measured_here": false
   }
  },
@@ -350,6 +350,11 @@
   "_rule": "MTP: native heads, factor in [min, max] when the runtime uses them. Draft models (DFlash/DSpark): use draft_dense unless the model is a mixture-of-experts with under 6.0 B active parameters, then draft_small_active_moe. Always show the range, never the headline."
  },
  "prefill": {
+  "DGX Spark": {
+   "pp_times_weights_gb": 54520.422,
+   "n": 5,
+   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  },
   "M1": {
    "pp_times_weights_gb": 448.248,
    "n": 1,
@@ -471,9 +476,10 @@
  "sources": [
   "https://github.com/ARahim3/mlx-dspark",
   "https://github.com/eauchs/mlx-dflash",
+  "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
   "https://github.com/ggml-org/llama.cpp/discussions/4167",
   "https://github.com/youssofal/MTPLX",
-  "https://intuitionlabs.ai/articles/nvidia-dgx-spark-review",
+  "https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/",
   "https://vinoth12940.github.io/blog/articles/genai-20260519-local-mtp-speculative-decoding/",
   "https://www.macrumors.com/2025/03/17/apples-m3-ultra-runs-deepseek-r1-efficiently/"
  ]

@@ -50,8 +50,8 @@
   "kv_lora_rank": null,
   "rope_dim": null,
   "window_size": 1024,
-  "full_bytes_per_token_8bit": 20480,
-  "sliding_bytes_per_token_8bit": 204800,
+  "full_bytes_per_token_8bit": 40960,
+  "sliding_bytes_per_token_8bit": 409600,
   "linear_state_bytes": 0,
   "hidden_size": 5376,
   "experts_total": null,
@@ -68,7 +68,7 @@
   "notes": [
    "full-attention layers use global KV heads"
   ],
-  "kv_cache_gb_at_128k_8bit": 2.89
+  "kv_cache_gb_at_128k_8bit": 5.79
  },
  "quants": [
   {
@@ -1033,9 +1033,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:26:35.130576+00:00",
-  "last_checked": "2026-09-04T07:54:29.029442+00:00",
+  "last_checked": "2026-09-04T21:57:27.485953+00:00",
   "last_changed": "2026-09-02T20:26:35.130576+00:00"
  },
- "generated_at": "2026-09-04T07:54:59+00:00",
- "sha": "fcfd26060bfe7893"
+ "generated_at": "2026-09-04T21:59:39+00:00",
+ "sha": "ac57c9d6efac1008"
 }

@@ -577,19 +577,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "unsloth/Qwen3.8-Flash-Next-FP8",
-   "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.25,
-   "size_gb": 185.52,
-   "size_bytes": 185523317458,
-   "quantizer": "unsloth",
-   "file_count": 131,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "Qwen/Qwen3.8-Flash-Next-FP8",
    "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8",
    "format": "safetensors",
@@ -598,6 +585,19 @@
    "size_gb": 185.52,
    "size_bytes": 185523317458,
    "quantizer": "official",
+   "file_count": 131,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "unsloth/Qwen3.8-Flash-Next-FP8",
+   "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.25,
+   "size_gb": 185.52,
+   "size_bytes": 185523317458,
+   "quantizer": "unsloth",
    "file_count": 131,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -709,7 +709,11 @@
    "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
    "note": "Community build; measured 36 tok/s on a 64 GB MacBook Pro with vision working (Atomic Chat, Aug 2026).",
    "measured_tok_s": 36,
-   "measured_on": "64 GB MacBook Pro"
+   "measured_on": "64 GB MacBook Pro",
+   "measured_machine": {
+    "platform": "apple",
+    "memory_gb": 64
+   }
   }
  ],
  "drafts": {
@@ -718,9 +722,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:24:51.887134+00:00",
-  "last_checked": "2026-09-04T07:54:22.208552+00:00",
+  "last_checked": "2026-09-04T21:56:40.208527+00:00",
   "last_changed": "2026-09-02T20:24:51.887134+00:00"
  },
- "generated_at": "2026-09-04T07:54:59+00:00",
- "sha": "022945254ae303e3"
+ "generated_at": "2026-09-04T21:59:39+00:00",
+ "sha": "33277151ed7a9fc1"
 }
