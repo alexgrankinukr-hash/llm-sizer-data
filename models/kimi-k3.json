@@ -8,8 +8,8 @@
  "variant": "instruct",
  "released": "2026-06-13",
  "params_total": 2779931837184,
- "params_active": 164994473671,
- "params_active_source": "estimated",
+ "params_active": 104000000000,
+ "params_active_source": "override",
  "context_max": 1048576,
  "native_bits": 4.0,
  "license": {
@@ -37,7 +37,8 @@
  "status": "active",
  "superseded_by": null,
  "notes": [
-  "Native MXFP4 (4-bit) release; no larger-precision weights exist."
+  "Native MXFP4 (4-bit) release; no larger-precision weights exist.",
+  "104B activated parameters per the model card (the config-derived estimate was 165B: the experts work on a 3,584-wide latent, not the 7,168 hidden size)."
  ],
  "four_bit_native": true,
  "architecture": {
@@ -68,7 +69,9 @@
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "f10ab4a284cec0ae",
-  "notes": [],
+  "notes": [
+   "experts work on a 3584-wide latent, not the 7168 hidden size"
+  ],
   "kv_cache_gb_at_128k_8bit": 2.03
  },
  "quants": [
@@ -199,9 +202,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:57.198926+00:00",
-  "last_checked": "2026-09-05T07:35:42.145024+00:00",
+  "last_checked": "2026-09-05T09:08:18.259189+00:00",
   "last_changed": "2026-09-02T20:28:57.198926+00:00"
  },
- "generated_at": "2026-09-05T07:35:58+00:00",
- "sha": "fa82ffd30b357cdb"
+ "generated_at": "2026-09-05T09:09:22+00:00",
+ "sha": "831f6287fa29f8ae"
 }

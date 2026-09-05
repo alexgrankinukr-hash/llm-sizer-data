@@ -527,8 +527,8 @@
      "n": 5,
      "source": "fitted",
      "range": [
-      0.81,
-      1.18
+      0.86,
+      1.37
      ]
     },
     "small_active_moe_m4plus": {
@@ -570,11 +570,11 @@
    "n_train": 73,
    "n_holdout": 19,
    "train_median_err": 0.062,
-   "train_p90_err": 0.255,
+   "train_p90_err": 0.256,
    "holdout_median_err": 0.133,
    "holdout_p90_err": 0.258,
    "multiplier_holdout_median_err": 0.188,
-   "multiplier_train_median_err": 0.288,
+   "multiplier_train_median_err": 0.287,
    "gate": {
     "holdout_median_max": 0.223,
     "no_worse_than_multiplier_by": 0.262,

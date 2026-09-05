@@ -203,9 +203,11 @@
     "kimi-k3": {
       "license_note": "Modified MIT: attribution required above $20M monthly revenue or 100M monthly users.",
       "notes": [
-        "Native MXFP4 (4-bit) release; no larger-precision weights exist."
+        "Native MXFP4 (4-bit) release; no larger-precision weights exist.",
+        "104B activated parameters per the model card (the config-derived estimate was 165B: the experts work on a 3,584-wide latent, not the 7,168 hidden size)."
       ],
-      "four_bit_native": true
+      "four_bit_native": true,
+      "params_active": 104000000000
     },
     "deepseek-v4-flash-0731": {
       "notes": [
@@ -240,8 +242,7 @@
           "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
           "note": "Community build; measured 36 tok/s on a 64 GB MacBook Pro with vision working (Atomic Chat, Aug 2026).",
           "measured_tok_s": 36,
-          "measured_on": "64 GB MacBook Pro",
-          "measured_machine": { "platform": "apple", "memory_gb": 64 }
+          "measured_on": "64 GB MacBook Pro"
         }
       ]
     },
@@ -254,6 +255,24 @@
     "meta-llama-llama-4-maverick-17b-128e": {
       "notes": [
         "Gated on Hugging Face (manual approval)."
+      ]
+    },
+    "minimax-m3": {
+      "params_active": 23000000000,
+      "notes": [
+        "~23B activated parameters per the model card (the config-derived estimate was 49.4B: the config carries no moe_intermediate_size, so the expert size was guessed)."
+      ]
+    },
+    "qwen3-coder-next": {
+      "params_active": 3000000000,
+      "notes": [
+        "3B activated parameters per the model card (the config-derived estimate was 4.0B)."
+      ]
+    },
+    "gemma-4-e4b": {
+      "params_active": 4500000000,
+      "notes": [
+        "4.5B effective parameters per the model card: 8B with the per-layer embedding tables, which are looked up per token, not streamed."
       ]
     }
   }

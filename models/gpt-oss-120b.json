@@ -418,7 +418,7 @@
    "repo": "unsloth/gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "UD-Q6_K_XL",
+   "label": "Q6_K",
    "bits": 4.33,
    "size_gb": 63.28,
    "size_bytes": 63284496960,
@@ -431,7 +431,7 @@
    "repo": "unsloth/gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/unsloth/gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "Q6_K",
+   "label": "UD-Q6_K_XL",
    "bits": 4.33,
    "size_gb": 63.28,
    "size_bytes": 63284496960,
@@ -622,9 +622,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:11.269631+00:00",
-  "last_checked": "2026-09-05T07:35:46.387273+00:00",
+  "last_checked": "2026-09-05T09:08:33.525923+00:00",
   "last_changed": "2026-09-02T20:29:11.269631+00:00"
  },
- "generated_at": "2026-09-05T07:35:58+00:00",
- "sha": "3c327451d559775b"
+ "generated_at": "2026-09-05T09:09:22+00:00",
+ "sha": "b863b0b233245594"
 }

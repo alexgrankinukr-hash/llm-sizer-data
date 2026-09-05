@@ -1,5 +1,5 @@
 {
- "schema": "llm-sizer/validation v1 — measured decode speeds and peak memory from public reports, used to fit and to judge the speed model (scripts/llm-sizer/fit_speed.py). split: train rows fit the architecture costs and runtime factors; holdout rows (the gemma-4 family and the omlx contributor, whole submissions) are never fitted on; report rows are informational only (grade C, accelerated, or excluded for the reason given). grade: A = reproducible benchmark output or stated methodology, B = a named person's measurement with hardware stated, C = secondary reporting. kv_bits is the cache precision the runtime used (16 unless stated). Chip profiles (t0, effective bandwidth) come from benchmarks.json, never from this file.",
+ "schema": "llm-sizer/validation v1 — measured decode speeds and peak memory from public reports, used to fit and to judge the speed model (scripts/llm-sizer/fit_speed.py). split: train rows fit the architecture costs and runtime factors; holdout rows (the gemma-4 family and the omlx contributor, whole submissions) are never fitted on; report rows are informational only (grade C, accelerated, or excluded for the reason given). grade: A = reproducible benchmark output or stated methodology, B = a named person's measurement with hardware stated, C = secondary reporting. kv_bits is the cache precision the runtime used (16 unless stated). Chip profiles (t0, effective bandwidth) come from benchmarks.json, never from this file. Memory rows carry peak_reported (the number as published), peak_unit (GiB, GB, or unknown), peak_metric (what was measured) and peak_gb normalised to decimal GB; weights_gb is the file size of the build measured. Every row's active_params_b and kv_bytes_per_token_8bit must match the catalog record it names (validation-catalog.test.ts).",
  "data_as_of": "2026-09-05",
  "holdout_rule": "family == gemma-4 or contributor == omlx, by submission_id",
  "rows": [
@@ -924,7 +924,7 @@
    "runtime": "ollama-gguf",
    "context_tokens": 3963,
    "kv_bits": 16,
-   "tg": 22.4,
+   "tg": 22.35,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -953,7 +953,7 @@
    "runtime": "ollama-gguf",
    "context_tokens": 16454,
    "kv_bits": 16,
-   "tg": 19.0,
+   "tg": 18.98,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -981,7 +981,7 @@
    "runtime": "ollama-gguf",
    "context_tokens": 3963,
    "kv_bits": 16,
-   "tg": 20.4,
+   "tg": 20.01,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1010,7 +1010,7 @@
    "runtime": "ollama-gguf",
    "context_tokens": 16454,
    "kv_bits": 16,
-   "tg": 19.1,
+   "tg": 19.06,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1038,7 +1038,7 @@
    "runtime": "mlx",
    "context_tokens": 3963,
    "kv_bits": 16,
-   "tg": 30.9,
+   "tg": 29.91,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1067,7 +1067,7 @@
    "runtime": "mlx",
    "context_tokens": 16454,
    "kv_bits": 16,
-   "tg": 27.5,
+   "tg": 27.52,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1095,7 +1095,7 @@
    "runtime": "mlx",
    "context_tokens": 3963,
    "kv_bits": 16,
-   "tg": 19.5,
+   "tg": 19.2,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1124,7 +1124,7 @@
    "runtime": "mlx",
    "context_tokens": 16454,
    "kv_bits": 16,
-   "tg": 18.1,
+   "tg": 18.13,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1152,7 +1152,7 @@
    "runtime": "ollama-gguf",
    "context_tokens": 517,
    "kv_bits": 16,
-   "tg": 83.3,
+   "tg": 83.32,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -1180,7 +1180,7 @@
    "runtime": "mlx",
    "context_tokens": 517,
    "kv_bits": 16,
-   "tg": 68.1,
+   "tg": 68.08,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
@@ -2083,12 +2083,12 @@
    "family": "gemma-4",
    "quant_label": "Q4_K_M",
    "bits": 4.7,
-   "active_params_b": 4.0,
+   "active_params_b": 4.5,
    "arch": {
     "attention": "gqa",
     "experts_total": 0,
     "linear_layers": 0,
-    "kv_bytes_per_token_8bit": 14336
+    "kv_bytes_per_token_8bit": 7168
    },
    "runtime": "llama.cpp-gguf",
    "context_tokens": 1007,
@@ -2097,7 +2097,8 @@
    "source": "https://hiesch.eu/blog/llamacpp-benchmarks-speculative-decoding/",
    "contributor": "hiesch",
    "grade": "B",
-   "split": "holdout"
+   "split": "holdout",
+   "note": "active 4.5B effective and 7,168 cache bytes per token as the catalog record has them (per-layer embeddings are lookups; 18 of 42 layers share their cache)"
   },
   {
    "id": "hiesch-m3max-qwen36-074",
@@ -2908,7 +2909,10 @@
    "contributor": "zachrattner",
    "grade": "A",
    "split": "train",
-   "note": "peak RAM"
+   "note": "peak RAM",
+   "peak_reported": 18.0,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "zachrattner-m1ultra-qwen27b-mem-102",
@@ -2936,7 +2940,10 @@
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 18.2,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "zachrattner-m1ultra-qwen27b-mem-103",
@@ -2964,7 +2971,10 @@
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 16.4,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "zachrattner-m1ultra-qwen27b-mem-104",
@@ -2992,7 +3002,10 @@
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 20.6,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "zachrattner-m1ultra-qwen27b-mem-105",
@@ -3020,7 +3033,10 @@
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 29.3,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "zachrattner-m1ultra-qwen27b-mem-106",
@@ -3044,11 +3060,14 @@
    "runtime": "ollama-gguf",
    "context_tokens": 16454,
    "kv_bits": 16,
-   "peak_gb": 29.7,
+   "peak_gb": 30.5,
    "source": "https://zachrattner.com/projects/ai-mac-cluster/mlx-vs-ollama",
    "contributor": "zachrattner",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 30.5,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak RAM as reported; method not stated"
   },
   {
    "id": "fioravanti-m3ultra-qwen397-4bit-mem-107",
@@ -3077,7 +3096,11 @@
    "contributor": "fioravanti",
    "grade": "A",
    "split": "train",
-   "note": "mlx_lm.benchmark peak memory; file 223.9 GB"
+   "note": "mlx_lm.benchmark peak memory; file 223.9 GB",
+   "peak_reported": 224.2,
+   "peak_unit": "GB (assumed: mlx_lm.benchmark reports bytes ÷ 1e9)",
+   "peak_metric": "allocator peak (mx.get_peak_memory)",
+   "weights_gb": 223.9
   },
   {
    "id": "fioravanti-m3ultra-qwen397-4bit-mem-108",
@@ -3106,7 +3129,11 @@
    "contributor": "fioravanti",
    "grade": "A",
    "split": "train",
-   "note": "mlx_lm.benchmark peak memory; file 223.9 GB"
+   "note": "mlx_lm.benchmark peak memory; file 223.9 GB",
+   "peak_reported": 231.4,
+   "peak_unit": "GB (assumed: mlx_lm.benchmark reports bytes ÷ 1e9)",
+   "peak_metric": "allocator peak (mx.get_peak_memory)",
+   "weights_gb": 223.9
   },
   {
    "id": "fioravanti-m3ultra-qwen397-4bit-mem-109",
@@ -3135,7 +3162,11 @@
    "contributor": "fioravanti",
    "grade": "A",
    "split": "train",
-   "note": "mlx_lm.benchmark peak memory; file 223.9 GB"
+   "note": "mlx_lm.benchmark peak memory; file 223.9 GB",
+   "peak_reported": 247.4,
+   "peak_unit": "GB (assumed: mlx_lm.benchmark reports bytes ÷ 1e9)",
+   "peak_metric": "allocator peak (mx.get_peak_memory)",
+   "weights_gb": 223.9
   },
   {
    "id": "fioravanti-m3ultra-qwen397-8bit-mem-110",
@@ -3163,7 +3194,11 @@
    "source": "https://x.com/ivanfioravanti/status/2023760975325700436",
    "contributor": "fioravanti",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 422.3,
+   "peak_unit": "GB (assumed: mlx_lm.benchmark reports bytes ÷ 1e9)",
+   "peak_metric": "allocator peak (mx.get_peak_memory)",
+   "weights_gb": 422.0
   },
   {
    "id": "fioravanti-m3ultra-qwen397-8bit-mem-111",
@@ -3191,7 +3226,11 @@
    "source": "https://x.com/ivanfioravanti/status/2023760975325700436",
    "contributor": "fioravanti",
    "grade": "A",
-   "split": "train"
+   "split": "train",
+   "peak_reported": 445.5,
+   "peak_unit": "GB (assumed: mlx_lm.benchmark reports bytes ÷ 1e9)",
+   "peak_metric": "allocator peak (mx.get_peak_memory)",
+   "weights_gb": 422.0
   },
   {
    "id": "tonoken3-m3ultra-dsv4-mem-112",
@@ -3219,8 +3258,13 @@
    "source": "https://github.com/Tonoken3/DeepSeek-V4-Flash-MacStudio",
    "contributor": "tonoken3",
    "grade": "B",
-   "split": "train",
-   "note": "memory at the configured context, file 155 GB"
+   "split": "report",
+   "note": "memory at the configured context, file 155 GB",
+   "peak_reported": 164,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "memory at the configured context, forum report",
+   "weights_gb": 155.0,
+   "exclude_reason": "memory at the configured context window, not the peak of a filled prompt; the MLX prompt-scratch term does not apply, so the row cannot judge it"
   },
   {
    "id": "tonoken3-m3ultra-dsv4-mem-113",
@@ -3248,8 +3292,13 @@
    "source": "https://github.com/Tonoken3/DeepSeek-V4-Flash-MacStudio",
    "contributor": "tonoken3",
    "grade": "B",
-   "split": "train",
-   "note": "memory at the configured context, file 155 GB"
+   "split": "report",
+   "note": "memory at the configured context, file 155 GB",
+   "peak_reported": 180,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "memory at the configured context, forum report",
+   "weights_gb": 155.0,
+   "exclude_reason": "memory at the configured context window, not the peak of a filled prompt; the MLX prompt-scratch term does not apply, so the row cannot judge it"
   },
   {
    "id": "tonoken3-m3ultra-dsv4-mem-114",
@@ -3277,8 +3326,13 @@
    "source": "https://github.com/Tonoken3/DeepSeek-V4-Flash-MacStudio",
    "contributor": "tonoken3",
    "grade": "B",
-   "split": "train",
-   "note": "memory at the configured context, file 155 GB"
+   "split": "report",
+   "note": "memory at the configured context, file 155 GB",
+   "peak_reported": 210,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "memory at the configured context, forum report",
+   "weights_gb": 155.0,
+   "exclude_reason": "memory at the configured context window, not the peak of a filled prompt; the MLX prompt-scratch term does not apply, so the row cannot judge it"
   },
   {
    "id": "omlx-32bf9vtv-m5max-qwen27-mem-115",
@@ -3302,12 +3356,15 @@
    "runtime": "mlx",
    "context_tokens": 4096,
    "kv_bits": 16,
-   "peak_gb": 17.3,
+   "peak_gb": 18.58,
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
    "split": "holdout",
-   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ"
+   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ",
+   "peak_reported": 17.3,
+   "peak_unit": "GiB",
+   "peak_metric": "allocator peak (MLX peak_memory_bytes ÷ 1024³ in omlx/admin/benchmark.py; the process footprint on the same page is far higher)"
   },
   {
    "id": "omlx-32bf9vtv-m5max-qwen27-mem-116",
@@ -3331,12 +3388,15 @@
    "runtime": "mlx",
    "context_tokens": 32768,
    "kv_bits": 16,
-   "peak_gb": 21.6,
+   "peak_gb": 23.19,
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
    "split": "holdout",
-   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ"
+   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ",
+   "peak_reported": 21.6,
+   "peak_unit": "GiB",
+   "peak_metric": "allocator peak (MLX peak_memory_bytes ÷ 1024³ in omlx/admin/benchmark.py; the process footprint on the same page is far higher)"
   },
   {
    "id": "omlx-32bf9vtv-m5max-qwen27-mem-117",
@@ -3360,12 +3420,15 @@
    "runtime": "mlx",
    "context_tokens": 65536,
    "kv_bits": 16,
-   "peak_gb": 26.7,
+   "peak_gb": 28.67,
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
    "split": "holdout",
-   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ"
+   "note": "reported peak; the 8K page shows footprint and allocation metrics that differ",
+   "peak_reported": 26.7,
+   "peak_unit": "GiB",
+   "peak_metric": "allocator peak (MLX peak_memory_bytes ÷ 1024³ in omlx/admin/benchmark.py; the process footprint on the same page is far higher)"
   },
   {
    "id": "kizai-m3ultra-gemma31-mem-118",
@@ -3393,7 +3456,10 @@
    "source": "https://ai-kizai.com/benchmarks/512gb",
    "contributor": "ai-kizai",
    "grade": "B",
-   "split": "holdout"
+   "split": "holdout",
+   "peak_reported": 29.7,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak as reported; method not stated"
   },
   {
    "id": "llmcheck-m5max-gptoss120-mem-119",
@@ -3421,7 +3487,11 @@
    "source": "https://llmcheck.net/blog/apple-silicon-m5-max-local-ai-guide/",
    "contributor": "llmcheck",
    "grade": "C",
-   "split": "report"
+   "split": "report",
+   "peak_reported": 64.4,
+   "peak_unit": "unknown (reported as GB)",
+   "peak_metric": "peak as reported; method not stated",
+   "weights_gb": 65.8
   },
   {
    "id": "macrumors-m3ultra-dsr1-120",

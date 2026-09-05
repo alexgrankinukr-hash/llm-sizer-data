@@ -8,8 +8,8 @@
  "variant": "instruct",
  "released": "2026-03-02",
  "params_total": 7996156490,
- "params_active": 7996156490,
- "params_active_source": "dense",
+ "params_active": 4500000000,
+ "params_active_source": "override",
  "context_max": 131072,
  "native_bits": 16.0,
  "license": {
@@ -35,7 +35,9 @@
  "gated": "false",
  "status": "active",
  "superseded_by": null,
- "notes": [],
+ "notes": [
+  "4.5B effective parameters per the model card: 8B with the per-layer embedding tables, which are looked up per token, not streamed."
+ ],
  "four_bit_native": false,
  "architecture": {
   "model_type": "gemma4_text",
@@ -65,7 +67,9 @@
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "f2530646aa8c6c45",
-  "notes": [],
+  "notes": [
+   "per-layer embedding tables are looked up, not streamed; effective parameters exclude them"
+  ],
   "kv_cache_gb_at_128k_8bit": 0.96
  },
  "quants": [
@@ -953,9 +957,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-09-05T07:35:35.777631+00:00",
+  "last_checked": "2026-09-05T09:07:35.967584+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-09-05T07:35:58+00:00",
- "sha": "16f8f032e30d5bd7"
+ "generated_at": "2026-09-05T09:09:22+00:00",
+ "sha": "8bd9f505f0273dc4"
 }
