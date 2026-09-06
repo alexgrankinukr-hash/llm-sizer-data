@@ -230,19 +230,41 @@
     "qwen3.8-flash-next": {
       "params_active": 6000000000,
       "notes": [
-        "125B main model plus a 51B n-gram table; 6B parameters active per token (Qwen's release notes). The n-gram table can page from SSD, so the memory need depends on the runtime."
+        "125B main model plus a 51B-parameter n-gram table (38 to 54 GB at the community builds that keep it on the SSD); 6B parameters active per token (Qwen's release notes). With the table on the SSD the memory need is the resident part only."
       ],
       "special_builds": [
         {
-          "label": "4-bit, n-gram table paged from SSD",
+          "label": "IQ4_XS · engram on SSD",
           "resident_gb": 45.8,
-          "disk_gb": 82,
+          "ssd_gb": 39.1,
+          "disk_gb": 84.9,
           "format": "gguf",
-          "bits": 4,
+          "bits": 3.84,
           "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
-          "note": "Community build; measured 36 tok/s on a 64 GB MacBook Pro with vision working (Atomic Chat, Aug 2026).",
+          "note": "Community build (AtomicChat, August 2026): the 51B n-gram table stays on the SSD and is read once per token, so 39 GB never enters memory. Measured 36 tok/s writing and 518 tok/s reading on an M5 Max MacBook Pro with 64 GB, memory limit raised to 56 GB. Needs a llama.cpp with qwen4exp support (PR #27742), mmap on, -fit off and --jinja.",
           "measured_tok_s": 36,
-          "measured_on": "64 GB MacBook Pro"
+          "measured_on": "MacBook Pro M5 Max 64 GB",
+          "measured_chip": "M5 Max"
+        },
+        {
+          "label": "Q4_K_M · engram on SSD",
+          "resident_gb": 54.5,
+          "ssd_gb": 38.4,
+          "disk_gb": 92.9,
+          "format": "gguf",
+          "bits": 4.27,
+          "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
+          "note": "Community build (AtomicChat, August 2026), the README's recommended file: within measurement error of the 5-bit build at 17.6 GB less. The n-gram table stays on the SSD. Needs a llama.cpp with qwen4exp support (PR #27742), mmap on, -fit off and --jinja."
+        },
+        {
+          "label": "Q5_K_M · engram on SSD",
+          "resident_gb": 56.1,
+          "ssd_gb": 54.4,
+          "disk_gb": 110.5,
+          "format": "gguf",
+          "bits": 5.0,
+          "url": "https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF",
+          "note": "Community build (AtomicChat, August 2026). The n-gram table stays on the SSD. Needs a llama.cpp with qwen4exp support (PR #27742), mmap on, -fit off and --jinja."
         }
       ]
     },

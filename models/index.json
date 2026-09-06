@@ -1,6 +1,6 @@
 {
  "schema": "llm-sizer/models v1",
- "generated_at": "2026-09-06T07:49:41+00:00",
+ "generated_at": "2026-09-06T18:09:30+00:00",
  "count": 34,
  "featured_count": 23,
  "models": [
@@ -44,7 +44,7 @@
    "quant_count": 72,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "6738bf38177c0286"
+   "detail_sha": "8b99ab0d7450e7a1"
   },
   {
    "id": "qwen3.6-35b-a3b",
@@ -86,7 +86,7 @@
    "quant_count": 72,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "7548225a665e7d55"
+   "detail_sha": "cba1518c81e53ac9"
   },
   {
    "id": "gemma-4-12b",
@@ -128,7 +128,7 @@
    "quant_count": 67,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "020d98f8e91eb779"
+   "detail_sha": "224328ddc40c188e"
   },
   {
    "id": "gemma-4-26b-a4b",
@@ -170,7 +170,7 @@
    "quant_count": 70,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "bda8e50df25ac4c8"
+   "detail_sha": "d2bc41dde6554653"
   },
   {
    "id": "gemma-4-e4b",
@@ -212,7 +212,7 @@
    "quant_count": 66,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "32c3d06c71c19175"
+   "detail_sha": "44828f7d970a30d1"
   },
   {
    "id": "gpt-oss-20b",
@@ -254,7 +254,7 @@
    "quant_count": 49,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "74af3844d5991b98"
+   "detail_sha": "2effd3ad4ea4533e"
   },
   {
    "id": "muse-glimmer-30b",
@@ -296,7 +296,7 @@
    "quant_count": 54,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "a7afdfb25b1f4208"
+   "detail_sha": "e89d8482c701dfe8"
   },
   {
    "id": "gemma-4-31b",
@@ -338,7 +338,7 @@
    "quant_count": 72,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "703047b04b1b7800"
+   "detail_sha": "0d5280b21668b6dc"
   },
   {
    "id": "qwen3-coder-next",
@@ -380,7 +380,7 @@
    "quant_count": 88,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "34c9a95147dfb38e"
+   "detail_sha": "dd5d7469713a1e29"
   },
   {
    "id": "gpt-oss-120b",
@@ -422,7 +422,7 @@
    "quant_count": 40,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "29d025d44008d78b"
+   "detail_sha": "aab2b0ffab37099d"
   },
   {
    "id": "mistral-small-4-119b-2603",
@@ -464,7 +464,7 @@
    "quant_count": 60,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "7c27e85733e1b79e"
+   "detail_sha": "19a5779cbc61dad5"
   },
   {
    "id": "nvidia-nemotron-3-super-120b-a12b",
@@ -506,7 +506,7 @@
    "quant_count": 62,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "84e96ed16fabff04"
+   "detail_sha": "52f659ed278f1e25"
   },
   {
    "id": "mistral-medium-3.5-128b",
@@ -548,7 +548,7 @@
    "quant_count": 54,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "755230721093273a"
+   "detail_sha": "e79203b32859259c"
   },
   {
    "id": "qwen3.8-flash-next",
@@ -590,7 +590,7 @@
    "quant_count": 47,
    "four_bit_native": false,
    "has_special_build": true,
-   "detail_sha": "8cc239ccdfb7400a"
+   "detail_sha": "494984f373ea9b93"
   },
   {
    "id": "deepseek-v4-flash-0731",
@@ -631,7 +631,7 @@
    "quant_count": 19,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "ef4083ade7cce0d3"
+   "detail_sha": "4d5fae52cdd4f734"
   },
   {
    "id": "glm-5.3-flash",
@@ -672,7 +672,7 @@
    "quant_count": 15,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0b432604ee3a294d"
+   "detail_sha": "7fc8842a840ad544"
   },
   {
    "id": "qwen3.5-397b-a17b",
@@ -714,7 +714,7 @@
    "quant_count": 71,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "62ac7ce95355a93d"
+   "detail_sha": "cc43796225d87fec"
   },
   {
    "id": "minimax-m3",
@@ -756,7 +756,7 @@
    "quant_count": 50,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "641e8472818a5fc6"
+   "detail_sha": "eebddf4379b11a2b"
   },
   {
    "id": "nvidia-nemotron-3-ultra-550b-a55b",
@@ -797,7 +797,7 @@
    "quant_count": 25,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "dc2b56f5d014556b"
+   "detail_sha": "236ea425714f994d"
   },
   {
    "id": "glm-5.2",
@@ -839,7 +839,7 @@
    "quant_count": 28,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "eabc532d705dd04d"
+   "detail_sha": "3a6cf91f8d262665"
   },
   {
    "id": "kimi-k2.6",
@@ -880,7 +880,7 @@
    "quant_count": 21,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "cbd5fe86b457af33"
+   "detail_sha": "8ac1b2e892ff79c7"
   },
   {
    "id": "deepseek-v4-pro-0813",
@@ -921,7 +921,7 @@
    "quant_count": 3,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "609a4067debcb0d9"
+   "detail_sha": "bbb2fcb0692d4cf1"
   },
   {
    "id": "kimi-k3",
@@ -962,7 +962,7 @@
    "quant_count": 8,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "bbf6d142d2a1f3ab"
+   "detail_sha": "afefd222737e536f"
   },
   {
    "id": "deepseek-v4-flash",
@@ -1004,7 +1004,7 @@
    "quant_count": 30,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "6563ffc5d59e6a14"
+   "detail_sha": "c2cc72feb34c75e2"
   },
   {
    "id": "deepseek-v4-flash-vision-exp",
@@ -1085,7 +1085,7 @@
    "quant_count": 4,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "243ef5eb6db48d4e"
+   "detail_sha": "ae4ef910d3a219c4"
   },
   {
    "id": "devstral-small-2-24b-2512",
@@ -1127,7 +1127,7 @@
    "quant_count": 65,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "9facbdd03e76f1c8"
+   "detail_sha": "8286972c09a2bddf"
   },
   {
    "id": "glm-5.3",
@@ -1293,7 +1293,7 @@
    "quant_count": 31,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "619a4bc77009deb1"
+   "detail_sha": "a940fccb724587aa"
   },
   {
    "id": "nvidia-nemotron-3.5-lightning-30b-a3b",
@@ -1419,5 +1419,5 @@
    "detail_sha": "8629373784814851"
   }
  ],
- "sha": "b77ddc66938a100d"
+ "sha": "12c1ff159c6c8a96"
 }
