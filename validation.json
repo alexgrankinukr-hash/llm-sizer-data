@@ -1,7 +1,7 @@
 {
- "schema": "llm-sizer/validation v1 — measured decode speeds and peak memory from public reports, used to fit and to judge the speed model (scripts/llm-sizer/fit_speed.py). split: train rows fit the architecture costs and runtime factors; holdout rows (the gemma-4 family and the omlx contributor, whole submissions) are never fitted on; report rows are informational only (grade C, accelerated, or excluded for the reason given). grade: A = reproducible benchmark output or stated methodology, B = a named person's measurement with hardware stated, C = secondary reporting. kv_bits is the cache precision the runtime used (16 unless stated). Chip profiles (t0, effective bandwidth) come from benchmarks.json, never from this file. Memory rows carry peak_reported (the number as published), peak_unit (GiB, GB, or unknown), peak_metric (what was measured) and peak_gb normalised to decimal GB; weights_gb is the file size of the build measured. Every row's active_params_b and kv_bytes_per_token_8bit must match the catalog record it names (validation-catalog.test.ts).",
+ "schema": "llm-sizer/validation v1 — measured decode speeds and peak memory from public reports, used to fit and to judge the speed model (scripts/llm-sizer/fit_speed.py). split: train rows fit the architecture costs and runtime factors; holdout rows (the gemma-4 family and the omlx contributor's short-context submissions, whole submissions; see holdout_rule) are never fitted on; report rows are informational only (grade C, accelerated, or excluded for the reason given). grade: A = reproducible benchmark output or stated methodology, B = a named person's measurement with hardware stated, C = secondary reporting. kv_bits is the cache precision the runtime used (16 unless stated). Chip profiles (t0, effective bandwidth) come from benchmarks.json, never from this file. Memory rows carry peak_reported (the number as published), peak_unit (GiB, GB, or unknown), peak_metric (what was measured) and peak_gb normalised to decimal GB; weights_gb is the file size of the build measured. Every row's active_params_b and kv_bytes_per_token_8bit must match the catalog record it names (validation-catalog.test.ts).",
  "data_as_of": "2026-09-05",
- "holdout_rule": "family == gemma-4 or contributor == omlx, by submission_id",
+ "holdout_rule": "family == gemma-4, or contributor == omlx with no row past 8K, by submission_id; the two oMLX M5 Max submissions that run past 8K (Qwen 3.8 27B to 64K, Nemotron 3 Super at 32K) train the M5-generation MLX context cost, the only long-context M5 rows there are",
  "rows": [
   {
    "id": "llamacpp-15396-m4max-001",
@@ -2154,7 +2154,7 @@
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout",
+   "split": "train",
    "note": "oMLX 0.6.3rc2, accelerations off"
   },
   {
@@ -2183,7 +2183,7 @@
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout",
+   "split": "train",
    "note": "oMLX 0.6.3rc2, accelerations off"
   },
   {
@@ -2212,7 +2212,7 @@
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout",
+   "split": "train",
    "note": "oMLX 0.6.3rc2, accelerations off"
   },
   {
@@ -2241,7 +2241,7 @@
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout",
+   "split": "train",
    "note": "oMLX 0.6.3rc2, accelerations off"
   },
   {
@@ -2270,7 +2270,7 @@
    "source": "https://omlx.ai/benchmarks/performance/32bf9vtv",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout",
+   "split": "train",
    "note": "oMLX 0.6.3rc2, accelerations off"
   },
   {
@@ -2327,7 +2327,7 @@
    "source": "https://omlx.ai/benchmarks/performance/u79n8shx",
    "contributor": "omlx",
    "grade": "B",
-   "split": "holdout"
+   "split": "train"
   },
   {
    "id": "omlx-hbc7ao8r-m3ultra-nemotron-082",
