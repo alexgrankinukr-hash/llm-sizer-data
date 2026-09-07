@@ -61,7 +61,7 @@
   "moe_layers": null,
   "accel_mtp": false,
   "accel_dflash_repo": "z-lab/gemma-4-31B-it-DFlash",
-  "accel_dspark_repo": null,
+  "accel_dspark_repo": "Anbeeld/gemma-4-31B-it-DSpark-GGUF",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "3c75b107d2eab99a",
@@ -1029,13 +1029,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": "z-lab/gemma-4-31B-it-DFlash",
-  "dspark": null
+  "dspark": "Anbeeld/gemma-4-31B-it-DSpark-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:26:35.130576+00:00",
-  "last_checked": "2026-09-06T18:07:16.704404+00:00",
+  "last_checked": "2026-09-07T08:10:34.843038+00:00",
   "last_changed": "2026-09-02T20:26:35.130576+00:00"
  },
- "generated_at": "2026-09-06T18:09:30+00:00",
- "sha": "0d5280b21668b6dc"
+ "generated_at": "2026-09-07T08:11:01+00:00",
+ "sha": "8abbbed3fcd44f0b"
 }

@@ -1,6 +1,6 @@
 {
  "schema": "llm-sizer/factors v1 — derived by scripts/llm-sizer/calibrate.py from benchmarks.json; do not edit by hand",
- "data_as_of": "2026-09-05",
+ "data_as_of": "2026-09-06",
  "efficiency": {
   "_formula": "decode tok/s = bandwidth_gbs × efficiency ÷ gigabytes read per token (active weights at the quant's bits + context cache per token)",
   "_resolve": "exact chip if present in by_chip, else assumed[chip] if present, else the tier median (tier from the chip name: base | Pro | Max | Ultra; DGX Spark = spark)",
@@ -650,101 +650,214 @@
   "_rule": "MTP: native heads, factor in [min, max] when the runtime uses them. Draft models (DFlash/DSpark): use draft_dense unless the model is a mixture-of-experts with under 6.0 B active parameters, then draft_small_active_moe. Always show the range, never the headline."
  },
  "prefill": {
-  "DGX Spark": {
-   "pp_times_weights_gb": 54520.422,
-   "n": 5,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "class_by_model": {
+   "qwen3.8-flash-next": "flash_next"
   },
-  "M1": {
-   "pp_times_weights_gb": 646.224,
-   "n": 2,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "chips_with_rows": [
+   "DGX Spark",
+   "M1",
+   "M1 Max",
+   "M1 Pro",
+   "M1 Ultra",
+   "M2",
+   "M2 Max",
+   "M2 Pro",
+   "M2 Ultra",
+   "M3",
+   "M3 Max",
+   "M3 Pro",
+   "M3 Ultra",
+   "M4",
+   "M4 Max",
+   "M4 Pro",
+   "M5",
+   "M5 Max",
+   "M5 Pro"
+  ],
+  "_formula": "prefill tok/s at a short prompt = K ÷ active parameters (B), K = per_core[generation] × GPU cores (Apple) or by_chip (others), × kquant for K-quant and IQ GGUF files, × class[arch], × mlx[generation group] on MLX; rate at context depth d = short-prompt rate ÷ (1 + d ÷ d0_tokens × attention_share ÷ attention_share_ref); wait before the first word for an n-token prompt = (n + n² ÷ (2 × D0)) ÷ short-prompt rate",
+  "per_core": {
+   "M1": {
+    "value": 112,
+    "n": 13,
+    "range": [
+     99,
+     127
+    ]
+   },
+   "M2": {
+    "value": 122,
+    "n": 12,
+    "range": [
+     110,
+     136
+    ]
+   },
+   "M3": {
+    "value": 128,
+    "n": 13,
+    "range": [
+     124,
+     134
+    ]
+   },
+   "M4": {
+    "value": 151,
+    "n": 11,
+    "range": [
+     148,
+     157
+    ]
+   },
+   "M5": {
+    "value": 531,
+    "n": 8,
+    "range": [
+     482,
+     546
+    ]
+   }
   },
-  "M1 Max": {
-   "pp_times_weights_gb": 3869.064,
-   "n": 5,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "by_chip": {
+   "DGX Spark": {
+    "value": 21341,
+    "n": 2,
+    "range": [
+     17102,
+     25580
+    ]
+   }
   },
-  "M1 Pro": {
-   "pp_times_weights_gb": 1946.664,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "kquant": {
+   "factor": 0.88,
+   "n": 7,
+   "range": [
+    0.85,
+    0.98
+   ]
   },
-  "M1 Ultra": {
-   "pp_times_weights_gb": 7509.24,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "class": {
+   "dense": {
+    "factor": 1.0,
+    "note": "by definition"
+   },
+   "moe": {
+    "factor": 0.68,
+    "n": 6,
+    "range": [
+     0.46,
+     0.92
+    ],
+    "examples": [
+     "Qwen 3 30B-A3B on M2 Max 30-core (llama.cpp-gguf): 0.75 of the dense rate",
+     "Gemma 4 26B-A4B on M2 Max 30-core (llama.cpp-gguf): 0.92 of the dense rate",
+     "Qwen3-Coder-30B-A3B on M2 Max 30-core (mlx): 0.61 of the dense rate",
+     "gpt-oss-20b on the DGX Spark: 0.76 of the dense rate",
+     "gpt-oss-120b on the DGX Spark: 0.58 of the dense rate",
+     "Qwen3 Coder 30B A3B on the DGX Spark: 0.46 of the dense rate"
+    ]
+   },
+   "moe_hybrid": {
+    "factor": 0.63,
+    "n": 3,
+    "range": [
+     0.28,
+     0.74
+    ],
+    "examples": [
+     "Qwen 3.5 35B-A3B on M2 Max 30-core (llama.cpp-gguf): 0.74 of the dense rate",
+     "Qwen3.5-35B-A3B on M5 10-core (mlx): 0.63 of the dense rate",
+     "Qwen3.6-35B-A3B on M5 10-core (mlx): 0.28 of the dense rate"
+    ]
+   },
+   "flash_next": {
+    "factor": 0.31,
+    "n": 1,
+    "range": [
+     0.31,
+     0.31
+    ],
+    "examples": [
+     "Qwen 3.8 Flash Next on M5 Max 40-core at an empty context: 966 tok/s (0.31 of the dense rate)"
+    ]
+   },
+   "moe_latent": {
+    "factor": 0.68,
+    "n": 0,
+    "note": "assumed: the mixture-of-experts factor, no measured prefill row for a latent-attention model yet"
+   },
+   "deepseek_v4": {
+    "factor": 0.68,
+    "n": 0,
+    "note": "assumed: the latent-attention factor"
+   }
   },
-  "M2": {
-   "pp_times_weights_gb": 1306.08,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "mlx": {
+   "pre_m5": {
+    "factor": 0.65,
+    "n": 1,
+    "range": [
+     0.65,
+     0.65
+    ],
+    "examples": [
+     "Qwen3-8B on M2 Max 30-core: 290.4 tok/s (0.65 of the plain-GGUF constant)"
+    ]
+   },
+   "m5plus": {
+    "factor": 0.61,
+    "n": 6,
+    "range": [
+     0.56,
+     0.8
+    ],
+    "examples": [
+     "Llama 3.1 8B on M5 10-core: 528.0 tok/s (0.80 of the plain-GGUF constant)",
+     "Qwen3-8B on M5 10-core: 405.0 tok/s (0.63 of the plain-GGUF constant)",
+     "Qwen2.5-Coder-14B on M5 10-core: 220.3 tok/s (0.61 of the plain-GGUF constant)",
+     "phi-4 on M5 10-core: 218.7 tok/s (0.61 of the plain-GGUF constant)",
+     "gemma-3-27b on M5 10-core: 113.3 tok/s (0.58 of the plain-GGUF constant)",
+     "Qwen2.5-Coder-32B on M5 10-core: 91.0 tok/s (0.56 of the plain-GGUF constant)"
+    ]
+   }
   },
-  "M2 Max": {
-   "pp_times_weights_gb": 4880.952,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
+  "context": {
+   "d0_tokens": 19257,
+   "n_points": 6,
+   "range": [
+    14649,
+    24858
+   ],
+   "attention_share_ref": 0.25,
+   "note": "fitted on the published depth sweep(s): D0 is the context depth at which the rate has halved; other models scale D0 by their share of full-attention layers relative to the sweep's model (assumed)"
   },
-  "M2 Pro": {
-   "pp_times_weights_gb": 2480.4,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M2 Ultra": {
-   "pp_times_weights_gb": 8989.848,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M3": {
-   "pp_times_weights_gb": 1029.897,
-   "n": 2,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M3 Max": {
-   "pp_times_weights_gb": 5455.008,
-   "n": 5,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M3 Pro": {
-   "pp_times_weights_gb": 2481.552,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M3 Ultra": {
-   "pp_times_weights_gb": 10710.072,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M4": {
-   "pp_times_weights_gb": 1610.208,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M4 Max": {
-   "pp_times_weights_gb": 6421.968,
-   "n": 5,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M4 Pro": {
-   "pp_times_weights_gb": 3237.264,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M5": {
-   "pp_times_weights_gb": 3948.813,
-   "n": 2,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M5 Max": {
-   "pp_times_weights_gb": 22635.432,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  },
-  "M5 Pro": {
-   "pp_times_weights_gb": 11187.792,
-   "n": 3,
-   "note": "prefill tok/s ≈ this ÷ weights_gb (v1.5 feature)"
-  }
+  "waits_tokens": [
+   8192,
+   32768,
+   131072
+  ],
+  "feels_like": [
+   {
+    "max_s": 3,
+    "label": "instant"
+   },
+   {
+    "max_s": 15,
+    "label": "short wait"
+   },
+   {
+    "max_s": 90,
+    "label": "get a coffee"
+   },
+   {
+    "max_s": null,
+    "label": "painful"
+   }
+  ],
+  "_sources": [
+   "https://github.com/ggml-org/llama.cpp/discussions/4167",
+   "https://github.com/enescingoz/mac-llm-bench",
+   "https://heretik.io/qwen38-flash-next-262k-macbook/"
+  ]
  },
  "feels_like": [
   {
@@ -776,6 +889,7 @@
  "sources": [
   "https://github.com/ARahim3/mlx-dspark",
   "https://github.com/eauchs/mlx-dflash",
+  "https://github.com/enescingoz/mac-llm-bench",
   "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
   "https://github.com/ggml-org/llama.cpp/discussions/4167",
   "https://github.com/youssofal/MTPLX",

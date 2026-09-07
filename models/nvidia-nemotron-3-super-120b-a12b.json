@@ -299,7 +299,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-Q3_K_M",
+   "label": "UD-Q3_K_S",
    "bits": 3.99,
    "size_gb": 61.71,
    "size_bytes": 61712254816,
@@ -312,7 +312,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-Q3_K_S",
+   "label": "UD-Q3_K_M",
    "bits": 3.99,
    "size_gb": 61.71,
    "size_bytes": 61712254816,
@@ -517,19 +517,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
-   "format": "safetensors",
-   "label": "NVFP4",
-   "bits": 5.2,
-   "size_gb": 80.32,
-   "size_bytes": 80317948856,
-   "quantizer": "official",
-   "file_count": 17,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
    "format": "safetensors",
@@ -538,6 +525,19 @@
    "size_gb": 80.32,
    "size_bytes": 80317948856,
    "quantizer": "unsloth",
+   "file_count": 17,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+   "format": "safetensors",
+   "label": "NVFP4",
+   "bits": 5.2,
+   "size_gb": 80.32,
+   "size_bytes": 80317948856,
+   "quantizer": "official",
    "file_count": 17,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -919,9 +919,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:02.768696+00:00",
-  "last_checked": "2026-09-06T18:08:21.010773+00:00",
+  "last_checked": "2026-09-07T08:10:44.948464+00:00",
   "last_changed": "2026-09-02T20:29:02.768696+00:00"
  },
- "generated_at": "2026-09-06T18:09:30+00:00",
- "sha": "52f659ed278f1e25"
+ "generated_at": "2026-09-07T08:11:01+00:00",
+ "sha": "48b13ba1b5aa73fd"
 }

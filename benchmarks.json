@@ -1,6 +1,6 @@
 {
- "schema": "LLM Sizer benchmarks.json v1 — one row per measured configuration; tg = decode tok/s, pp = prefill tok/s; weights_gb = loaded weight size for the quant (decimal GB); active_weights_gb = the active weights a mixture-of-experts model re-reads per token; runtime = llama.cpp-gguf | mlx | sglang (only llama.cpp-gguf rows calibrate); accel = none | mtp | dspark | dflash | dflash2; accel rows carry baseline_tg = the same setup without acceleration; optional build = runtime build or commit; optional context_tokens = tokens already in context when tg was measured (absent = short prompt); optional role = floor-fit marks rows added for the fixed-cost speed model (F16 / Q8_0 / other GPU bins of the 7B table): they enter the per-chip floor fit but not the legacy efficiency median, which stays on its 0.8 row set until the multiplier model is removed",
- "data_as_of": "2026-09-05",
+ "schema": "LLM Sizer benchmarks.json v1 — one row per measured configuration; tg = decode tok/s, pp = prefill tok/s; weights_gb = loaded weight size for the quant (decimal GB); active_weights_gb = the active weights a mixture-of-experts model re-reads per token; runtime = llama.cpp-gguf | mlx | sglang (only llama.cpp-gguf rows calibrate); accel = none | mtp | dspark | dflash | dflash2; accel rows carry baseline_tg = the same setup without acceleration; optional build = runtime build or commit; optional context_tokens = tokens already in context when tg was measured (absent = short prompt); optional role = floor-fit marks rows added for the fixed-cost speed model (F16 / Q8_0 / other GPU bins of the 7B table): they enter the per-chip floor fit but not the legacy efficiency median, which stays on its 0.8 row set until the multiplier model is removed; rows with role = prefill carry a pp figure, params_active_b and arch_class only (community rows): they calibrate the prefill terms and enter no decode fit; prefill_depth_sweeps = pp512 at several context depths, one entry per published sweep",
+ "data_as_of": "2026-09-06",
  "rows": [
   {
    "chip": "M1",
@@ -14,7 +14,9 @@
    "tg": 14.15,
    "pp": 117.96,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Pro",
@@ -28,7 +30,9 @@
    "tg": 36.41,
    "pp": 266.25,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Max",
@@ -42,7 +46,9 @@
    "tg": 61.19,
    "pp": 530.06,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Ultra",
@@ -56,7 +62,9 @@
    "tg": 83.73,
    "pp": 1030.04,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2",
@@ -70,7 +78,9 @@
    "tg": 21.91,
    "pp": 179.57,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Pro",
@@ -84,7 +94,9 @@
    "tg": 38.86,
    "pp": 341.19,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Max",
@@ -98,7 +110,9 @@
    "tg": 65.95,
    "pp": 671.31,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Ultra",
@@ -112,7 +126,9 @@
    "tg": 94.27,
    "pp": 1238.48,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3",
@@ -126,7 +142,9 @@
    "tg": 21.34,
    "pp": 186.75,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Pro",
@@ -140,7 +158,9 @@
    "tg": 30.74,
    "pp": 341.67,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Max",
@@ -154,7 +174,9 @@
    "tg": 66.31,
    "pp": 759.7,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Ultra",
@@ -169,7 +191,9 @@
    "pp": 1471.24,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "table quotes 800 GB/s; the catalog's spec is 819 and the floor fit takes its ratio against the catalog"
+   "note": "table quotes 800 GB/s; the catalog's spec is 819 and the floor fit takes its ratio against the catalog",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Ultra",
@@ -184,7 +208,9 @@
    "pp": 1487.51,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "table quotes 800 GB/s; the catalog's spec is 819 and the floor fit takes its ratio against the catalog"
+   "note": "table quotes 800 GB/s; the catalog's spec is 819 and the floor fit takes its ratio against the catalog",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4",
@@ -198,7 +224,9 @@
    "tg": 24.11,
    "pp": 221.29,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Pro",
@@ -212,7 +240,9 @@
    "tg": 50.74,
    "pp": 439.78,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Max",
@@ -226,7 +256,9 @@
    "tg": 83.06,
    "pp": 885.68,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Max",
@@ -240,7 +272,9 @@
    "tg": 54.05,
    "pp": 891.94,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5",
@@ -255,7 +289,9 @@
    "pp": 722.79,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "M5 rows measured on commit c1d0e7a"
+   "note": "M5 rows measured on commit c1d0e7a",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Pro",
@@ -269,7 +305,9 @@
    "tg": 66.33,
    "pp": 1620.64,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Max",
@@ -283,7 +321,9 @@
    "tg": 119.92,
    "pp": 3219.99,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Max",
@@ -297,7 +337,9 @@
    "tg": 72.42,
    "pp": 3143.81,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Max",
@@ -311,7 +353,9 @@
    "tg": 37.11,
    "pp": 3158.49,
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-   "date": "2026-08-25"
+   "date": "2026-08-25",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1",
@@ -327,7 +371,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Pro",
@@ -343,7 +389,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Pro",
@@ -359,7 +407,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Max",
@@ -375,7 +425,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Max",
@@ -391,7 +443,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Ultra",
@@ -407,7 +461,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Ultra",
@@ -423,7 +479,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2",
@@ -439,7 +497,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2",
@@ -455,7 +515,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Pro",
@@ -471,7 +533,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Pro",
@@ -487,7 +551,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Max",
@@ -503,7 +569,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Max",
@@ -519,7 +587,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Ultra",
@@ -535,7 +605,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M2 Ultra",
@@ -551,7 +623,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3",
@@ -567,7 +641,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Pro",
@@ -583,7 +659,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Pro",
@@ -599,7 +677,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Max",
@@ -615,7 +695,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Max",
@@ -631,7 +713,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Ultra",
@@ -647,7 +731,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4",
@@ -663,7 +749,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4",
@@ -679,7 +767,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Pro",
@@ -695,7 +785,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Pro",
@@ -711,7 +803,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Max",
@@ -727,7 +821,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "commit 8e672ef"
+   "note": "commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5",
@@ -743,7 +839,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "M5 rows measured on commit c1d0e7a"
+   "note": "M5 rows measured on commit c1d0e7a",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Pro",
@@ -759,7 +857,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "M5 rows measured on commit c1d0e7a"
+   "note": "M5 rows measured on commit c1d0e7a",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M5 Pro",
@@ -775,7 +875,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "M5 rows measured on commit c1d0e7a"
+   "note": "M5 rows measured on commit c1d0e7a",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Max",
@@ -791,7 +893,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "32-core GPU bin; commit 8e672ef"
+   "note": "32-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Max",
@@ -823,7 +927,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "32-core GPU bin; commit 8e672ef"
+   "note": "32-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Max",
@@ -839,7 +945,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "30-core GPU bin; commit 8e672ef"
+   "note": "30-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Max",
@@ -871,7 +979,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "30-core GPU bin; commit 8e672ef"
+   "note": "30-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Max",
@@ -887,7 +997,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "24-core GPU bin; commit 8e672ef"
+   "note": "24-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M1 Max",
@@ -919,7 +1031,9 @@
    "role": "floor-fit",
    "source": "https://github.com/ggml-org/llama.cpp/discussions/4167",
    "date": "2026-08-25",
-   "note": "24-core GPU bin; commit 8e672ef"
+   "note": "24-core GPU bin; commit 8e672ef",
+   "params_active_b": 6.74,
+   "arch_class": "dense"
   },
   {
    "chip": "M3 Ultra",
@@ -952,7 +1066,9 @@
    "pp": 803,
    "source": "https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/",
    "date": "2025-10-13",
-   "note": "kept for provenance; SGLang FP8, not llama.cpp, so excluded from calibration (was recorded as a 40 GB Q4 llama.cpp run)"
+   "note": "kept for provenance; SGLang FP8, not llama.cpp, so excluded from calibration (was recorded as a 40 GB Q4 llama.cpp run)",
+   "params_active_b": 70.6,
+   "arch_class": "dense"
   },
   {
    "chip": "DGX Spark",
@@ -971,7 +1087,9 @@
    "context_tokens": 0,
    "source": "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
    "date": "2026-02-05",
-   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB"
+   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB",
+   "params_active_b": 3.6,
+   "arch_class": "moe"
   },
   {
    "chip": "DGX Spark",
@@ -990,7 +1108,9 @@
    "context_tokens": 0,
    "source": "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
    "date": "2026-02-05",
-   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB"
+   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB",
+   "params_active_b": 5.1,
+   "arch_class": "moe"
   },
   {
    "chip": "DGX Spark",
@@ -1009,7 +1129,9 @@
    "context_tokens": 0,
    "source": "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
    "date": "2026-02-05",
-   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB"
+   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB",
+   "params_active_b": 3.3,
+   "arch_class": "moe"
   },
   {
    "chip": "DGX Spark",
@@ -1027,7 +1149,9 @@
    "context_tokens": 0,
    "source": "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
    "date": "2026-02-05",
-   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB"
+   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB",
+   "params_active_b": 7.6,
+   "arch_class": "dense"
   },
   {
    "chip": "DGX Spark",
@@ -1045,7 +1169,9 @@
    "context_tokens": 0,
    "source": "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
    "date": "2026-02-05",
-   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB"
+   "note": "-fa 1, depth 0, batch 1; GiB in the table converted to decimal GB",
+   "params_active_b": 4.3,
+   "arch_class": "dense"
   },
   {
    "chip": "M4 Pro",
@@ -1291,6 +1417,373 @@
    "date": "2026",
    "note": "1.6x, depth 1",
    "baseline_tg": 14.4
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Llama 3.1 8B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 428.3,
+   "params_active_b": 8.03,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3 8B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 437.5,
+   "params_active_b": 8.2,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3 14B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 229.6,
+   "params_active_b": 14.8,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Gemma 3 27B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 118.1,
+   "params_active_b": 27.4,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3.5 27B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 115.0,
+   "params_active_b": 27.0,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3 32B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 96.8,
+   "params_active_b": 32.8,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Gemma 4 31B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 100.0,
+   "params_active_b": 31.3,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3 30B-A3B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 735.4,
+   "params_active_b": 3.3,
+   "arch_class": "moe",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen 3.5 35B-A3B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 726.3,
+   "params_active_b": 3.3,
+   "arch_class": "moe_hybrid",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Gemma 4 26B-A4B",
+   "quant": "Q4_K_M",
+   "runtime": "llama.cpp-gguf",
+   "accel": "none",
+   "pp": 745.9,
+   "params_active_b": 4.0,
+   "arch_class": "moe",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen3-8B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 290.4,
+   "params_active_b": 8.2,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M2 Max",
+   "gpu_cores": 30,
+   "bandwidth_gbs": 400,
+   "model": "Qwen3-Coder-30B-A3B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 441.3,
+   "params_active_b": 3.3,
+   "arch_class": "moe",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Llama 3.1 8B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 528.0,
+   "params_active_b": 8.03,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Qwen3-8B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 405.0,
+   "params_active_b": 8.2,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Qwen2.5-Coder-14B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 220.3,
+   "params_active_b": 14.8,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "phi-4",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 218.7,
+   "params_active_b": 14.7,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "gemma-3-27b",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 113.3,
+   "params_active_b": 27.4,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Qwen2.5-Coder-32B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 91.0,
+   "params_active_b": 32.8,
+   "arch_class": "dense",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Qwen3.5-35B-A3B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 618.8,
+   "params_active_b": 3.3,
+   "arch_class": "moe_hybrid",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  },
+  {
+   "chip": "M5",
+   "gpu_cores": 10,
+   "bandwidth_gbs": 154,
+   "model": "Qwen3.6-35B-A3B",
+   "quant": "MLX-4bit",
+   "runtime": "mlx",
+   "accel": "none",
+   "pp": 277.7,
+   "params_active_b": 3.3,
+   "arch_class": "moe_hybrid",
+   "role": "prefill",
+   "source": "https://github.com/enescingoz/mac-llm-bench",
+   "date": "2026-09-06",
+   "note": "mac-llm-bench community row (llama-bench pp512, flash attention on, ngl 99); prefill only, no file size, so it enters no decode fit"
+  }
+ ],
+ "prefill_depth_sweeps": [
+  {
+   "chip": "M5 Max",
+   "gpu_cores": 40,
+   "model": "Qwen 3.8 Flash Next",
+   "model_id": "qwen3.8-flash-next",
+   "quant": "UD-IQ4_XS",
+   "runtime": "llama.cpp-gguf",
+   "params_active_b": 6.0,
+   "arch_class": "flash_next",
+   "attention_layers": 12,
+   "layers": 48,
+   "points": [
+    [
+     0,
+     966
+    ],
+    [
+     4096,
+     776
+    ],
+    [
+     16384,
+     456
+    ],
+    [
+     32768,
+     324
+    ],
+    [
+     65536,
+     241
+    ],
+    [
+     131072,
+     154
+    ],
+    [
+     262144,
+     80
+    ]
+   ],
+   "source": "https://heretik.io/qwen38-flash-next-262k-macbook/",
+   "date": "2026-09-06",
+   "note": "llama-bench -p 512 -n 128 -d 0,4096,16384,32768,65536,131072,262144 on a 128 GB M5 Max, llama.cpp 213df585b; pp512 at each depth"
   }
  ]
 }
