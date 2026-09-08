@@ -61,7 +61,7 @@
   "moe_layers": 60,
   "accel_mtp": false,
   "accel_dflash_repo": "z-lab/Kimi-K2.6-DFlash",
-  "accel_dspark_repo": "novita/kimi-k2.6-dspark",
+  "accel_dspark_repo": "Anbeeld/Kimi-K2.6-DSpark-GGUF",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "3a752573f2cb2268",
@@ -361,13 +361,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Kimi-K2.6-DFlash",
-  "dspark": "novita/kimi-k2.6-dspark"
+  "dspark": "Anbeeld/Kimi-K2.6-DSpark-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:48.095518+00:00",
-  "last_checked": "2026-09-07T08:10:42.188109+00:00",
+  "last_checked": "2026-09-08T07:59:43.151362+00:00",
   "last_changed": "2026-09-02T20:28:48.095518+00:00"
  },
- "generated_at": "2026-09-07T08:11:01+00:00",
- "sha": "cb5b6517e43a5e3e"
+ "generated_at": "2026-09-08T07:59:54+00:00",
+ "sha": "ab29b99b9b125904"
 }
