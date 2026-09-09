@@ -1,5 +1,5 @@
 {
- "schema": "LLM Sizer benchmarks.json v1 — one row per measured configuration; tg = decode tok/s, pp = prefill tok/s; weights_gb = loaded weight size for the quant (decimal GB); active_weights_gb = the active weights a mixture-of-experts model re-reads per token; runtime = llama.cpp-gguf | mlx | sglang (only llama.cpp-gguf rows calibrate); accel = none | mtp | dspark | dflash | dflash2; accel rows carry baseline_tg = the same setup without acceleration; optional build = runtime build or commit; optional context_tokens = tokens already in context when tg was measured (absent = short prompt); optional role = floor-fit marks rows added for the fixed-cost speed model (F16 / Q8_0 / other GPU bins of the 7B table): they enter the per-chip floor fit but not the legacy efficiency median, which stays on its 0.8 row set until the multiplier model is removed; rows with role = prefill carry a pp figure, params_active_b and arch_class only (community rows): they calibrate the prefill terms and enter no decode fit; prefill_depth_sweeps = pp512 at several context depths, one entry per published sweep",
+ "schema": "LLM Sizer benchmarks.json v1 — one row per measured configuration; tg = decode tok/s, pp = prefill tok/s; weights_gb = loaded weight size for the quant (decimal GB); active_weights_gb = the active weights a mixture-of-experts model re-reads per token; runtime = llama.cpp-gguf | mlx | sglang (only llama.cpp-gguf rows calibrate); accel = none | mtp | dspark | dflash | dflash2; accel rows carry baseline_tg = the same setup without acceleration; optional build = runtime build or commit; optional context_tokens = tokens already in context when tg was measured (absent = short prompt); optional role = floor-fit marks rows added for the fixed-cost speed model (F16 / Q8_0 / other GPU bins of the 7B table): they enter the per-chip floor fit but not the legacy efficiency median, which stays on its 0.8 row set until the multiplier model is removed; rows with role = prefill carry a pp figure, params_active_b and arch_class only (community rows): they calibrate the prefill terms and enter no decode fit; prefill_depth_sweeps = pp512 at several context depths, one entry per published sweep; cluster_series = one entry per published multi-machine run, tokens per second by machine count in tg_by_nodes (prefill in pp_by_nodes where it was published) with the link, the split (layer | tensor), the runtime and the architecture class: these calibrate the cluster block only and enter no single-machine fit, and a series marked report_only has no one-machine point of its own runtime (or changes quant with the count), so it is quoted and never fitted",
  "data_as_of": "2026-09-06",
  "rows": [
   {
@@ -1784,6 +1784,239 @@
    "source": "https://heretik.io/qwen38-flash-next-262k-macbook/",
    "date": "2026-09-06",
    "note": "llama-bench -p 512 -n 128 -d 0,4096,16384,32768,65536,131072,262144 on a 128 GB M5 Max, llama.cpp 213df585b; pp512 at each depth"
+  }
+ ],
+ "cluster_series": [
+  {
+   "id": "exo-pipeline-m4-pro-mini-llama-3.2-3b",
+   "chip": "M4 Pro",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "layer",
+   "runtime": "exo",
+   "model": "Llama-3.2-3B",
+   "arch_class": "dense",
+   "quant": "unstated",
+   "tg_by_nodes": {
+    "1": 49.3,
+    "2": 44.4,
+    "3": 39.7
+   },
+   "source": "https://blog.exolabs.net/day-1/",
+   "date": "2024-12",
+   "note": "exo pipeline over Thunderbolt 5 in the TCP era (before RDMA), on Mac mini M4 Pro 24 GB machines, one request at a time"
+  },
+  {
+   "id": "llama.cpp-rpc-m3-ultra-qwen3-235b",
+   "chip": "M3 Ultra",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "layer",
+   "runtime": "llama.cpp-rpc",
+   "model": "Qwen3 235B-A22B",
+   "arch_class": "moe",
+   "quant": "8-bit",
+   "tg_by_nodes": {
+    "1": 20.4,
+    "2": 17.2,
+    "4": 15.2
+   },
+   "source": "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/",
+   "source_2": "https://appleinsider.com/articles/25/12/20/ai-calculations-on-mac-cluster-gets-a-big-boost-from-new-rdma-support-on-thunderbolt-5",
+   "date": "2025-12-20",
+   "note": "llama.cpp RPC over Thunderbolt 5 in the TCP era, on Mac Studio M3 Ultra 512 GB machines; the one-machine figure is the same model on one Studio"
+  },
+  {
+   "id": "mlx-pipeline-m3-ultra-kimi-k2-thinking",
+   "chip": "M3 Ultra",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "layer",
+   "runtime": "mlx",
+   "model": "Kimi-K2-Thinking",
+   "arch_class": "moe_latent",
+   "quant": "Q4",
+   "tg_by_nodes": {
+    "4": 14.49,
+    "5": 14.45
+   },
+   "report_only": true,
+   "source": "https://github.com/ml-explore/mlx/discussions/2990",
+   "date": "2026-01-12",
+   "note": "RDMA pipeline hop about 0.2 ms"
+  },
+  {
+   "id": "mlx-tensor-m5-max-qwen3.6-27b",
+   "chip": "M5 Max",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "tensor",
+   "runtime": "mlx",
+   "model": "Qwen3.6-27B",
+   "arch_class": "dense",
+   "quant": "INT8",
+   "tg_by_nodes": {
+    "1": 18.68,
+    "2": 32.59,
+    "3": 40.79
+   },
+   "source": "https://github.com/ml-explore/mlx/discussions/3209",
+   "date": "2026-07-24",
+   "note": "MLX tensor parallel with JACCL over Thunderbolt 5 RDMA (macOS 26.2 or newer, RDMA switched on in Recovery), on MacBook Pro M5 Max 128 GB machines"
+  },
+  {
+   "id": "exo-tensor-m3-ultra-qwen3-235b",
+   "chip": "M3 Ultra",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "tensor",
+   "runtime": "exo",
+   "model": "Qwen3 235B-A22B",
+   "arch_class": "moe",
+   "quant": "unstated",
+   "tg_by_nodes": {
+    "1": 19.5,
+    "2": 26.2,
+    "4": 31.9
+   },
+   "source": "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/",
+   "source_2": "https://appleinsider.com/articles/25/12/20/ai-calculations-on-mac-cluster-gets-a-big-boost-from-new-rdma-support-on-thunderbolt-5",
+   "date": "2025-12-20",
+   "note": "exo tensor parallel over Thunderbolt 5 RDMA, on Mac Studio M3 Ultra machines"
+  },
+  {
+   "id": "exo-tensor-m3-ultra-deepseek-v3.1",
+   "chip": "M3 Ultra",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "tensor",
+   "runtime": "exo",
+   "model": "DeepSeek V3.1 671B",
+   "arch_class": "moe_latent",
+   "quant": "unstated",
+   "tg_by_nodes": {
+    "1": 21.1,
+    "2": 27.8,
+    "4": 32.5
+   },
+   "source": "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/",
+   "source_2": "https://appleinsider.com/articles/25/12/20/ai-calculations-on-mac-cluster-gets-a-big-boost-from-new-rdma-support-on-thunderbolt-5",
+   "date": "2025-12-20",
+   "note": "exo tensor parallel over Thunderbolt 5 RDMA, on Mac Studio M3 Ultra machines"
+  },
+  {
+   "id": "vllm-tensor-dgx-spark-qwen3.6-27b",
+   "chip": "DGX Spark",
+   "link": "connectx7-200gbe",
+   "link_class": "spark",
+   "split": "tensor",
+   "runtime": "vllm",
+   "model": "Qwen3.6-27B",
+   "arch_class": "dense",
+   "quant": "NVFP4",
+   "tg_by_nodes": {
+    "1": 12.63,
+    "2": 22.57,
+    "4": 33.11
+   },
+   "source": "https://whitepapers.openzeka.com/papers/qwen3.6-27b-dgx-spark-scaling/",
+   "date": "2026-07",
+   "note": "vLLM with Ray over the Spark 200 Gb/s ports (NCCL on RDMA); time to first word 233 ms on one machine, 149 ms on two, 164 ms on four"
+  },
+  {
+   "id": "llama.cpp-rpc-dgx-spark-gpt-oss-120b",
+   "chip": "DGX Spark",
+   "link": "connectx7-200gbe",
+   "link_class": "spark",
+   "split": "layer",
+   "runtime": "llama.cpp-rpc",
+   "model": "gpt-oss-120b",
+   "arch_class": "moe",
+   "quant": "MXFP4",
+   "tg_by_nodes": {
+    "1": 57,
+    "2": 47
+   },
+   "source": "https://github.com/ggml-org/llama.cpp/discussions/16578",
+   "date": "2026-02",
+   "note": "llama.cpp RPC over the 200 Gb/s ports; this model fits one Spark, so the second machine buys nothing and costs a hop"
+  },
+  {
+   "id": "llama.cpp-rpc-dgx-spark-qwen3-235b",
+   "chip": "DGX Spark",
+   "link": "connectx7-200gbe",
+   "link_class": "spark",
+   "split": "layer",
+   "runtime": "llama.cpp-rpc",
+   "model": "Qwen3-235B-A22B",
+   "arch_class": "moe",
+   "quant": "UD-Q4_K_XL",
+   "tg_by_nodes": {
+    "1": 15.51,
+    "2": 14.57
+   },
+   "pp_by_nodes": {
+    "1": 389.5,
+    "2": 453.9
+   },
+   "source": "https://dev.classmethod.jp/en/articles/dgx-spark-two-node-clustering/",
+   "date": "2026-02-13",
+   "note": "llama.cpp RPC over the 200 Gb/s ports; pp2048, so prompt reading rose from 389.5 to 453.9 tok/s on two machines"
+  },
+  {
+   "id": "tensorrt-llm-tensor-dgx-spark-qwen3-235b",
+   "chip": "DGX Spark",
+   "link": "connectx7-200gbe",
+   "link_class": "spark",
+   "split": "tensor",
+   "runtime": "tensorrt-llm",
+   "model": "Qwen3-235B",
+   "arch_class": "moe",
+   "quant": "NVFP4",
+   "tg_by_nodes": {
+    "2": 21.65
+   },
+   "report_only": true,
+   "source": "https://forums.developer.nvidia.com/t/question-on-inference-performance-results-of-qwen3-235b-a22b-on-2x-dgx-spark/355053",
+   "date": "2025-12",
+   "note": "TensorRT-LLM TP2 on two Sparks; no one-machine figure of the same build, so the pair is quoted and never fitted"
+  },
+  {
+   "id": "mlx-tensor-m3-ultra-kimi-k3",
+   "chip": "M3 Ultra",
+   "link": "thunderbolt5",
+   "link_class": "mac",
+   "split": "tensor",
+   "runtime": "mlx",
+   "model": "Kimi-K3 2.78T",
+   "arch_class": "moe",
+   "quant": "MXFP4",
+   "tg_by_nodes": {
+    "4": 2.0
+   },
+   "report_only": true,
+   "source": "https://github.com/ml-explore/mlx/discussions/3939",
+   "date": "2026-07-28",
+   "note": "dispatch-bound: the bandwidth maths says about 36 tok/s; per-kernel dispatch overhead dominates on 92 layers × top-16 experts"
+  },
+  {
+   "id": "sglang-tensor-rtx-pro-6000-minimax-m2.5",
+   "chip": "RTX PRO 6000 Blackwell",
+   "link": "pcie5",
+   "link_class": "gpu",
+   "split": "tensor",
+   "runtime": "sglang",
+   "model": "MiniMax-M2.5",
+   "arch_class": "moe",
+   "quant": "NVFP4 at two cards, FP8 at four",
+   "tg_by_nodes": {
+    "2": 87,
+    "4": 76
+   },
+   "report_only": true,
+   "source": "https://github.com/voipmonitor/rtx6kpro/blob/master/benchmarks/results.md",
+   "date": "2026-07",
+   "note": "SGLang and vLLM tensor parallel over PCIe 5 on 96 GB cards; the two-card runs read 85 to 89 tok/s at NVFP4 and the four-card runs 71 to 81 at FP8, so the quant changes with the count and the points are quoted, never fitted; they imply a rough C of about 1.5 ms"
   }
  ]
 }

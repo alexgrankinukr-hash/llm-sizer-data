@@ -859,6 +859,93 @@
    "https://heretik.io/qwen38-flash-next-262k-macbook/"
   ]
  },
+ "cluster": {
+  "_formula": "layer split: ms per token = one machine's ms for the whole model + hop_ms[link] × (machines − 1); tensor parallel: ms = one machine's ms ÷ machines + tensor_c_ms[class] × log2(machines); reading speed × prefill.layer_factor on a layer split, × machines ^ prefill.tensor_exponent under tensor parallel",
+  "_links": "hop_ms and the gpu tensor constant are keyed by link class: mac (Thunderbolt 5) | spark (the 200 Gb/s ports of a DGX Spark or GX10) | gpu (cards on PCIe inside one box)",
+  "_sources": [
+   "https://appleinsider.com/articles/25/12/20/ai-calculations-on-mac-cluster-gets-a-big-boost-from-new-rdma-support-on-thunderbolt-5",
+   "https://blog.exolabs.net/day-1/",
+   "https://dev.classmethod.jp/en/articles/dgx-spark-two-node-clustering/",
+   "https://forums.developer.nvidia.com/t/question-on-inference-performance-results-of-qwen3-235b-a22b-on-2x-dgx-spark/355053",
+   "https://github.com/ggml-org/llama.cpp/discussions/16578",
+   "https://github.com/ml-explore/mlx/discussions/2990",
+   "https://github.com/ml-explore/mlx/discussions/3209",
+   "https://github.com/ml-explore/mlx/discussions/3939",
+   "https://github.com/voipmonitor/rtx6kpro/blob/master/benchmarks/results.md",
+   "https://whitepapers.openzeka.com/papers/qwen3.6-27b-dgx-spark-scaling/",
+   "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/"
+  ],
+  "hop_ms": {
+   "mac": {
+    "value": 4.0,
+    "n": 4,
+    "source": "fitted",
+    "range": [
+     2.2,
+     9.1
+    ]
+   },
+   "spark": {
+    "value": 3.9,
+    "n": 2,
+    "source": "fitted",
+    "range": [
+     3.7,
+     4.2
+    ]
+   },
+   "gpu": {
+    "value": 1.0,
+    "n": 0,
+    "source": "assumed",
+    "note": "assumed: no published layer-split series across several cards in one box; PCIe 5 is faster than either measured link, so the hop is set below both"
+   }
+  },
+  "tensor_c_ms": {
+   "dense": {
+    "value": 4.5,
+    "n": 4,
+    "source": "fitted",
+    "range": [
+     3.9,
+     5.2
+    ]
+   },
+   "moe": {
+    "value": 10.9,
+    "n": 4,
+    "source": "fitted",
+    "range": [
+     9.3,
+     12.5
+    ]
+   },
+   "gpu": {
+    "value": 1.5,
+    "n": 0,
+    "source": "assumed",
+    "note": "assumed: one MiniMax-M2.5 pair on RTX PRO 6000 Blackwell cards over PCIe 5 implies roughly this, and its quant changes with the card count, so it is quoted and not fitted"
+   }
+  },
+  "prefill": {
+   "layer_factor": {
+    "value": 1.0,
+    "n": 1,
+    "source": "assumed",
+    "note": "assumed flat: only one layer-split series publishes prompt reading at two machine counts (llama.cpp RPC on two DGX Sparks, pp2048 389.5 tok/s on one machine and 453.9 on two, 1.17 times), so reading speed stays flat until a second series exists"
+   },
+   "tensor_exponent": {
+    "value": 0.75,
+    "n": 0,
+    "source": "assumed",
+    "note": "assumed: tensor parallel divides the prompt work, so reading should scale with the count, but only one short-prompt point exists (vLLM on DGX Sparks, time to first word 233 ms on one machine and 149 ms on two, 1.56 times); machines ^ 0.75 gives 1.68 at two machines, a little above that point"
+   }
+  },
+  "dispatch_caveat": {
+   "min_layers": 60,
+   "note": "a very deep mixture of experts can be dispatch-bound under tensor parallel: Kimi-K3 2.78T on four Mac Studio M3 Ultra wrote 2 tok/s where the bandwidth maths says about 36, because per-kernel dispatch overhead dominates on 92 layers with top-16 routing; above this layer count the tool warns instead of promising the number"
+  }
+ },
  "feels_like": [
   {
    "max_tok_s": 5,
@@ -887,14 +974,25 @@
   }
  ],
  "sources": [
+  "https://appleinsider.com/articles/25/12/20/ai-calculations-on-mac-cluster-gets-a-big-boost-from-new-rdma-support-on-thunderbolt-5",
+  "https://blog.exolabs.net/day-1/",
+  "https://dev.classmethod.jp/en/articles/dgx-spark-two-node-clustering/",
+  "https://forums.developer.nvidia.com/t/question-on-inference-performance-results-of-qwen3-235b-a22b-on-2x-dgx-spark/355053",
   "https://github.com/ARahim3/mlx-dspark",
   "https://github.com/eauchs/mlx-dflash",
   "https://github.com/enescingoz/mac-llm-bench",
   "https://github.com/ggml-org/llama.cpp/blob/master/benches/dgx-spark/dgx-spark.md",
+  "https://github.com/ggml-org/llama.cpp/discussions/16578",
   "https://github.com/ggml-org/llama.cpp/discussions/4167",
+  "https://github.com/ml-explore/mlx/discussions/2990",
+  "https://github.com/ml-explore/mlx/discussions/3209",
+  "https://github.com/ml-explore/mlx/discussions/3939",
+  "https://github.com/voipmonitor/rtx6kpro/blob/master/benchmarks/results.md",
   "https://github.com/youssofal/MTPLX",
   "https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark/",
   "https://vinoth12940.github.io/blog/articles/genai-20260519-local-mtp-speculative-decoding/",
+  "https://whitepapers.openzeka.com/papers/qwen3.6-27b-dgx-spark-scaling/",
+  "https://www.jeffgeerling.com/blog/2025/15-tb-vram-on-mac-studio-rdma-over-thunderbolt-5/",
   "https://www.macrumors.com/2025/03/17/apples-m3-ultra-runs-deepseek-r1-efficiently/"
  ]
 }
