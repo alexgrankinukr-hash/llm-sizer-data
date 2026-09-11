@@ -188,6 +188,19 @@
    "first_seen": "2026-09-10"
   },
   {
+   "repo": "mlx-community/MiniCPM5-2B-mlx-4Bit",
+   "url": "https://huggingface.co/mlx-community/MiniCPM5-2B-mlx-4Bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.5,
+   "size_gb": 1.42,
+   "size_bytes": 1416035480,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-11"
+  },
+  {
    "repo": "bartowski/MiniCPM5-2B-GGUF",
    "url": "https://huggingface.co/bartowski/MiniCPM5-2B-GGUF",
    "format": "gguf",
@@ -331,6 +344,19 @@
    "first_seen": "2026-09-10"
   },
   {
+   "repo": "mlx-community/MiniCPM5-2B-8bit",
+   "url": "https://huggingface.co/mlx-community/MiniCPM5-2B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 8.5,
+   "size_gb": 2.67,
+   "size_bytes": 2674327290,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-11"
+  },
+  {
    "repo": "bartowski/MiniCPM5-2B-GGUF",
    "url": "https://huggingface.co/bartowski/MiniCPM5-2B-GGUF",
    "format": "gguf",
@@ -342,6 +368,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-10"
+  },
+  {
+   "repo": "mlx-community/MiniCPM5-2B-bf16",
+   "url": "https://huggingface.co/mlx-community/MiniCPM5-2B-bf16",
+   "format": "mlx",
+   "label": "MLX-BF16",
+   "bits": 16.0,
+   "size_gb": 5.03,
+   "size_bytes": 5033557048,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-11"
   },
   {
    "repo": "openbmb/MiniCPM5-2B",
@@ -379,7 +418,10 @@
    "repo": "bartowski/MiniCPM5-2B-GGUF",
    "label": "Q8_0"
   },
-  "mlx4": null,
+  "mlx4": {
+   "repo": "mlx-community/MiniCPM5-2B-mlx-4Bit",
+   "label": "MLX-4bit"
+  },
   "native": {
    "repo": "openbmb/MiniCPM5-2B",
    "label": "BF16"
@@ -392,9 +434,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-10T08:02:46.004577+00:00",
-  "last_checked": "2026-09-10T08:02:46.004577+00:00",
+  "last_checked": "2026-09-11T07:58:26.402237+00:00",
   "last_changed": "2026-09-10T08:02:46.004577+00:00"
  },
- "generated_at": "2026-09-10T08:02:50+00:00",
- "sha": "7787cbcccc1a8240"
+ "generated_at": "2026-09-11T07:58:28+00:00",
+ "sha": "fd9806c0117129c3"
 }

@@ -156,7 +156,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ1_M",
+   "label": "UD-IQ2_XXS",
    "bits": 3.41,
    "size_gb": 52.68,
    "size_bytes": 52676904800,
@@ -169,7 +169,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ2_XXS",
+   "label": "UD-IQ1_M",
    "bits": 3.41,
    "size_gb": 52.68,
    "size_bytes": 52676904800,
@@ -338,7 +338,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_XS",
+   "label": "UD-IQ4_NL",
    "bits": 4.17,
    "size_gb": 64.48,
    "size_bytes": 64484689760,
@@ -351,7 +351,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_NL",
+   "label": "UD-IQ4_XS",
    "bits": 4.17,
    "size_gb": 64.48,
    "size_bytes": 64484689760,
@@ -919,9 +919,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:02.768696+00:00",
-  "last_checked": "2026-09-10T08:02:33.279336+00:00",
+  "last_checked": "2026-09-11T07:58:14.595002+00:00",
   "last_changed": "2026-09-02T20:29:02.768696+00:00"
  },
- "generated_at": "2026-09-10T08:02:50+00:00",
- "sha": "183ce6c17986759d"
+ "generated_at": "2026-09-11T07:58:28+00:00",
+ "sha": "0913836b6aec45ae"
 }
