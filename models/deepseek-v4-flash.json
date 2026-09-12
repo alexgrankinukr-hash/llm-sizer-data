@@ -231,7 +231,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_XS",
+   "label": "UD-IQ4_NL",
    "bits": 3.79,
    "size_gb": 137.9,
    "size_bytes": 137903959808,
@@ -244,7 +244,7 @@
    "repo": "unsloth/DeepSeek-V4-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-GGUF",
    "format": "gguf",
-   "label": "UD-IQ4_NL",
+   "label": "UD-IQ4_XS",
    "bits": 3.79,
    "size_gb": 137.9,
    "size_bytes": 137903959808,
@@ -487,9 +487,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:11.883557+00:00",
-  "last_checked": "2026-09-11T07:58:20.770042+00:00",
+  "last_checked": "2026-09-12T07:51:18.583743+00:00",
   "last_changed": "2026-09-02T20:30:11.883557+00:00"
  },
- "generated_at": "2026-09-11T07:58:28+00:00",
- "sha": "2b4de5661c5d7626"
+ "generated_at": "2026-09-12T07:51:23+00:00",
+ "sha": "c7619faa45f65895"
 }
