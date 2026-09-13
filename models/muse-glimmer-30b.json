@@ -396,19 +396,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
-   "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_M",
-   "bits": 4.5,
-   "size_gb": 16.76,
-   "size_bytes": 16756683904,
-   "quantizer": "lmstudio-community",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "meta-models/Muse-Glimmer-30B-GGUF",
    "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
    "format": "gguf",
@@ -417,6 +404,19 @@
    "size_gb": 16.76,
    "size_bytes": 16756683904,
    "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
+   "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 4.5,
+   "size_gb": 16.76,
+   "size_bytes": 16756683904,
+   "quantizer": "lmstudio-community",
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -798,9 +798,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:49.678978+00:00",
-  "last_checked": "2026-09-12T07:51:07.544747+00:00",
+  "last_checked": "2026-09-13T08:13:21.698818+00:00",
   "last_changed": "2026-09-02T20:27:49.678978+00:00"
  },
- "generated_at": "2026-09-12T07:51:23+00:00",
- "sha": "b49a3ce3887a94ee"
+ "generated_at": "2026-09-13T08:13:47+00:00",
+ "sha": "24d433cb08d445a8"
 }
