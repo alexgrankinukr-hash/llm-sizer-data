@@ -23,7 +23,6 @@
   "safetensors",
   "deepseek_v4",
   "text-generation",
-  "conversational",
   "eval-results",
   "endpoints_compatible",
   "8-bit",
@@ -487,9 +486,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:11.883557+00:00",
-  "last_checked": "2026-09-15T08:35:11.867469+00:00",
+  "last_checked": "2026-09-16T08:29:01.405035+00:00",
   "last_changed": "2026-09-02T20:30:11.883557+00:00"
  },
- "generated_at": "2026-09-15T08:35:16+00:00",
- "sha": "fdafab50cabef286"
+ "generated_at": "2026-09-16T08:29:07+00:00",
+ "sha": "7a26ded3ebea0db8"
 }
