@@ -2,6 +2,8 @@
 
 This repository holds the **data and the math** behind [LLM Sizer](https://theaibridges.com/tools/llm-sizer), a free tool from [The AI Bridge](https://theaibridges.com) that tells you which open AI models fit your machine and how fast they'll run.
 
+The tool's code is open source too: [llm-sizer](https://github.com/alexgrankinukr-hash/llm-sizer) (MIT). A wrong number or a new machine belongs here; a formula or a feature belongs there.
+
 Everything the tool shows traces to a file here:
 
 | File | What it is | How it's maintained |
