@@ -504,7 +504,7 @@
    "repo": "bartowski/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442399968,
@@ -517,7 +517,7 @@
    "repo": "bartowski/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442399968,
@@ -1046,9 +1046,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:18:39.014131+00:00",
-  "last_checked": "2026-09-20T08:29:24.445296+00:00",
+  "last_checked": "2026-09-21T08:49:12.512973+00:00",
   "last_changed": "2026-09-02T20:18:39.014131+00:00"
  },
- "generated_at": "2026-09-20T08:30:16+00:00",
- "sha": "b0ca4b28d16d39c5"
+ "generated_at": "2026-09-21T08:49:40+00:00",
+ "sha": "71165fec064f4c25"
 }

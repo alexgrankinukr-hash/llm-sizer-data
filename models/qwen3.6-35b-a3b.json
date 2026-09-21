@@ -61,7 +61,7 @@
   "moe_layers": 40,
   "accel_mtp": true,
   "accel_dflash_repo": "z-lab/Qwen3.6-35B-A3B-DFlash",
-  "accel_dspark_repo": "williamliao/Qwen3.6-35B-A3B-DSPARK-GGUF",
+  "accel_dspark_repo": "Anbeeld/Qwen3.6-35B-A3B-DSpark-GGUF",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "5b6bd108a56ad8cb",
@@ -889,19 +889,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "mlx-community/Qwen3.6-35B-A3B-8bit",
-   "url": "https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-8bit",
-   "format": "mlx",
-   "label": "MLX-8bit",
-   "bits": 8.39,
-   "size_gb": 37.72,
-   "size_bytes": 37721403002,
-   "quantizer": "mlx-community",
-   "file_count": 8,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "lmstudio-community/Qwen3.6-35B-A3B-MLX-8bit",
    "url": "https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-8bit",
    "format": "mlx",
@@ -910,6 +897,19 @@
    "size_gb": 37.72,
    "size_bytes": 37721403002,
    "quantizer": "lmstudio-community",
+   "file_count": 8,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "mlx-community/Qwen3.6-35B-A3B-8bit",
+   "url": "https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 8.39,
+   "size_gb": 37.72,
+   "size_bytes": 37721403002,
+   "quantizer": "mlx-community",
    "file_count": 8,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -1027,13 +1027,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Qwen3.6-35B-A3B-DFlash",
-  "dspark": "williamliao/Qwen3.6-35B-A3B-DSPARK-GGUF"
+  "dspark": "Anbeeld/Qwen3.6-35B-A3B-DSpark-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:23:54.503541+00:00",
-  "last_checked": "2026-09-20T08:29:22.586916+00:00",
+  "last_checked": "2026-09-21T08:49:11.345704+00:00",
   "last_changed": "2026-09-02T20:23:54.503541+00:00"
  },
- "generated_at": "2026-09-20T08:30:16+00:00",
- "sha": "e55372a9b398851a"
+ "generated_at": "2026-09-21T08:49:40+00:00",
+ "sha": "0e0fe4cdf8222f75"
 }
