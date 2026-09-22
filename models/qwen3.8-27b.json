@@ -917,19 +917,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "unsloth/Qwen3.8-27B-FP8",
-   "url": "https://huggingface.co/unsloth/Qwen3.8-27B-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.89,
-   "size_gb": 30.87,
-   "size_bytes": 30866866928,
-   "quantizer": "unsloth",
-   "file_count": 66,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "Qwen/Qwen3.8-27B-FP8",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
    "format": "safetensors",
@@ -938,6 +925,19 @@
    "size_gb": 30.87,
    "size_bytes": 30866866928,
    "quantizer": "official",
+   "file_count": 66,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "unsloth/Qwen3.8-27B-FP8",
+   "url": "https://huggingface.co/unsloth/Qwen3.8-27B-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.89,
+   "size_gb": 30.87,
+   "size_bytes": 30866866928,
+   "quantizer": "unsloth",
    "file_count": 66,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -1046,9 +1046,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:18:39.014131+00:00",
-  "last_checked": "2026-09-21T08:49:12.512973+00:00",
+  "last_checked": "2026-09-22T08:26:31.727197+00:00",
   "last_changed": "2026-09-02T20:18:39.014131+00:00"
  },
- "generated_at": "2026-09-21T08:49:40+00:00",
- "sha": "71165fec064f4c25"
+ "generated_at": "2026-09-22T08:26:51+00:00",
+ "sha": "8266cdf133670b41"
 }
