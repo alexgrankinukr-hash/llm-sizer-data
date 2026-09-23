@@ -26,7 +26,8 @@
   "conversational",
   "eval-results",
   "endpoints_compatible",
-  "deploy:sagemaker"
+  "deploy:sagemaker",
+  "deploy:azure"
  ],
  "featured": true,
  "tier": "laptop",
@@ -396,19 +397,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
-   "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_M",
-   "bits": 4.5,
-   "size_gb": 16.76,
-   "size_bytes": 16756683904,
-   "quantizer": "lmstudio-community",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "meta-models/Muse-Glimmer-30B-GGUF",
    "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
    "format": "gguf",
@@ -417,6 +405,19 @@
    "size_gb": 16.76,
    "size_bytes": 16756683904,
    "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
+   "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 4.5,
+   "size_gb": 16.76,
+   "size_bytes": 16756683904,
+   "quantizer": "lmstudio-community",
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -798,9 +799,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:49.678978+00:00",
-  "last_checked": "2026-09-22T08:26:38.177154+00:00",
+  "last_checked": "2026-09-23T08:28:50.963281+00:00",
   "last_changed": "2026-09-02T20:27:49.678978+00:00"
  },
- "generated_at": "2026-09-22T08:26:51+00:00",
- "sha": "59e85bef0ae920b0"
+ "generated_at": "2026-09-23T08:29:26+00:00",
+ "sha": "ae95d9eb3c4a7f39"
 }
