@@ -184,7 +184,7 @@
    "repo": "bartowski/openai_gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "IQ3_M",
+   "label": "Q2_K",
    "bits": 4.29,
    "size_gb": 62.71,
    "size_bytes": 62706284224,
@@ -197,7 +197,7 @@
    "repo": "bartowski/openai_gpt-oss-120b-GGUF",
    "url": "https://huggingface.co/bartowski/openai_gpt-oss-120b-GGUF",
    "format": "gguf",
-   "label": "Q2_K",
+   "label": "IQ3_M",
    "bits": 4.29,
    "size_gb": 62.71,
    "size_bytes": 62706284224,
@@ -622,9 +622,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:11.269631+00:00",
-  "last_checked": "2026-09-23T08:29:03.624909+00:00",
+  "last_checked": "2026-09-24T08:21:33.178820+00:00",
   "last_changed": "2026-09-02T20:29:11.269631+00:00"
  },
- "generated_at": "2026-09-23T08:29:26+00:00",
- "sha": "abbfc11686f5dc08"
+ "generated_at": "2026-09-24T08:21:51+00:00",
+ "sha": "ad29b8a9bd41e932"
 }
