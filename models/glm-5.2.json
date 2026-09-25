@@ -61,7 +61,7 @@
   "moe_layers": 75,
   "accel_mtp": true,
   "accel_dflash_repo": null,
-  "accel_dspark_repo": "Anbeeld/GLM-5.2-DSpark-GGUF",
+  "accel_dspark_repo": "AlayaNeW/GLM-5.2-DSpark",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "8eadd3d97490703b",
@@ -455,13 +455,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": null,
-  "dspark": "Anbeeld/GLM-5.2-DSpark-GGUF"
+  "dspark": "AlayaNeW/GLM-5.2-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:51.274032+00:00",
-  "last_checked": "2026-09-24T08:21:37.030893+00:00",
+  "last_checked": "2026-09-25T08:43:40.435656+00:00",
   "last_changed": "2026-09-02T20:29:51.274032+00:00"
  },
- "generated_at": "2026-09-24T08:21:51+00:00",
- "sha": "c56172ec8ef7dacf"
+ "generated_at": "2026-09-25T08:43:56+00:00",
+ "sha": "747748311903c7d7"
 }
