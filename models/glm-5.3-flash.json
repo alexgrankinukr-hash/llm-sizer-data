@@ -177,6 +177,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "mlx-community/GLM-5.3-Flash-4bit",
+   "url": "https://huggingface.co/mlx-community/GLM-5.3-Flash-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 5.08,
+   "size_gb": 203.99,
+   "size_bytes": 203992076296,
+   "quantizer": "mlx-community",
+   "file_count": 62,
+   "qat": false,
+   "first_seen": "2026-09-26"
+  },
+  {
    "repo": "unsloth/GLM-5.3-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
    "format": "gguf",
@@ -203,19 +216,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "zai-org/GLM-5.3-Flash",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.17,
-   "size_gb": 328.34,
-   "size_bytes": 328337455672,
-   "quantizer": "official",
-   "file_count": 62,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/GLM-5.3-Flash-FP8",
    "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8",
    "format": "safetensors",
@@ -224,6 +224,19 @@
    "size_gb": 328.34,
    "size_bytes": 328337455672,
    "quantizer": "unsloth",
+   "file_count": 62,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "zai-org/GLM-5.3-Flash",
+   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.17,
+   "size_gb": 328.34,
+   "size_bytes": 328337455672,
+   "quantizer": "official",
    "file_count": 62,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -277,7 +290,10 @@
    "repo": "unsloth/GLM-5.3-Flash-GGUF",
    "label": "Q8_0"
   },
-  "mlx4": null,
+  "mlx4": {
+   "repo": "mlx-community/GLM-5.3-Flash-4bit",
+   "label": "MLX-4bit"
+  },
   "native": {
    "repo": "zai-org/GLM-5.3-Flash",
    "label": "FP8"
@@ -290,9 +306,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:03.811239+00:00",
-  "last_checked": "2026-09-25T08:43:41.539503+00:00",
+  "last_checked": "2026-09-26T08:30:17.254828+00:00",
   "last_changed": "2026-09-02T20:30:03.811239+00:00"
  },
- "generated_at": "2026-09-25T08:43:56+00:00",
- "sha": "293baa4ec0c94f78"
+ "generated_at": "2026-09-26T08:30:23+00:00",
+ "sha": "56866fbad84e912e"
 }

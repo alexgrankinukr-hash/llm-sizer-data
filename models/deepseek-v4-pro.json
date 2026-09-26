@@ -26,7 +26,8 @@
   "eval-results",
   "endpoints_compatible",
   "8-bit",
-  "fp8"
+  "fp8",
+  "deploy:sagemaker"
  ],
  "featured": false,
  "tier": null,
@@ -146,9 +147,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:34.968343+00:00",
-  "last_checked": "2026-09-25T08:43:48.180392+00:00",
+  "last_checked": "2026-09-26T08:30:19.936246+00:00",
   "last_changed": "2026-09-02T20:30:34.968343+00:00"
  },
- "generated_at": "2026-09-25T08:43:56+00:00",
- "sha": "29e13aa895a52857"
+ "generated_at": "2026-09-26T08:30:23+00:00",
+ "sha": "653d04d2402b087a"
 }

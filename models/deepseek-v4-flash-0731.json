@@ -27,7 +27,8 @@
   "endpoints_compatible",
   "8-bit",
   "fp8",
-  "deploy:azure"
+  "deploy:azure",
+  "deploy:sagemaker"
  ],
  "featured": true,
  "tier": "studio",
@@ -342,9 +343,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:08.769191+00:00",
-  "last_checked": "2026-09-25T08:43:23.624717+00:00",
+  "last_checked": "2026-09-26T08:30:02.839932+00:00",
   "last_changed": "2026-09-02T20:25:08.769191+00:00"
  },
- "generated_at": "2026-09-25T08:43:56+00:00",
- "sha": "138256bf1e69e59c"
+ "generated_at": "2026-09-26T08:30:23+00:00",
+ "sha": "81cd0e273d47d3f1"
 }
