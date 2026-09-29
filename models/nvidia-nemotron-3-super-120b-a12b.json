@@ -790,19 +790,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.31,
-   "size_gb": 128.35,
-   "size_bytes": 128350001680,
-   "quantizer": "official",
-   "file_count": 26,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "format": "safetensors",
@@ -811,6 +798,19 @@
    "size_gb": 128.35,
    "size_bytes": 128350001680,
    "quantizer": "unsloth",
+   "file_count": 26,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.31,
+   "size_gb": 128.35,
+   "size_bytes": 128350001680,
+   "quantizer": "official",
    "file_count": 26,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -919,9 +919,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:02.768696+00:00",
-  "last_checked": "2026-09-28T09:38:05.837438+00:00",
+  "last_checked": "2026-09-29T09:42:32.710520+00:00",
   "last_changed": "2026-09-02T20:29:02.768696+00:00"
  },
- "generated_at": "2026-09-28T09:38:16+00:00",
- "sha": "5392bdbf0abeee99"
+ "generated_at": "2026-09-29T09:42:42+00:00",
+ "sha": "586d59fe802268fe"
 }
