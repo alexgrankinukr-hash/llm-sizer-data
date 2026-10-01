@@ -85,7 +85,7 @@
    "label": "Q2_K",
    "bits": 3.25,
    "size_gb": 126.21,
-   "size_bytes": 126214593856,
+   "size_bytes": 126214594144,
    "quantizer": "ggml-org",
    "file_count": 2,
    "qat": false,
@@ -140,9 +140,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-30T09:34:11.699990+00:00",
-  "last_checked": "2026-09-30T09:34:11.699990+00:00",
+  "last_checked": "2026-10-01T10:00:54.238830+00:00",
   "last_changed": "2026-09-30T09:34:11.699990+00:00"
  },
- "generated_at": "2026-09-30T09:34:17+00:00",
- "sha": "3fab9060324a5335"
+ "generated_at": "2026-10-01T10:00:59+00:00",
+ "sha": "ce542dbce1dc4e4d"
 }
