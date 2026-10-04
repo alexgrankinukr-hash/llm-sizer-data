@@ -246,19 +246,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
-   "format": "safetensors",
-   "label": "NVFP4",
-   "bits": 5.03,
-   "size_gb": 352.31,
-   "size_bytes": 352308689576,
-   "quantizer": "unsloth",
-   "file_count": 113,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
    "format": "safetensors",
@@ -267,6 +254,19 @@
    "size_gb": 352.31,
    "size_bytes": 352308689576,
    "quantizer": "official",
+   "file_count": 113,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+   "format": "safetensors",
+   "label": "NVFP4",
+   "bits": 5.03,
+   "size_gb": 352.31,
+   "size_bytes": 352308689576,
+   "quantizer": "unsloth",
    "file_count": 113,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -437,9 +437,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:37:51.627382+00:00",
-  "last_checked": "2026-10-03T09:03:07.590797+00:00",
+  "last_checked": "2026-10-04T09:36:45.098167+00:00",
   "last_changed": "2026-09-02T20:37:51.627382+00:00"
  },
- "generated_at": "2026-10-03T09:03:24+00:00",
- "sha": "fbdfb6c251f0d19e"
+ "generated_at": "2026-10-04T09:37:07+00:00",
+ "sha": "b8c6babe68891bda"
 }

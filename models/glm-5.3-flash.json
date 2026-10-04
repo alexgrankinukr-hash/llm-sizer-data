@@ -138,6 +138,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "ggml-org/GLM-5.3-Flash-GGUF",
+   "url": "https://huggingface.co/ggml-org/GLM-5.3-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q2_K",
+   "bits": 3.33,
+   "size_gb": 133.81,
+   "size_bytes": 133809056384,
+   "quantizer": "ggml-org",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-10-04"
+  },
+  {
    "repo": "unsloth/GLM-5.3-Flash-GGUF",
    "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
    "format": "gguf",
@@ -162,6 +175,19 @@
    "file_count": 5,
    "qat": false,
    "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "ggml-org/GLM-5.3-Flash-GGUF",
+   "url": "https://huggingface.co/ggml-org/GLM-5.3-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_K",
+   "bits": 4.52,
+   "size_gb": 181.37,
+   "size_bytes": 181372463744,
+   "quantizer": "ggml-org",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-10-04"
   },
   {
    "repo": "unsloth/GLM-5.3-Flash-GGUF",
@@ -216,19 +242,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "zai-org/GLM-5.3-Flash",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.17,
-   "size_gb": 328.34,
-   "size_bytes": 328337455672,
-   "quantizer": "official",
-   "file_count": 62,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/GLM-5.3-Flash-FP8",
    "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8",
    "format": "safetensors",
@@ -237,6 +250,19 @@
    "size_gb": 328.34,
    "size_bytes": 328337455672,
    "quantizer": "unsloth",
+   "file_count": 62,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "zai-org/GLM-5.3-Flash",
+   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.17,
+   "size_gb": 328.34,
+   "size_bytes": 328337455672,
+   "quantizer": "official",
    "file_count": 62,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -306,9 +332,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:03.811239+00:00",
-  "last_checked": "2026-10-03T09:03:11.009226+00:00",
+  "last_checked": "2026-10-04T09:36:49.657903+00:00",
   "last_changed": "2026-09-02T20:30:03.811239+00:00"
  },
- "generated_at": "2026-10-03T09:03:24+00:00",
- "sha": "5f13f4f32ca7b0a6"
+ "generated_at": "2026-10-04T09:37:07+00:00",
+ "sha": "af31df8566741b6a"
 }
