@@ -64,7 +64,7 @@
   "moe_layers": 43,
   "accel_mtp": true,
   "accel_dflash_repo": null,
-  "accel_dspark_repo": "Lucebox/DeepSeek-V4-Flash-0731-DSpark-GGUF",
+  "accel_dspark_repo": "alessandrobologna/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "bd2c2daff7fb54a2",
@@ -339,13 +339,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": null,
-  "dspark": "Lucebox/DeepSeek-V4-Flash-0731-DSpark-GGUF"
+  "dspark": "alessandrobologna/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:08.769191+00:00",
-  "last_checked": "2026-10-09T15:22:14.651674+00:00",
+  "last_checked": "2026-10-10T09:41:37.870181+00:00",
   "last_changed": "2026-09-02T20:25:08.769191+00:00"
  },
- "generated_at": "2026-10-09T15:22:34+00:00",
- "sha": "85119d09e57f5a7f"
+ "generated_at": "2026-10-10T09:42:09+00:00",
+ "sha": "a1928f58915c44d8"
 }

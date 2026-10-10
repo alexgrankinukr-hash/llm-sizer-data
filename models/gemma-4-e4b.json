@@ -63,7 +63,7 @@
   "moe_layers": null,
   "accel_mtp": false,
   "accel_dflash_repo": null,
-  "accel_dspark_repo": null,
+  "accel_dspark_repo": "rasyosef/gemma-4-E4B-it-dspark",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "f2530646aa8c6c45",
@@ -953,13 +953,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": null,
-  "dspark": null
+  "dspark": "rasyosef/gemma-4-E4B-it-dspark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-10-09T15:22:18.952341+00:00",
+  "last_checked": "2026-10-10T09:41:44.218818+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-10-09T15:22:34+00:00",
- "sha": "1d790abae9475b5f"
+ "generated_at": "2026-10-10T09:42:09+00:00",
+ "sha": "a45e676551922d1b"
 }
