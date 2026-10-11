@@ -299,7 +299,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-Q3_K_M",
+   "label": "UD-Q3_K_S",
    "bits": 3.99,
    "size_gb": 61.71,
    "size_bytes": 61712254816,
@@ -312,7 +312,7 @@
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
    "format": "gguf",
-   "label": "UD-Q3_K_S",
+   "label": "UD-Q3_K_M",
    "bits": 3.99,
    "size_gb": 61.71,
    "size_bytes": 61712254816,
@@ -790,19 +790,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.31,
-   "size_gb": 128.35,
-   "size_bytes": 128350001680,
-   "quantizer": "official",
-   "file_count": 26,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
    "format": "safetensors",
@@ -811,6 +798,19 @@
    "size_gb": 128.35,
    "size_bytes": 128350001680,
    "quantizer": "unsloth",
+   "file_count": 26,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.31,
+   "size_gb": 128.35,
+   "size_bytes": 128350001680,
+   "quantizer": "official",
    "file_count": 26,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -919,9 +919,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:29:02.768696+00:00",
-  "last_checked": "2026-10-10T09:41:51.743739+00:00",
+  "last_checked": "2026-10-11T09:53:41.510695+00:00",
   "last_changed": "2026-09-02T20:29:02.768696+00:00"
  },
- "generated_at": "2026-10-10T09:42:09+00:00",
- "sha": "58be8822792d9429"
+ "generated_at": "2026-10-11T09:54:04+00:00",
+ "sha": "2646358ee41d20bc"
 }
