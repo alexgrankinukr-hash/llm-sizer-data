@@ -1,10 +1,10 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-e4b",
- "name": "Gemma 4 E4B",
+ "name": "gemma-4-E4B",
  "provider": "google",
- "hf_repo": "google/gemma-4-E4B-it",
- "url": "https://huggingface.co/google/gemma-4-E4B-it",
+ "hf_repo": "google/gemma-4-E4B",
+ "url": "https://huggingface.co/google/gemma-4-E4B",
  "variant": "instruct",
  "released": "2026-03-02",
  "params_total": 7996156490,
@@ -24,14 +24,11 @@
   "gemma4",
   "image-text-to-text",
   "any-to-any",
-  "eval-results",
-  "endpoints_compatible",
-  "deploy:sagemaker",
-  "deploy:azure"
+  "endpoints_compatible"
  ],
- "featured": true,
- "tier": "laptop",
- "rank": 5,
+ "featured": false,
+ "tier": null,
+ "rank": null,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -66,7 +63,7 @@
   "accel_dspark_repo": "rasyosef/gemma-4-E4B-it-dspark",
   "conventional_assumed": false,
   "source": "config",
-  "config_sha": "f2530646aa8c6c45",
+  "config_sha": "496233d28fe91cc2",
   "notes": [
    "per-layer embedding tables are looked up, not streamed; effective parameters exclude them"
   ],
@@ -737,6 +734,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "ggml-org/gemma-4-E4B-GGUF",
+   "url": "https://huggingface.co/ggml-org/gemma-4-E4B-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.04,
+   "size_gb": 8.03,
+   "size_bytes": 8031223872,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
+  },
+  {
    "repo": "lmstudio-community/gemma-4-E4B-it-GGUF",
    "url": "https://huggingface.co/lmstudio-community/gemma-4-E4B-it-GGUF",
    "format": "gguf",
@@ -867,6 +877,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "ggml-org/gemma-4-E4B-GGUF",
+   "url": "https://huggingface.co/ggml-org/gemma-4-E4B-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 15.06,
+   "size_gb": 15.05,
+   "size_bytes": 15053078592,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
+  },
+  {
    "repo": "bartowski/google_gemma-4-E4B-it-GGUF",
    "url": "https://huggingface.co/bartowski/google_gemma-4-E4B-it-GGUF",
    "format": "gguf",
@@ -930,6 +953,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "google/gemma-4-E4B",
+   "url": "https://huggingface.co/google/gemma-4-E4B",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 15.99,
+   "size_bytes": 15992595884,
+   "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
   }
  ],
  "reference": {
@@ -946,7 +982,7 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-E4B-it",
+   "repo": "google/gemma-4-E4B",
    "label": "BF16"
   }
  },
@@ -957,9 +993,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-10-19T08:43:42.435441+00:00",
+  "last_checked": "2026-10-20T08:25:19.072851+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-10-19T08:44:16+00:00",
- "sha": "abac3d83d3b75c62"
+ "generated_at": "2026-10-20T08:25:37+00:00",
+ "sha": "17007c8dc0a0071d"
 }

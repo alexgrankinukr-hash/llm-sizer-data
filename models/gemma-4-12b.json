@@ -1,10 +1,10 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-12b",
- "name": "Gemma 4 12B",
+ "name": "gemma-4-12B",
  "provider": "google",
- "hf_repo": "google/gemma-4-12B-it",
- "url": "https://huggingface.co/google/gemma-4-12B-it",
+ "hf_repo": "google/gemma-4-12B",
+ "url": "https://huggingface.co/google/gemma-4-12B",
  "variant": "instruct",
  "released": "2026-05-23",
  "params_total": 11959730224,
@@ -25,12 +25,11 @@
   "image-text-to-text",
   "any-to-any",
   "eval-results",
-  "endpoints_compatible",
-  "deploy:sagemaker"
+  "endpoints_compatible"
  ],
- "featured": true,
- "tier": "laptop",
- "rank": 3,
+ "featured": false,
+ "tier": null,
+ "rank": null,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -65,7 +64,7 @@
   "accel_dspark_repo": null,
   "conventional_assumed": true,
   "source": "config",
-  "config_sha": "f6756d69fb00597e",
+  "config_sha": "bdae7345925a095e",
   "notes": [
    "full-attention layers use global KV heads"
   ],
@@ -788,6 +787,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "ggml-org/gemma-4-12B-GGUF",
+   "url": "https://huggingface.co/ggml-org/gemma-4-12B-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.47,
+   "size_gb": 12.67,
+   "size_bytes": 12669628032,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
+  },
+  {
    "repo": "ggml-org/gemma-4-12B-it-GGUF",
    "url": "https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF",
    "format": "gguf",
@@ -879,6 +891,19 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "ggml-org/gemma-4-12B-GGUF",
+   "url": "https://huggingface.co/ggml-org/gemma-4-12B-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 15.94,
+   "size_gb": 23.83,
+   "size_bytes": 23832047232,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
+  },
+  {
    "repo": "ggml-org/gemma-4-12B-it-GGUF",
    "url": "https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF",
    "format": "gguf",
@@ -942,6 +967,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "google/gemma-4-12B",
+   "url": "https://huggingface.co/google/gemma-4-12B",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 23.92,
+   "size_bytes": 23919549408,
+   "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-20"
   }
  ],
  "reference": {
@@ -958,7 +996,7 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-12B-it",
+   "repo": "google/gemma-4-12B",
    "label": "BF16"
   }
  },
@@ -969,9 +1007,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:23.565073+00:00",
-  "last_checked": "2026-10-19T08:43:38.435705+00:00",
+  "last_checked": "2026-10-20T08:25:11.137340+00:00",
   "last_changed": "2026-09-02T20:25:23.565073+00:00"
  },
- "generated_at": "2026-10-19T08:44:16+00:00",
- "sha": "60c823f65a0db500"
+ "generated_at": "2026-10-20T08:25:37+00:00",
+ "sha": "3be19c11bc9a434b"
 }
