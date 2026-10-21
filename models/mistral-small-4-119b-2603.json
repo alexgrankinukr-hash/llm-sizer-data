@@ -7,7 +7,7 @@
  "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
  "variant": "instruct",
  "released": "2026-01-23",
- "params_total": 119401317952,
+ "params_total": 119401317376,
  "params_active": 6500000000,
  "params_active_source": "override",
  "context_max": 1048576,
@@ -898,9 +898,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:28:27.519783+00:00",
-  "last_checked": "2026-10-20T08:24:34.729498+00:00",
-  "last_changed": "2026-09-02T20:28:27.519783+00:00"
+  "last_checked": "2026-10-21T08:27:27.727093+00:00",
+  "last_changed": "2026-10-21T08:27:27.727093+00:00"
  },
- "generated_at": "2026-10-20T08:25:37+00:00",
- "sha": "8da335f3c2434184"
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "sha": "02be39c27a33a9b7"
 }

@@ -1,10 +1,10 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-e4b",
- "name": "gemma-4-E4B",
+ "name": "Gemma 4 E4B",
  "provider": "google",
- "hf_repo": "google/gemma-4-E4B",
- "url": "https://huggingface.co/google/gemma-4-E4B",
+ "hf_repo": "google/gemma-4-E4B-it",
+ "url": "https://huggingface.co/google/gemma-4-E4B-it",
  "variant": "instruct",
  "released": "2026-03-02",
  "params_total": 7996156490,
@@ -24,11 +24,14 @@
   "gemma4",
   "image-text-to-text",
   "any-to-any",
-  "endpoints_compatible"
+  "eval-results",
+  "endpoints_compatible",
+  "deploy:sagemaker",
+  "deploy:azure"
  ],
- "featured": false,
- "tier": null,
- "rank": null,
+ "featured": true,
+ "tier": "laptop",
+ "rank": 5,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -60,10 +63,10 @@
   "moe_layers": null,
   "accel_mtp": false,
   "accel_dflash_repo": null,
-  "accel_dspark_repo": "rasyosef/gemma-4-E4B-it-dspark",
+  "accel_dspark_repo": "rasyosef/gemma-4-E4B-it-dspark-GGUF",
   "conventional_assumed": false,
   "source": "config",
-  "config_sha": "496233d28fe91cc2",
+  "config_sha": "f2530646aa8c6c45",
   "notes": [
    "per-layer embedding tables are looked up, not streamed; effective parameters exclude them"
   ],
@@ -942,19 +945,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "google/gemma-4-E4B-it",
-   "url": "https://huggingface.co/google/gemma-4-E4B-it",
-   "format": "safetensors",
-   "label": "BF16",
-   "bits": 16.0,
-   "size_gb": 15.99,
-   "size_bytes": 15992595884,
-   "quantizer": "official",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "google/gemma-4-E4B",
    "url": "https://huggingface.co/google/gemma-4-E4B",
    "format": "safetensors",
@@ -966,6 +956,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-20"
+  },
+  {
+   "repo": "google/gemma-4-E4B-it",
+   "url": "https://huggingface.co/google/gemma-4-E4B-it",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 15.99,
+   "size_bytes": 15992595884,
+   "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
   }
  ],
  "reference": {
@@ -982,20 +985,20 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-E4B",
+   "repo": "google/gemma-4-E4B-it",
    "label": "BF16"
   }
  },
  "special_builds": [],
  "drafts": {
   "dflash": null,
-  "dspark": "rasyosef/gemma-4-E4B-it-dspark"
+  "dspark": "rasyosef/gemma-4-E4B-it-dspark-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-10-20T08:25:19.072851+00:00",
+  "last_checked": "2026-10-21T08:27:24.930589+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-10-20T08:25:37+00:00",
- "sha": "17007c8dc0a0071d"
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "sha": "e1bfc6da2b9c1d51"
 }

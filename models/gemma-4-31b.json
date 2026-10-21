@@ -1,14 +1,14 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-31b",
- "name": "gemma-4-31B",
+ "name": "Gemma 4 31B",
  "provider": "google",
- "hf_repo": "google/gemma-4-31B",
- "url": "https://huggingface.co/google/gemma-4-31B",
+ "hf_repo": "google/gemma-4-31B-it",
+ "url": "https://huggingface.co/google/gemma-4-31B-it",
  "variant": "instruct",
  "released": "2026-03-11",
- "params_total": 32682372656,
- "params_active": 32682372656,
+ "params_total": 31273088876,
+ "params_active": 31273088876,
  "params_active_source": "dense",
  "context_max": 262144,
  "native_bits": 16.0,
@@ -23,11 +23,15 @@
   "safetensors",
   "gemma4",
   "image-text-to-text",
-  "endpoints_compatible"
+  "conversational",
+  "eval-results",
+  "endpoints_compatible",
+  "deploy:sagemaker",
+  "deploy:azure"
  ],
- "featured": false,
- "tier": null,
- "rank": null,
+ "featured": true,
+ "tier": "studio",
+ "rank": 8,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -60,7 +64,7 @@
   "accel_dspark_repo": "Anbeeld/gemma-4-31B-it-DSpark-GGUF",
   "conventional_assumed": false,
   "source": "config",
-  "config_sha": "bafd81dc69ca75a7",
+  "config_sha": "3c75b107d2eab99a",
   "notes": [
    "full-attention layers use global KV heads"
   ],
@@ -1017,19 +1021,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "google/gemma-4-31B-it",
-   "url": "https://huggingface.co/google/gemma-4-31B-it",
-   "format": "safetensors",
-   "label": "BF16",
-   "bits": 16.0,
-   "size_gb": 62.55,
-   "size_bytes": 62546338248,
-   "quantizer": "official",
-   "file_count": 2,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "google/gemma-4-31B",
    "url": "https://huggingface.co/google/gemma-4-31B",
    "format": "safetensors",
@@ -1041,6 +1032,19 @@
    "file_count": 2,
    "qat": false,
    "first_seen": "2026-10-20"
+  },
+  {
+   "repo": "google/gemma-4-31B-it",
+   "url": "https://huggingface.co/google/gemma-4-31B-it",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 62.55,
+   "size_bytes": 62546338248,
+   "quantizer": "official",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-09-02"
   }
  ],
  "reference": {
@@ -1057,7 +1061,7 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-31B",
+   "repo": "google/gemma-4-31B-it",
    "label": "BF16"
   }
  },
@@ -1068,9 +1072,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:26:35.130576+00:00",
-  "last_checked": "2026-10-20T08:25:14.837969+00:00",
-  "last_changed": "2026-10-20T08:25:14.837969+00:00"
+  "last_checked": "2026-10-21T08:27:24.074180+00:00",
+  "last_changed": "2026-10-21T08:27:24.074180+00:00"
  },
- "generated_at": "2026-10-20T08:25:37+00:00",
- "sha": "fb85600f9f1a277b"
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "sha": "237715d83ad901dd"
 }

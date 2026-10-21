@@ -1,13 +1,13 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-26b-a4b",
- "name": "gemma-4-26B-A4B",
+ "name": "Gemma 4 26B-A4B",
  "provider": "google",
- "hf_repo": "google/gemma-4-26B-A4B",
- "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+ "hf_repo": "google/gemma-4-26B-A4B-it",
+ "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
  "variant": "instruct",
  "released": "2026-03-11",
- "params_total": 26544131376,
+ "params_total": 25805936206,
  "params_active": 4000000000,
  "params_active_source": "name",
  "context_max": 262144,
@@ -23,11 +23,15 @@
   "safetensors",
   "gemma4",
   "image-text-to-text",
-  "endpoints_compatible"
+  "conversational",
+  "eval-results",
+  "endpoints_compatible",
+  "deploy:sagemaker",
+  "deploy:azure"
  ],
- "featured": false,
- "tier": null,
- "rank": null,
+ "featured": true,
+ "tier": "laptop",
+ "rank": 4,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -60,7 +64,7 @@
   "accel_dspark_repo": null,
   "conventional_assumed": false,
   "source": "config",
-  "config_sha": "afd106ac525e1998",
+  "config_sha": "73683881ef9d3cc3",
   "notes": [
    "full-attention layers use global KV heads"
   ],
@@ -978,19 +982,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "google/gemma-4-26B-A4B-it",
-   "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
-   "format": "safetensors",
-   "label": "BF16",
-   "bits": 16.0,
-   "size_gb": 51.61,
-   "size_bytes": 51612009916,
-   "quantizer": "official",
-   "file_count": 2,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "google/gemma-4-26B-A4B",
    "url": "https://huggingface.co/google/gemma-4-26B-A4B",
    "format": "safetensors",
@@ -1002,6 +993,19 @@
    "file_count": 2,
    "qat": false,
    "first_seen": "2026-10-20"
+  },
+  {
+   "repo": "google/gemma-4-26B-A4B-it",
+   "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 51.61,
+   "size_bytes": 51612009916,
+   "quantizer": "official",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-09-02"
   },
   {
    "repo": "mlx-community/gemma-4-26b-a4b-it-bf16",
@@ -1031,7 +1035,7 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-26B-A4B",
+   "repo": "google/gemma-4-26B-A4B-it",
    "label": "BF16"
   }
  },
@@ -1042,9 +1046,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:26:00.236284+00:00",
-  "last_checked": "2026-10-20T08:25:13.426050+00:00",
-  "last_changed": "2026-10-20T08:25:13.426050+00:00"
+  "last_checked": "2026-10-21T08:27:23.278818+00:00",
+  "last_changed": "2026-10-21T08:27:23.278818+00:00"
  },
- "generated_at": "2026-10-20T08:25:37+00:00",
- "sha": "1795643a28a44d8f"
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "sha": "d6d71a7449001d47"
 }

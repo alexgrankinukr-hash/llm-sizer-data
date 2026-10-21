@@ -1,10 +1,10 @@
 {
  "schema": "llm-sizer/models v1",
  "id": "gemma-4-12b",
- "name": "gemma-4-12B",
+ "name": "Gemma 4 12B",
  "provider": "google",
- "hf_repo": "google/gemma-4-12B",
- "url": "https://huggingface.co/google/gemma-4-12B",
+ "hf_repo": "google/gemma-4-12B-it",
+ "url": "https://huggingface.co/google/gemma-4-12B-it",
  "variant": "instruct",
  "released": "2026-05-23",
  "params_total": 11959730224,
@@ -25,11 +25,12 @@
   "image-text-to-text",
   "any-to-any",
   "eval-results",
-  "endpoints_compatible"
+  "endpoints_compatible",
+  "deploy:sagemaker"
  ],
- "featured": false,
- "tier": null,
- "rank": null,
+ "featured": true,
+ "tier": "laptop",
+ "rank": 3,
  "gated": "false",
  "status": "active",
  "superseded_by": null,
@@ -64,7 +65,7 @@
   "accel_dspark_repo": null,
   "conventional_assumed": true,
   "source": "config",
-  "config_sha": "bdae7345925a095e",
+  "config_sha": "f6756d69fb00597e",
   "notes": [
    "full-attention layers use global KV heads"
   ],
@@ -996,7 +997,7 @@
    "label": "MLX-4bit"
   },
   "native": {
-   "repo": "google/gemma-4-12B",
+   "repo": "google/gemma-4-12B-it",
    "label": "BF16"
   }
  },
@@ -1007,9 +1008,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:25:23.565073+00:00",
-  "last_checked": "2026-10-20T08:25:11.137340+00:00",
+  "last_checked": "2026-10-21T08:27:22.460477+00:00",
   "last_changed": "2026-09-02T20:25:23.565073+00:00"
  },
- "generated_at": "2026-10-20T08:25:37+00:00",
- "sha": "3be19c11bc9a434b"
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "sha": "a3edc997f2308feb"
 }

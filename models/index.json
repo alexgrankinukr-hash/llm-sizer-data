@@ -1,8 +1,8 @@
 {
  "schema": "llm-sizer/models v1",
- "generated_at": "2026-10-20T08:25:37+00:00",
- "count": 88,
- "featured_count": 19,
+ "generated_at": "2026-10-21T08:27:51+00:00",
+ "count": 90,
+ "featured_count": 23,
  "models": [
   {
    "id": "qwen3.8-27b",
@@ -44,7 +44,7 @@
    "quant_count": 73,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "852c3262dbeca257"
+   "detail_sha": "911acf916303d483"
   },
   {
    "id": "qwen3.6-35b-a3b",
@@ -86,7 +86,133 @@
    "quant_count": 72,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "741fb4be6a5d6084"
+   "detail_sha": "0abeb3c1939986b3"
+  },
+  {
+   "id": "gemma-4-12b",
+   "name": "Gemma 4 12B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-12B-it",
+   "released": "2026-05-23",
+   "params_total_b": 11.96,
+   "params_active_b": 11.96,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 3,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": true,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 8192,
+   "sizes": {
+    "min_gb": 4.21,
+    "q4_gb": 7.38,
+    "q8_gb": 12.67,
+    "native_gb": 23.92
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 70,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "a3edc997f2308feb"
+  },
+  {
+   "id": "gemma-4-26b-a4b",
+   "name": "Gemma 4 26B-A4B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-26B-A4B-it",
+   "released": "2026-03-11",
+   "params_total_b": 25.81,
+   "params_active_b": 4.0,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 4,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": true,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 10240,
+   "sizes": {
+    "min_gb": 9.66,
+    "q4_gb": 16.8,
+    "q8_gb": 26.86,
+    "native_gb": 51.61
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 73,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "d6d71a7449001d47"
+  },
+  {
+   "id": "gemma-4-e4b",
+   "name": "Gemma 4 E4B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-E4B-it",
+   "released": "2026-03-02",
+   "params_total_b": 8.0,
+   "params_active_b": 4.5,
+   "context_max": 131072,
+   "featured": true,
+   "tier": "laptop",
+   "rank": 5,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 7168,
+   "sizes": {
+    "min_gb": 3.55,
+    "q4_gb": 5.34,
+    "q8_gb": 8.03,
+    "native_gb": 15.99
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 69,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "e1bfc6da2b9c1d51"
   },
   {
    "id": "gpt-oss-20b",
@@ -128,7 +254,7 @@
    "quant_count": 49,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "edcff71fb0ed81ad"
+   "detail_sha": "5066e784b8c60c5f"
   },
   {
    "id": "muse-glimmer-30b",
@@ -170,7 +296,49 @@
    "quant_count": 57,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "be8c94afcc7fd055"
+   "detail_sha": "30390c430f2ecc18"
+  },
+  {
+   "id": "gemma-4-31b",
+   "name": "Gemma 4 31B",
+   "provider": "google",
+   "hf_repo": "google/gemma-4-31B-it",
+   "released": "2026-03-11",
+   "params_total_b": 31.27,
+   "params_active_b": 31.27,
+   "context_max": 262144,
+   "featured": true,
+   "tier": "studio",
+   "rank": 8,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": true,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": true,
+    "dspark": true
+   },
+   "kv_bytes_per_token_8bit": 40960,
+   "sizes": {
+    "min_gb": 8.53,
+    "q4_gb": 18.69,
+    "q8_gb": 32.64,
+    "native_gb": 62.55
+   },
+   "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 75,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "237715d83ad901dd"
   },
   {
    "id": "qwen3-coder-next",
@@ -212,7 +380,7 @@
    "quant_count": 88,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "b51d22c9a876ef71"
+   "detail_sha": "477df6e51516acd0"
   },
   {
    "id": "gpt-oss-120b",
@@ -254,7 +422,7 @@
    "quant_count": 40,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "6fb0ac898d4962ae"
+   "detail_sha": "bedcdd9486c94d16"
   },
   {
    "id": "mistral-small-4-119b-2603",
@@ -296,7 +464,7 @@
    "quant_count": 60,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "8da335f3c2434184"
+   "detail_sha": "02be39c27a33a9b7"
   },
   {
    "id": "nvidia-nemotron-3-super-120b-a12b",
@@ -338,7 +506,7 @@
    "quant_count": 62,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "cbefb6a7981f45fc"
+   "detail_sha": "1199da5d49b68c36"
   },
   {
    "id": "mistral-medium-3.5-128b",
@@ -380,7 +548,7 @@
    "quant_count": 54,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "3b643a66193b3856"
+   "detail_sha": "039ff38669fa6af0"
   },
   {
    "id": "qwen3.8-flash-next",
@@ -422,7 +590,7 @@
    "quant_count": 49,
    "four_bit_native": false,
    "has_special_build": true,
-   "detail_sha": "ec50909b75fdde17"
+   "detail_sha": "c155c3f1bd0775f0"
   },
   {
    "id": "deepseek-v4-flash-0731",
@@ -463,7 +631,7 @@
    "quant_count": 19,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "dd57406bf9290568"
+   "detail_sha": "4f6481e6d471b4c3"
   },
   {
    "id": "glm-5.3-flash",
@@ -505,7 +673,7 @@
    "quant_count": 19,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "da139c97e71a0b3f"
+   "detail_sha": "07e79c83b3335872"
   },
   {
    "id": "qwen3.5-397b-a17b",
@@ -547,7 +715,7 @@
    "quant_count": 71,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "78924540f23f4c63"
+   "detail_sha": "cafa1cd002e0e3a0"
   },
   {
    "id": "minimax-m3",
@@ -589,7 +757,7 @@
    "quant_count": 50,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "733508b69dc8b366"
+   "detail_sha": "bd497921232a8134"
   },
   {
    "id": "nvidia-nemotron-3-ultra-550b-a55b",
@@ -630,7 +798,7 @@
    "quant_count": 25,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "1ee3893336b0a8aa"
+   "detail_sha": "3a060f97d981614a"
   },
   {
    "id": "glm-5.2",
@@ -672,7 +840,7 @@
    "quant_count": 28,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "a9cb3b22910470e6"
+   "detail_sha": "20b53a08cdd6bcff"
   },
   {
    "id": "kimi-k2.6",
@@ -713,7 +881,7 @@
    "quant_count": 21,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "7ba033d1e48b90fe"
+   "detail_sha": "444ce9f774a01aec"
   },
   {
    "id": "deepseek-v4-pro-0813",
@@ -754,7 +922,7 @@
    "quant_count": 3,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "8c36a512d0d6d0d6"
+   "detail_sha": "1973a188f9cb7f99"
   },
   {
    "id": "kimi-k3",
@@ -795,7 +963,7 @@
    "quant_count": 8,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "1d2e077596231d79"
+   "detail_sha": "cc9c8ffd0aed43f2"
   },
   {
    "id": "arex-2",
@@ -837,7 +1005,7 @@
    "quant_count": 30,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "8369f3ca7fbe35d9"
+   "detail_sha": "b457a733ef1e8509"
   },
   {
    "id": "beam-1.0-501b-a23b",
@@ -1125,7 +1293,7 @@
    "quant_count": 10,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "2779aa2864430411"
+   "detail_sha": "c43de42bae67c41b"
   },
   {
    "id": "deepseek-v4-flash",
@@ -1167,7 +1335,7 @@
    "quant_count": 30,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0e43d090c0c68dbd"
+   "detail_sha": "97c0e4ccc5a3341b"
   },
   {
    "id": "deepseek-v4-flash-vision-exp",
@@ -1249,7 +1417,7 @@
    "quant_count": 4,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0d0741c46dfe8d94"
+   "detail_sha": "615e314bf47aaee6"
   },
   {
    "id": "devstral-small-2-24b-2512",
@@ -1291,7 +1459,7 @@
    "quant_count": 65,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "ea58d0fb55b9cc58"
+   "detail_sha": "0f790d098b41e397"
   },
   {
    "id": "flux-3-image-klein-pup",
@@ -1333,7 +1501,7 @@
    "quant_count": 9,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "3ef7225d07fc431d"
+   "detail_sha": "736bb472dfea76b2"
   },
   {
    "id": "frognano-4b-2609",
@@ -1377,132 +1545,6 @@
    "detail_sha": "9a0c931946dd7131"
   },
   {
-   "id": "gemma-4-12b",
-   "name": "gemma-4-12B",
-   "provider": "google",
-   "hf_repo": "google/gemma-4-12B",
-   "released": "2026-05-23",
-   "params_total_b": 11.96,
-   "params_active_b": 11.96,
-   "context_max": 262144,
-   "featured": false,
-   "tier": null,
-   "rank": null,
-   "gated": "false",
-   "status": "active",
-   "license": "apache-2.0",
-   "commercial": true,
-   "arch": "gqa",
-   "hybrid": true,
-   "moe": false,
-   "assumed": true,
-   "accel": {
-    "mtp": false,
-    "dflash": true,
-    "dspark": false
-   },
-   "kv_bytes_per_token_8bit": 8192,
-   "sizes": {
-    "min_gb": 4.21,
-    "q4_gb": 7.38,
-    "q8_gb": 12.67,
-    "native_gb": 23.92
-   },
-   "formats": [
-    "gguf",
-    "mlx",
-    "safetensors"
-   ],
-   "quant_count": 70,
-   "four_bit_native": false,
-   "has_special_build": false,
-   "detail_sha": "3be19c11bc9a434b"
-  },
-  {
-   "id": "gemma-4-26b-a4b",
-   "name": "gemma-4-26B-A4B",
-   "provider": "google",
-   "hf_repo": "google/gemma-4-26B-A4B",
-   "released": "2026-03-11",
-   "params_total_b": 26.54,
-   "params_active_b": 4.0,
-   "context_max": 262144,
-   "featured": false,
-   "tier": null,
-   "rank": null,
-   "gated": "false",
-   "status": "active",
-   "license": "apache-2.0",
-   "commercial": true,
-   "arch": "gqa",
-   "hybrid": true,
-   "moe": true,
-   "assumed": false,
-   "accel": {
-    "mtp": false,
-    "dflash": true,
-    "dspark": false
-   },
-   "kv_bytes_per_token_8bit": 10240,
-   "sizes": {
-    "min_gb": 9.66,
-    "q4_gb": 16.8,
-    "q8_gb": 26.86,
-    "native_gb": 51.61
-   },
-   "formats": [
-    "gguf",
-    "mlx",
-    "safetensors"
-   ],
-   "quant_count": 73,
-   "four_bit_native": false,
-   "has_special_build": false,
-   "detail_sha": "1795643a28a44d8f"
-  },
-  {
-   "id": "gemma-4-31b",
-   "name": "gemma-4-31B",
-   "provider": "google",
-   "hf_repo": "google/gemma-4-31B",
-   "released": "2026-03-11",
-   "params_total_b": 32.68,
-   "params_active_b": 32.68,
-   "context_max": 262144,
-   "featured": false,
-   "tier": null,
-   "rank": null,
-   "gated": "false",
-   "status": "active",
-   "license": "apache-2.0",
-   "commercial": true,
-   "arch": "gqa",
-   "hybrid": true,
-   "moe": false,
-   "assumed": false,
-   "accel": {
-    "mtp": false,
-    "dflash": true,
-    "dspark": true
-   },
-   "kv_bytes_per_token_8bit": 40960,
-   "sizes": {
-    "min_gb": 8.53,
-    "q4_gb": 18.69,
-    "q8_gb": 32.64,
-    "native_gb": 62.55
-   },
-   "formats": [
-    "gguf",
-    "mlx",
-    "safetensors"
-   ],
-   "quant_count": 75,
-   "four_bit_native": false,
-   "has_special_build": false,
-   "detail_sha": "fb85600f9f1a277b"
-  },
-  {
    "id": "gemma-4-e2b",
    "name": "gemma-4-E2B-it",
    "provider": "google",
@@ -1542,48 +1584,6 @@
    "four_bit_native": false,
    "has_special_build": false,
    "detail_sha": "de8a74e1454641db"
-  },
-  {
-   "id": "gemma-4-e4b",
-   "name": "gemma-4-E4B",
-   "provider": "google",
-   "hf_repo": "google/gemma-4-E4B",
-   "released": "2026-03-02",
-   "params_total_b": 8.0,
-   "params_active_b": 4.5,
-   "context_max": 131072,
-   "featured": false,
-   "tier": null,
-   "rank": null,
-   "gated": "false",
-   "status": "active",
-   "license": "apache-2.0",
-   "commercial": true,
-   "arch": "gqa",
-   "hybrid": true,
-   "moe": false,
-   "assumed": false,
-   "accel": {
-    "mtp": false,
-    "dflash": false,
-    "dspark": true
-   },
-   "kv_bytes_per_token_8bit": 7168,
-   "sizes": {
-    "min_gb": 3.55,
-    "q4_gb": 5.34,
-    "q8_gb": 8.03,
-    "native_gb": 15.99
-   },
-   "formats": [
-    "gguf",
-    "mlx",
-    "safetensors"
-   ],
-   "quant_count": 69,
-   "four_bit_native": false,
-   "has_special_build": false,
-   "detail_sha": "17007c8dc0a0071d"
   },
   {
    "id": "glm-5.3",
@@ -1707,7 +1707,7 @@
    "quant_count": 26,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "5e7efc9ad7012bdb"
+   "detail_sha": "840a6f226eabbd87"
   },
   {
    "id": "hy4-preview",
@@ -1749,6 +1749,88 @@
    "four_bit_native": false,
    "has_special_build": false,
    "detail_sha": "37b84e22b9a97ced"
+  },
+  {
+   "id": "hybridagent-14b-agentic",
+   "name": "HybridAgent-14B-Agentic",
+   "provider": "togethercomputer",
+   "hf_repo": "togethercomputer/HybridAgent-14B-Agentic",
+   "released": "2026-10-09",
+   "params_total_b": 14.77,
+   "params_active_b": 14.77,
+   "context_max": 32768,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "false",
+   "status": "active",
+   "license": "mit",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": false,
+   "assumed": false,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 81920,
+   "sizes": {
+    "min_gb": 5.1,
+    "q4_gb": 9.32,
+    "q8_gb": 15.7,
+    "native_gb": 29.53
+   },
+   "formats": [
+    "gguf",
+    "safetensors"
+   ],
+   "quant_count": 24,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "b1606edef70111cd"
+  },
+  {
+   "id": "hy-memory-30b-a3b",
+   "name": "Hy-Memory-30B-A3B",
+   "provider": "tencent",
+   "hf_repo": "tencent/Hy-Memory-30B-A3B",
+   "released": "2026-10-15",
+   "params_total_b": 30.06,
+   "params_active_b": 3.0,
+   "context_max": 262144,
+   "featured": false,
+   "tier": null,
+   "rank": null,
+   "gated": "false",
+   "status": "active",
+   "license": "apache-2.0",
+   "commercial": true,
+   "arch": "gqa",
+   "hybrid": false,
+   "moe": true,
+   "assumed": true,
+   "accel": {
+    "mtp": false,
+    "dflash": false,
+    "dspark": false
+   },
+   "kv_bytes_per_token_8bit": 49152,
+   "sizes": {
+    "min_gb": 16.93,
+    "q4_gb": 16.93,
+    "q8_gb": 31.96,
+    "native_gb": 60.13
+   },
+   "formats": [
+    "mlx",
+    "safetensors"
+   ],
+   "quant_count": 3,
+   "four_bit_native": false,
+   "has_special_build": false,
+   "detail_sha": "c092cc09476f9cb8"
   },
   {
    "id": "ice-ai",
@@ -2491,7 +2573,7 @@
    "quant_count": 31,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "762a39465584e907"
+   "detail_sha": "5d08e33e111467db"
   },
   {
    "id": "lythri-4b-a2b",
@@ -2532,7 +2614,7 @@
    "quant_count": 23,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "ba349859478603f9"
+   "detail_sha": "1eafacb21aab5e18"
   },
   {
    "id": "mellum2.1-12b-a2.5b-thinking",
@@ -2945,7 +3027,7 @@
    "quant_count": 34,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "03c491523515296d"
+   "detail_sha": "351e3b595031431e"
   },
   {
    "id": "molmo2-8b",
@@ -3274,7 +3356,7 @@
    "quant_count": 54,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "45a3ac435e6de8d7"
+   "detail_sha": "248c44b28fe5ce98"
   },
   {
    "id": "onejev-0.8b",
@@ -3646,5 +3728,5 @@
    "detail_sha": "0047d64307f1bbb5"
   }
  ],
- "sha": "789a8439b4581fa8"
+ "sha": "31831b5b3aea9a69"
 }
