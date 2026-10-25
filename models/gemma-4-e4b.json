@@ -945,19 +945,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "google/gemma-4-E4B-it",
-   "url": "https://huggingface.co/google/gemma-4-E4B-it",
-   "format": "safetensors",
-   "label": "BF16",
-   "bits": 16.0,
-   "size_gb": 15.99,
-   "size_bytes": 15992595884,
-   "quantizer": "official",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "google/gemma-4-E4B",
    "url": "https://huggingface.co/google/gemma-4-E4B",
    "format": "safetensors",
@@ -969,6 +956,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-20"
+  },
+  {
+   "repo": "google/gemma-4-E4B-it",
+   "url": "https://huggingface.co/google/gemma-4-E4B-it",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 15.99,
+   "size_bytes": 15992595884,
+   "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
   }
  ],
  "reference": {
@@ -996,9 +996,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:10.073710+00:00",
-  "last_checked": "2026-10-24T08:01:42.222261+00:00",
+  "last_checked": "2026-10-25T08:18:35.839763+00:00",
   "last_changed": "2026-09-02T20:27:10.073710+00:00"
  },
- "generated_at": "2026-10-24T08:02:28+00:00",
- "sha": "1ffe2e9d0c8c6dc0"
+ "generated_at": "2026-10-25T08:19:21+00:00",
+ "sha": "259d733b6a956f4d"
 }
