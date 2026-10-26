@@ -180,19 +180,6 @@
    "first_seen": "2026-10-14"
   },
   {
-   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "IQ2_M",
-   "bits": 2.93,
-   "size_gb": 8.78,
-   "size_bytes": 8783561120,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-15"
-  },
-  {
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -204,6 +191,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-24"
+  },
+  {
+   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "IQ2_M",
+   "bits": 2.93,
+   "size_gb": 8.78,
+   "size_bytes": 8783561120,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-15"
   },
   {
    "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
@@ -245,19 +245,6 @@
    "first_seen": "2026-10-24"
   },
   {
-   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "IQ3_XXS",
-   "bits": 3.45,
-   "size_gb": 10.33,
-   "size_bytes": 10326540704,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-15"
-  },
-  {
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -271,17 +258,17 @@
    "first_seen": "2026-10-24"
   },
   {
-   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
-   "label": "IQ3_XS",
-   "bits": 3.63,
-   "size_gb": 10.88,
-   "size_bytes": 10881106336,
+   "label": "IQ3_XXS",
+   "bits": 3.45,
+   "size_gb": 10.33,
+   "size_bytes": 10326540704,
    "quantizer": "bartowski",
    "file_count": 1,
    "qat": false,
-   "first_seen": "2026-10-24"
+   "first_seen": "2026-10-15"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -295,6 +282,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-15"
+  },
+  {
+   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XS",
+   "bits": 3.63,
+   "size_gb": 10.88,
+   "size_bytes": 10881106336,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-24"
   },
   {
    "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
@@ -336,6 +336,19 @@
    "first_seen": "2026-10-15"
   },
   {
+   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_M",
+   "bits": 3.86,
+   "size_gb": 11.55,
+   "size_bytes": 11552211360,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-15"
+  },
+  {
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -347,32 +360,6 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-24"
-  },
-  {
-   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "Q3_K_M",
-   "bits": 3.86,
-   "size_gb": 11.55,
-   "size_bytes": 11552211360,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-15"
-  },
-  {
-   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "Q3_K_L",
-   "bits": 4.09,
-   "size_gb": 12.24,
-   "size_bytes": 12244607392,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-15"
   },
   {
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
@@ -391,10 +378,10 @@
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
-   "label": "IQ3_M",
-   "bits": 4.2,
-   "size_gb": 12.59,
-   "size_bytes": 12591980960,
+   "label": "Q3_K_L",
+   "bits": 4.09,
+   "size_gb": 12.24,
+   "size_bytes": 12244607392,
    "quantizer": "bartowski",
    "file_count": 1,
    "qat": false,
@@ -414,17 +401,17 @@
    "first_seen": "2026-10-24"
   },
   {
-   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
-   "label": "IQ4_XS",
-   "bits": 4.46,
-   "size_gb": 13.38,
-   "size_bytes": 13378191776,
+   "label": "IQ3_M",
+   "bits": 4.2,
+   "size_gb": 12.59,
+   "size_bytes": 12591980960,
    "quantizer": "bartowski",
    "file_count": 1,
    "qat": false,
-   "first_seen": "2026-10-24"
+   "first_seen": "2026-10-15"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -443,10 +430,10 @@
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
-   "label": "Q4_0",
-   "bits": 4.55,
-   "size_gb": 13.65,
-   "size_bytes": 13647430048,
+   "label": "IQ4_XS",
+   "bits": 4.46,
+   "size_gb": 13.38,
+   "size_bytes": 13378191776,
    "quantizer": "bartowski",
    "file_count": 1,
    "qat": false,
@@ -464,6 +451,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-15"
+  },
+  {
+   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "Q4_0",
+   "bits": 4.55,
+   "size_gb": 13.65,
+   "size_bytes": 13647430048,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-24"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -518,19 +518,6 @@
    "first_seen": "2026-10-14"
   },
   {
-   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "Q4_1",
-   "bits": 5.03,
-   "size_gb": 15.07,
-   "size_bytes": 15072969120,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-15"
-  },
-  {
    "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -542,6 +529,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-24"
+  },
+  {
+   "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "Q4_1",
+   "bits": 5.03,
+   "size_gb": 15.07,
+   "size_bytes": 15072969120,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-15"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -596,19 +596,6 @@
    "first_seen": "2026-10-15"
   },
   {
-   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_L",
-   "bits": 5.46,
-   "size_gb": 16.37,
-   "size_bytes": 16369549728,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-24"
-  },
-  {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -620,6 +607,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-15"
+  },
+  {
+   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_L",
+   "bits": 5.46,
+   "size_gb": 16.37,
+   "size_bytes": 16369549728,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-24"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -856,19 +856,6 @@
    "first_seen": "2026-10-14"
   },
   {
-   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
-   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
-   "format": "gguf",
-   "label": "BF16",
-   "bits": 16.01,
-   "size_gb": 47.96,
-   "size_bytes": 47962095712,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-10-24"
-  },
-  {
    "repo": "ggml-org/LFM2.5-24B-A2B-GGUF",
    "url": "https://huggingface.co/ggml-org/LFM2.5-24B-A2B-GGUF",
    "format": "gguf",
@@ -880,6 +867,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-16"
+  },
+  {
+   "repo": "bartowski/LFM2.5-24B-A2B-GGUF",
+   "url": "https://huggingface.co/bartowski/LFM2.5-24B-A2B-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 16.01,
+   "size_gb": 47.96,
+   "size_bytes": 47962095712,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-10-24"
   },
   {
    "repo": "bartowski/LiquidAI_LFM2.5-24B-A2B-GGUF",
@@ -920,6 +920,6 @@
   "last_checked": "2026-10-25T08:18:55.452124+00:00",
   "last_changed": "2026-10-14T08:35:56.901923+00:00"
  },
- "generated_at": "2026-10-25T08:19:21+00:00",
- "sha": "081b133c6d8db982"
+ "generated_at": "2026-10-26T08:46:37+00:00",
+ "sha": "34a154893b659357"
 }
