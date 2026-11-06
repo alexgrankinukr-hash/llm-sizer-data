@@ -1,0 +1,167 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "qwopus3.8-27b-coder-flash",
+ "name": "Qwopus3.8-27B-Coder-Flash",
+ "provider": "Jackrong",
+ "hf_repo": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+ "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash",
+ "variant": "instruct",
+ "released": "2026-10-31",
+ "params_total": 27781427952,
+ "params_active": 27781427952,
+ "params_active_source": "dense",
+ "context_max": 262144,
+ "native_bits": 16.0,
+ "license": {
+  "name": "apache-2.0",
+  "url": null,
+  "commercial": true,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "qwen3_5",
+  "image-text-to-text",
+  "gguf",
+  "llama.cpp",
+  "vision",
+  "multimodal",
+  "conversational",
+  "qwopus3_8",
+  "vllm",
+  "fine-tuned",
+  "coding",
+  "code-generation",
+  "reasoning",
+  "tool-use",
+  "agent",
+  "efficient-inference",
+  "en",
+  "zh",
+  "endpoints_compatible"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "qwen3_5_text",
+  "attention": "gqa",
+  "layers": 64,
+  "kv_layers": 16,
+  "sliding_layers": 0,
+  "linear_layers": 48,
+  "kv_heads": 4,
+  "head_dim": 256,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 32768,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 75497472,
+  "hidden_size": 5120,
+  "experts_total": null,
+  "experts_active": null,
+  "experts_shared": null,
+  "moe_intermediate": null,
+  "moe_layers": null,
+  "accel_mtp": true,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": false,
+  "source": "config",
+  "config_sha": "a999e60d3462b385",
+  "notes": [],
+  "kv_cache_gb_at_128k_8bit": 4.37
+ },
+ "quants": [
+  {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
+   "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.62,
+   "size_gb": 16.05,
+   "size_bytes": 16054541599,
+   "quantizer": "mlx-community",
+   "file_count": 3,
+   "qat": false,
+   "first_seen": "2026-11-06"
+  },
+  {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-6bit",
+   "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-6bit",
+   "format": "mlx",
+   "label": "MLX-6bit",
+   "bits": 6.56,
+   "size_gb": 22.78,
+   "size_bytes": 22777879765,
+   "quantizer": "mlx-community",
+   "file_count": 5,
+   "qat": false,
+   "first_seen": "2026-11-06"
+  },
+  {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
+   "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 8.5,
+   "size_gb": 29.5,
+   "size_bytes": 29501218261,
+   "quantizer": "mlx-community",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-06"
+  },
+  {
+   "repo": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+   "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 55.56,
+   "size_bytes": 55563006776,
+   "quantizer": "official",
+   "file_count": 18,
+   "qat": false,
+   "first_seen": "2026-11-06"
+  }
+ ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-06T10:41:13.136410+00:00",
+  "last_checked": "2026-11-06T10:41:13.136410+00:00",
+  "last_changed": "2026-11-06T10:41:13.136410+00:00"
+ },
+ "generated_at": "2026-11-06T10:41:21+00:00",
+ "sha": "3f0ccd80b4c808ef"
+}
