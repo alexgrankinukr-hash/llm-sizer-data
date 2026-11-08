@@ -271,7 +271,7 @@
    "repo": "bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF",
    "url": "https://huggingface.co/bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.15,
    "size_gb": 22.32,
    "size_bytes": 22318513056,
@@ -284,7 +284,7 @@
    "repo": "bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF",
    "url": "https://huggingface.co/bartowski/Diffuspace_Clover-35B-A3B-Preview-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.15,
    "size_gb": 22.32,
    "size_bytes": 22318513056,
@@ -436,6 +436,6 @@
   "last_checked": "2026-11-04T10:45:15.602575+00:00",
   "last_changed": "2026-11-04T10:45:15.602575+00:00"
  },
- "generated_at": "2026-11-07T09:53:44+00:00",
- "sha": "93fa6cc871e324d0"
+ "generated_at": "2026-11-08T10:07:54+00:00",
+ "sha": "20bd03a7d9f1f386"
 }

@@ -421,19 +421,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
-   "url": "https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
-   "format": "mlx",
-   "label": "MLX-4bit",
-   "bits": 4.54,
-   "size_gb": 20.4,
-   "size_bytes": 20402204271,
-   "quantizer": "lmstudio-community",
-   "file_count": 4,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
    "url": "https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit",
    "format": "mlx",
@@ -447,13 +434,26 @@
    "first_seen": "2026-09-02"
   },
   {
+   "repo": "lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
+   "url": "https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.54,
+   "size_gb": 20.4,
+   "size_bytes": 20402204271,
+   "quantizer": "lmstudio-community",
+   "file_count": 4,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
    "repo": "ggml-org/Qwen3.6-35B-A3B-GGUF",
    "url": "https://huggingface.co/ggml-org/Qwen3.6-35B-A3B-GGUF",
    "format": "gguf",
    "label": "Q4_K_M",
-   "bits": 4.54,
-   "size_gb": 20.42,
-   "size_bytes": 20419565568,
+   "bits": 4.57,
+   "size_gb": 20.54,
+   "size_bytes": 20542732576,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -830,7 +830,7 @@
    "label": "Q8_0",
    "bits": 8.21,
    "size_gb": 36.9,
-   "size_bytes": 36903139328,
+   "size_bytes": 36903139616,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -947,7 +947,7 @@
    "label": "BF16",
    "bits": 15.44,
    "size_gb": 69.38,
-   "size_bytes": 69376637248,
+   "size_bytes": 69376637536,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -1031,9 +1031,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:23:54.503541+00:00",
-  "last_checked": "2026-11-07T09:53:14.777136+00:00",
+  "last_checked": "2026-11-08T10:07:07.150863+00:00",
   "last_changed": "2026-09-02T20:23:54.503541+00:00"
  },
- "generated_at": "2026-11-07T09:53:44+00:00",
- "sha": "8ea1aaa6556d3375"
+ "generated_at": "2026-11-08T10:07:54+00:00",
+ "sha": "8e52ed197a9a8616"
 }

@@ -23,8 +23,6 @@
   "safetensors",
   "qwen3_5",
   "image-text-to-text",
-  "gguf",
-  "llama.cpp",
   "vision",
   "multimodal",
   "conversational",
@@ -82,6 +80,162 @@
  },
  "quants": [
   {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ2_XXS",
+   "bits": 2.56,
+   "size_gb": 8.88,
+   "size_bytes": 8881270304,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ2_XS",
+   "bits": 2.62,
+   "size_gb": 9.09,
+   "size_bytes": 9088527904,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ2_S",
+   "bits": 2.79,
+   "size_gb": 9.68,
+   "size_bytes": 9684045344,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ2_M",
+   "bits": 3.03,
+   "size_gb": 10.52,
+   "size_bytes": 10522250784,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q2_K",
+   "bits": 3.12,
+   "size_gb": 10.82,
+   "size_bytes": 10821545504,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XXS",
+   "bits": 3.55,
+   "size_gb": 12.32,
+   "size_bytes": 12320169504,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_S",
+   "bits": 3.67,
+   "size_gb": 12.74,
+   "size_bytes": 12739886624,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XS",
+   "bits": 3.69,
+   "size_gb": 12.8,
+   "size_bytes": 12799606304,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_M",
+   "bits": 3.86,
+   "size_gb": 13.4,
+   "size_bytes": 13404053024,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_L",
+   "bits": 4.07,
+   "size_gb": 14.12,
+   "size_bytes": 14122819104,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ3_M",
+   "bits": 4.28,
+   "size_gb": 14.86,
+   "size_bytes": 14860631584,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ4_XS",
+   "bits": 4.46,
+   "size_gb": 15.48,
+   "size_bytes": 15475953184,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
    "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
    "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
    "format": "mlx",
@@ -93,6 +247,110 @@
    "file_count": 3,
    "qat": false,
    "first_seen": "2026-11-06"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_0",
+   "bits": 4.71,
+   "size_gb": 16.35,
+   "size_bytes": 16348769824,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_S",
+   "bits": 4.71,
+   "size_gb": 16.36,
+   "size_bytes": 16363515424,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 5.02,
+   "size_gb": 17.44,
+   "size_bytes": 17442401824,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "IQ4_NL",
+   "bits": 5.02,
+   "size_gb": 17.44,
+   "size_bytes": 17442401824,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_1",
+   "bits": 5.13,
+   "size_gb": 17.83,
+   "size_bytes": 17825459744,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_L",
+   "bits": 5.42,
+   "size_gb": 18.82,
+   "size_bytes": 18820705824,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q5_K_S",
+   "bits": 5.63,
+   "size_gb": 19.57,
+   "size_bytes": 19566915104,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q5_K_M",
+   "bits": 6.03,
+   "size_gb": 20.92,
+   "size_bytes": 20923878944,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
   },
   {
    "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-6bit",
@@ -108,6 +366,58 @@
    "first_seen": "2026-11-06"
   },
   {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q6_K_S",
+   "bits": 6.58,
+   "size_gb": 22.86,
+   "size_bytes": 22857457184,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q6_K",
+   "bits": 6.87,
+   "size_gb": 23.86,
+   "size_bytes": 23860567584,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q6_K_L",
+   "bits": 7.19,
+   "size_gb": 24.96,
+   "size_bytes": 24958909984,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.38,
+   "size_gb": 29.12,
+   "size_bytes": 29116390944,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-08"
+  },
+  {
    "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
    "url": "https://huggingface.co/mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
    "format": "mlx",
@@ -119,6 +429,19 @@
    "file_count": 6,
    "qat": false,
    "first_seen": "2026-11-06"
+  },
+  {
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 15.74,
+   "size_gb": 54.66,
+   "size_bytes": 54657736064,
+   "quantizer": "bartowski",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-11-08"
   },
   {
    "repo": "Jackrong/Qwopus3.8-27B-Coder-Flash",
@@ -136,12 +459,12 @@
  ],
  "reference": {
   "q4": {
-   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
-   "label": "MLX-4bit"
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "label": "Q4_K_M"
   },
   "q8": {
-   "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-8bit",
-   "label": "MLX-8bit"
+   "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+   "label": "Q8_0"
   },
   "mlx4": {
    "repo": "mlx-community/Qwopus3.8-27B-Coder-Flash-4bit",
@@ -159,9 +482,9 @@
  },
  "timestamps": {
   "first_seen": "2026-11-06T10:41:13.136410+00:00",
-  "last_checked": "2026-11-06T10:41:13.136410+00:00",
+  "last_checked": "2026-11-08T10:07:31.861975+00:00",
   "last_changed": "2026-11-06T10:41:13.136410+00:00"
  },
- "generated_at": "2026-11-07T09:53:44+00:00",
- "sha": "3f0ccd80b4c808ef"
+ "generated_at": "2026-11-08T10:07:54+00:00",
+ "sha": "34c2e67a285d0d2f"
 }
