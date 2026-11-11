@@ -102,9 +102,9 @@
    "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
    "format": "gguf",
    "label": "UD-IQ2_XXS",
-   "bits": 2.09,
-   "size_gb": 7.27,
-   "size_bytes": 7266070528,
+   "bits": 2.08,
+   "size_gb": 7.21,
+   "size_bytes": 7206043648,
    "quantizer": "unsloth",
    "file_count": 1,
    "qat": false,
@@ -504,7 +504,7 @@
    "repo": "bartowski/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442399968,
@@ -517,7 +517,7 @@
    "repo": "bartowski/Qwen3.8-27B-GGUF",
    "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442399968,
@@ -1046,9 +1046,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:18:39.014131+00:00",
-  "last_checked": "2026-11-10T10:57:28.457078+00:00",
+  "last_checked": "2026-11-11T10:40:05.500115+00:00",
   "last_changed": "2026-09-02T20:18:39.014131+00:00"
  },
- "generated_at": "2026-11-10T10:58:10+00:00",
- "sha": "32284aa49c9f1f05"
+ "generated_at": "2026-11-11T10:40:34+00:00",
+ "sha": "65ac227715ca50f7"
 }

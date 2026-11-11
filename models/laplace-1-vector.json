@@ -223,7 +223,7 @@
    "repo": "bartowski/JuneoAI_Laplace-1-Vector-GGUF",
    "url": "https://huggingface.co/bartowski/JuneoAI_Laplace-1-Vector-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.1,
    "size_gb": 2.62,
    "size_bytes": 2621105664,
@@ -236,7 +236,7 @@
    "repo": "bartowski/JuneoAI_Laplace-1-Vector-GGUF",
    "url": "https://huggingface.co/bartowski/JuneoAI_Laplace-1-Vector-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.1,
    "size_gb": 2.62,
    "size_bytes": 2621105664,
@@ -401,6 +401,6 @@
   "last_checked": "2026-11-09T11:16:55.088065+00:00",
   "last_changed": "2026-11-09T11:16:55.088065+00:00"
  },
- "generated_at": "2026-11-10T10:58:10+00:00",
- "sha": "3f977f3509448f37"
+ "generated_at": "2026-11-11T10:40:34+00:00",
+ "sha": "8866f975b08f94ec"
 }
