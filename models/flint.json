@@ -24,6 +24,7 @@
   "flint",
   "text-generation",
   "conversational",
+  "eval-results",
   "endpoints_compatible"
  ],
  "featured": false,
@@ -637,9 +638,9 @@
  },
  "timestamps": {
   "first_seen": "2026-10-24T08:02:05.423683+00:00",
-  "last_checked": "2026-10-24T08:02:05.423683+00:00",
+  "last_checked": "2026-11-12T10:52:44.558747+00:00",
   "last_changed": "2026-10-24T08:02:05.423683+00:00"
  },
- "generated_at": "2026-11-11T10:40:34+00:00",
- "sha": "23b37f282cffdd28"
+ "generated_at": "2026-11-12T10:53:05+00:00",
+ "sha": "c9220f12bd8f90a5"
 }

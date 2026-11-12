@@ -24,6 +24,7 @@
   "deepseek_v41",
   "text-generation",
   "image-text-to-text",
+  "conversational",
   "eval-results",
   "endpoints_compatible",
   "8-bit",
@@ -99,6 +100,19 @@
    "first_seen": "2026-10-20"
   },
   {
+   "repo": "ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
+   "url": "https://huggingface.co/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
+   "format": "gguf",
+   "label": "Q2_K_S",
+   "bits": 3.12,
+   "size_gb": 298.01,
+   "size_bytes": 298014272320,
+   "quantizer": "ggml-org",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-12"
+  },
+  {
    "repo": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
    "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
    "format": "gguf",
@@ -123,6 +137,19 @@
    "file_count": 7,
    "qat": false,
    "first_seen": "2026-10-20"
+  },
+  {
+   "repo": "ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
+   "url": "https://huggingface.co/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
+   "format": "gguf",
+   "label": "Q2_K",
+   "bits": 3.51,
+   "size_gb": 334.82,
+   "size_bytes": 334819289920,
+   "quantizer": "ggml-org",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-12"
   },
   {
    "repo": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
@@ -225,9 +252,9 @@
  },
  "timestamps": {
   "first_seen": "2026-10-19T08:44:08.718782+00:00",
-  "last_checked": "2026-11-08T10:07:46.856417+00:00",
+  "last_checked": "2026-11-12T10:52:51.201228+00:00",
   "last_changed": "2026-10-19T08:44:08.718782+00:00"
  },
- "generated_at": "2026-11-11T10:40:34+00:00",
- "sha": "91a553a71e166f98"
+ "generated_at": "2026-11-12T10:53:05+00:00",
+ "sha": "284cd36d1b4c47eb"
 }

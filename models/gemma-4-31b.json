@@ -830,7 +830,7 @@
    "url": "https://huggingface.co/ggml-org/gemma-4-31B-GGUF",
    "format": "gguf",
    "label": "Q8_0",
-   "bits": 7.99,
+   "bits": 8.35,
    "size_gb": 32.64,
    "size_bytes": 32635657984,
    "quantizer": "ggml-org",
@@ -960,7 +960,7 @@
    "url": "https://huggingface.co/ggml-org/gemma-4-31B-GGUF",
    "format": "gguf",
    "label": "BF16",
-   "bits": 15.03,
+   "bits": 15.71,
    "size_gb": 61.41,
    "size_bytes": 61413170944,
    "quantizer": "ggml-org",
@@ -1072,9 +1072,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:26:35.130576+00:00",
-  "last_checked": "2026-11-11T10:40:14.858805+00:00",
+  "last_checked": "2026-11-12T10:52:15.576719+00:00",
   "last_changed": "2026-10-21T08:27:24.074180+00:00"
  },
- "generated_at": "2026-11-11T10:40:34+00:00",
- "sha": "390ef8a4e16c1e32"
+ "generated_at": "2026-11-12T10:53:05+00:00",
+ "sha": "5f1daab479235b4c"
 }

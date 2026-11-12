@@ -278,7 +278,7 @@
    "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
    "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442401824,
@@ -291,7 +291,7 @@
    "repo": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
    "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.02,
    "size_gb": 17.44,
    "size_bytes": 17442401824,
@@ -485,6 +485,6 @@
   "last_checked": "2026-11-08T10:07:31.861975+00:00",
   "last_changed": "2026-11-06T10:41:13.136410+00:00"
  },
- "generated_at": "2026-11-11T10:40:34+00:00",
- "sha": "dc9375700f991960"
+ "generated_at": "2026-11-12T10:53:05+00:00",
+ "sha": "34c2e67a285d0d2f"
 }

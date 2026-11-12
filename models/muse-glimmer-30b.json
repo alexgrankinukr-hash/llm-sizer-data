@@ -62,7 +62,7 @@
   "moe_intermediate": null,
   "moe_layers": null,
   "accel_mtp": false,
-  "accel_dflash_repo": "z-lab/Muse-Glimmer-30B-DFlash2",
+  "accel_dflash_repo": "z-lab/Muse-Glimmer-30B-DFlash2-GGUF",
   "accel_dspark_repo": "DaoCloud/Muse-Glimmer-30B-DSpark",
   "conventional_assumed": true,
   "source": "config",
@@ -833,14 +833,14 @@
  },
  "special_builds": [],
  "drafts": {
-  "dflash": "z-lab/Muse-Glimmer-30B-DFlash2",
+  "dflash": "z-lab/Muse-Glimmer-30B-DFlash2-GGUF",
   "dspark": "DaoCloud/Muse-Glimmer-30B-DSpark"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:49.678978+00:00",
-  "last_checked": "2026-11-11T10:40:16.697240+00:00",
+  "last_checked": "2026-11-12T10:52:20.101051+00:00",
   "last_changed": "2026-09-02T20:27:49.678978+00:00"
  },
- "generated_at": "2026-11-11T10:40:34+00:00",
- "sha": "ebd76eb14b8a0b3f"
+ "generated_at": "2026-11-12T10:53:05+00:00",
+ "sha": "0825b103149235b7"
 }
