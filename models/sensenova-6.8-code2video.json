@@ -259,7 +259,7 @@
    "repo": "bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
    "url": "https://huggingface.co/bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.03,
    "size_gb": 17.2,
    "size_bytes": 17203416288,
@@ -272,7 +272,7 @@
    "repo": "bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
    "url": "https://huggingface.co/bartowski/sensenova_SenseNova-6.8-Code2Video-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.03,
    "size_gb": 17.2,
    "size_bytes": 17203416288,
@@ -437,6 +437,6 @@
   "last_checked": "2026-11-05T10:41:23.438927+00:00",
   "last_changed": "2026-11-05T10:41:23.438927+00:00"
  },
- "generated_at": "2026-11-13T10:48:37+00:00",
- "sha": "d8031623333bb40c"
+ "generated_at": "2026-11-14T10:03:59+00:00",
+ "sha": "11d1ad7be9217392"
 }

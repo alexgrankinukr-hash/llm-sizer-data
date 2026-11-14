@@ -269,7 +269,7 @@
    "repo": "bartowski/Apexintelligence-AI_Apex-35B-V1.0-GGUF",
    "url": "https://huggingface.co/bartowski/Apexintelligence-AI_Apex-35B-V1.0-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.07,
    "size_gb": 22.8,
    "size_bytes": 22795471072,
@@ -282,7 +282,7 @@
    "repo": "bartowski/Apexintelligence-AI_Apex-35B-V1.0-GGUF",
    "url": "https://huggingface.co/bartowski/Apexintelligence-AI_Apex-35B-V1.0-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.07,
    "size_gb": 22.8,
    "size_bytes": 22795471072,
@@ -434,6 +434,6 @@
   "last_checked": "2026-11-01T10:19:49.761108+00:00",
   "last_changed": "2026-11-01T10:19:49.761108+00:00"
  },
- "generated_at": "2026-11-13T10:48:37+00:00",
- "sha": "acfaea1ff91ce052"
+ "generated_at": "2026-11-14T10:03:59+00:00",
+ "sha": "2000e08e9ce2730f"
 }

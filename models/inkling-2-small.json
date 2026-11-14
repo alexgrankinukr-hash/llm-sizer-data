@@ -7,8 +7,8 @@
  "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
  "variant": "instruct",
  "released": "2026-11-04",
- "params_total": 383072987216,
- "params_active": 37988071232,
+ "params_total": 594050672720,
+ "params_active": 24111603918,
  "params_active_source": "estimated",
  "context_max": null,
  "native_bits": 16.0,
@@ -25,8 +25,10 @@
   "image-text-to-text",
   "conversational",
   "moe",
+  "eval-results",
   "endpoints_compatible",
-  "8-bit"
+  "8-bit",
+  "modelopt"
  ],
  "featured": false,
  "tier": null,
@@ -65,7 +67,7 @@
   "accel_dspark_repo": null,
   "conventional_assumed": true,
   "source": "config",
-  "config_sha": "ca340317fc8944ca",
+  "config_sha": "3301fd3fffc7a4d2",
   "notes": [
    "expert size taken from intermediate_size"
   ],
@@ -77,7 +79,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-IQ1_S",
-   "bits": 3.59,
+   "bits": 2.31,
    "size_gb": 171.73,
    "size_bytes": 171728965465,
    "quantizer": "unsloth",
@@ -90,7 +92,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-IQ1_M",
-   "bits": 3.73,
+   "bits": 2.4,
    "size_gb": 178.54,
    "size_bytes": 178544971609,
    "quantizer": "unsloth",
@@ -103,7 +105,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-IQ2_XXS",
-   "bits": 3.98,
+   "bits": 2.57,
    "size_gb": 190.58,
    "size_bytes": 190584459097,
    "quantizer": "unsloth",
@@ -116,7 +118,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-Q2_K_XL",
-   "bits": 4.28,
+   "bits": 2.76,
    "size_gb": 204.97,
    "size_bytes": 204969271289,
    "quantizer": "unsloth",
@@ -129,7 +131,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-IQ3_XXS",
-   "bits": 4.72,
+   "bits": 3.04,
    "size_gb": 225.99,
    "size_bytes": 225986223385,
    "quantizer": "unsloth",
@@ -142,7 +144,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-Q3_K_XL",
-   "bits": 5.95,
+   "bits": 3.84,
    "size_gb": 285.13,
    "size_bytes": 285128675513,
    "quantizer": "unsloth",
@@ -155,7 +157,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-Q4_K_XL",
-   "bits": 7.4,
+   "bits": 4.77,
    "size_gb": 354.15,
    "size_bytes": 354150089945,
    "quantizer": "unsloth",
@@ -164,11 +166,24 @@
    "first_seen": "2026-11-13"
   },
   {
+   "repo": "mlx-community/Inkling-2-Small-4bit",
+   "url": "https://huggingface.co/mlx-community/Inkling-2-Small-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 5.13,
+   "size_gb": 380.79,
+   "size_bytes": 380788964744,
+   "quantizer": "mlx-community",
+   "file_count": 97,
+   "qat": false,
+   "first_seen": "2026-11-14"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "UD-Q8_K_XL",
-   "bits": 8.07,
+   "bits": 5.21,
    "size_gb": 386.51,
    "size_bytes": 386510193913,
    "quantizer": "unsloth",
@@ -181,7 +196,7 @@
    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
    "format": "safetensors",
    "label": "BF16",
-   "bits": 8.22,
+   "bits": 5.3,
    "size_gb": 393.48,
    "size_bytes": 393480084520,
    "quantizer": "official",
@@ -194,7 +209,7 @@
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
    "label": "BF16",
-   "bits": 10.12,
+   "bits": 6.52,
    "size_gb": 484.38,
    "size_bytes": 484382454681,
    "quantizer": "unsloth",
@@ -212,7 +227,10 @@
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "label": "UD-Q8_K_XL"
   },
-  "mlx4": null,
+  "mlx4": {
+   "repo": "mlx-community/Inkling-2-Small-4bit",
+   "label": "MLX-4bit"
+  },
   "native": {
    "repo": "thinkingmachines/Inkling-2-Small",
    "label": "BF16"
@@ -225,9 +243,9 @@
  },
  "timestamps": {
   "first_seen": "2026-11-13T10:48:35.930446+00:00",
-  "last_checked": "2026-11-13T10:48:35.930446+00:00",
-  "last_changed": "2026-11-13T10:48:35.930446+00:00"
+  "last_checked": "2026-11-14T10:03:56.404377+00:00",
+  "last_changed": "2026-11-14T10:03:56.404377+00:00"
  },
- "generated_at": "2026-11-13T10:48:37+00:00",
- "sha": "872dd94d517b60e7"
+ "generated_at": "2026-11-14T10:03:59+00:00",
+ "sha": "177b71fd1e40f2a4"
 }
