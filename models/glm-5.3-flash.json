@@ -29,7 +29,8 @@
   "eval-results",
   "endpoints_compatible",
   "fp8",
-  "deploy:azure"
+  "deploy:azure",
+  "deploy:sagemaker"
  ],
  "featured": true,
  "tier": "studio",
@@ -256,19 +257,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "zai-org/GLM-5.3-Flash",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-   "format": "safetensors",
-   "label": "FP8",
-   "bits": 8.17,
-   "size_gb": 328.34,
-   "size_bytes": 328337455672,
-   "quantizer": "official",
-   "file_count": 62,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "unsloth/GLM-5.3-Flash-FP8",
    "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-FP8",
    "format": "safetensors",
@@ -277,6 +265,19 @@
    "size_gb": 328.34,
    "size_bytes": 328337455672,
    "quantizer": "unsloth",
+   "file_count": 62,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "zai-org/GLM-5.3-Flash",
+   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+   "format": "safetensors",
+   "label": "FP8",
+   "bits": 8.17,
+   "size_gb": 328.34,
+   "size_bytes": 328337455672,
+   "quantizer": "official",
    "file_count": 62,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -346,9 +347,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:30:03.811239+00:00",
-  "last_checked": "2026-11-15T10:39:20.564402+00:00",
+  "last_checked": "2026-11-16T10:56:05.342939+00:00",
   "last_changed": "2026-09-02T20:30:03.811239+00:00"
  },
- "generated_at": "2026-11-15T10:39:32+00:00",
- "sha": "7d7438525f2ed7ef"
+ "generated_at": "2026-11-16T10:56:12+00:00",
+ "sha": "2f27ba91a7306ad9"
 }
