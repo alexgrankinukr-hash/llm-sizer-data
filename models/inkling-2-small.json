@@ -75,6 +75,45 @@
  },
  "quants": [
   {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ1_S",
+   "bits": 1.72,
+   "size_gb": 127.52,
+   "size_bytes": 127516283168,
+   "quantizer": "bartowski",
+   "file_count": 4,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ1_M",
+   "bits": 1.94,
+   "size_gb": 143.81,
+   "size_bytes": 143805415744,
+   "quantizer": "bartowski",
+   "file_count": 4,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ2_XXS",
+   "bits": 2.24,
+   "size_gb": 166.05,
+   "size_bytes": 166054941120,
+   "quantizer": "bartowski",
+   "file_count": 5,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
@@ -88,6 +127,19 @@
    "first_seen": "2026-11-13"
   },
   {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ2_XS",
+   "bits": 2.4,
+   "size_gb": 177.85,
+   "size_bytes": 177849614784,
+   "quantizer": "bartowski",
+   "file_count": 5,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
@@ -99,6 +151,19 @@
    "file_count": 5,
    "qat": false,
    "first_seen": "2026-11-13"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ2_S",
+   "bits": 2.53,
+   "size_gb": 187.58,
+   "size_bytes": 187577287104,
+   "quantizer": "bartowski",
+   "file_count": 5,
+   "qat": false,
+   "first_seen": "2026-11-17"
   },
   {
    "repo": "unsloth/Inkling-2-Small-GGUF",
@@ -127,6 +192,32 @@
    "first_seen": "2026-11-13"
   },
   {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ2_M",
+   "bits": 2.82,
+   "size_gb": 209.46,
+   "size_bytes": 209462116896,
+   "quantizer": "bartowski",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q2_K",
+   "bits": 3.04,
+   "size_gb": 225.81,
+   "size_bytes": 225813586464,
+   "quantizer": "bartowski",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
@@ -138,6 +229,58 @@
    "file_count": 6,
    "qat": false,
    "first_seen": "2026-11-13"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XXS",
+   "bits": 3.3,
+   "size_gb": 245.4,
+   "size_bytes": 245403189888,
+   "quantizer": "bartowski",
+   "file_count": 7,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XS",
+   "bits": 3.57,
+   "size_gb": 265.02,
+   "size_bytes": 265021547200,
+   "quantizer": "bartowski",
+   "file_count": 7,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_S",
+   "bits": 3.57,
+   "size_gb": 265.02,
+   "size_bytes": 265021547200,
+   "quantizer": "bartowski",
+   "file_count": 7,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_M",
+   "bits": 3.77,
+   "size_gb": 280.05,
+   "size_bytes": 280054981408,
+   "quantizer": "bartowski",
+   "file_count": 8,
+   "qat": false,
+   "first_seen": "2026-11-17"
   },
   {
    "repo": "unsloth/Inkling-2-Small-GGUF",
@@ -153,6 +296,71 @@
    "first_seen": "2026-11-13"
   },
   {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ3_M",
+   "bits": 3.9,
+   "size_gb": 289.64,
+   "size_bytes": 289641980704,
+   "quantizer": "bartowski",
+   "file_count": 8,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q3_K_L",
+   "bits": 4.28,
+   "size_gb": 317.48,
+   "size_bytes": 317479314368,
+   "quantizer": "bartowski",
+   "file_count": 9,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ4_XS",
+   "bits": 4.34,
+   "size_gb": 322.19,
+   "size_bytes": 322193187776,
+   "quantizer": "bartowski",
+   "file_count": 9,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q4_0",
+   "bits": 4.53,
+   "size_gb": 336.46,
+   "size_bytes": 336457355392,
+   "quantizer": "bartowski",
+   "file_count": 9,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_S",
+   "bits": 4.66,
+   "size_gb": 345.89,
+   "size_bytes": 345889956832,
+   "quantizer": "bartowski",
+   "file_count": 10,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
@@ -164,6 +372,45 @@
    "file_count": 9,
    "qat": false,
    "first_seen": "2026-11-13"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "IQ4_NL",
+   "bits": 4.97,
+   "size_gb": 368.98,
+   "size_bytes": 368981566496,
+   "quantizer": "bartowski",
+   "file_count": 10,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 4.97,
+   "size_gb": 368.98,
+   "size_bytes": 368981566496,
+   "quantizer": "bartowski",
+   "file_count": 10,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q4_1",
+   "bits": 5.01,
+   "size_gb": 371.9,
+   "size_bytes": 371901962560,
+   "quantizer": "bartowski",
+   "file_count": 10,
+   "qat": false,
+   "first_seen": "2026-11-17"
   },
   {
    "repo": "mlx-community/Inkling-2-Small-4bit",
@@ -205,6 +452,32 @@
    "first_seen": "2026-11-13"
   },
   {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q5_K_S",
+   "bits": 5.65,
+   "size_gb": 419.37,
+   "size_bytes": 419369051328,
+   "quantizer": "bartowski",
+   "file_count": 12,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q5_K_M",
+   "bits": 6.12,
+   "size_gb": 454.44,
+   "size_bytes": 454436447616,
+   "quantizer": "bartowski",
+   "file_count": 13,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
@@ -216,16 +489,55 @@
    "file_count": 11,
    "qat": false,
    "first_seen": "2026-11-13"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q6_K_S",
+   "bits": 6.72,
+   "size_gb": 498.84,
+   "size_bytes": 498836039232,
+   "quantizer": "bartowski",
+   "file_count": 14,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q6_K",
+   "bits": 7.04,
+   "size_gb": 522.53,
+   "size_bytes": 522532808384,
+   "quantizer": "bartowski",
+   "file_count": 16,
+   "qat": false,
+   "first_seen": "2026-11-17"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.5,
+   "size_gb": 631.1,
+   "size_bytes": 631104882176,
+   "quantizer": "bartowski",
+   "file_count": 17,
+   "qat": false,
+   "first_seen": "2026-11-17"
   }
  ],
  "reference": {
   "q4": {
-   "repo": "unsloth/Inkling-2-Small-GGUF",
-   "label": "UD-Q4_K_XL"
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "label": "Q4_K_M"
   },
   "q8": {
-   "repo": "unsloth/Inkling-2-Small-GGUF",
-   "label": "UD-Q8_K_XL"
+   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "label": "Q8_0"
   },
   "mlx4": {
    "repo": "mlx-community/Inkling-2-Small-4bit",
@@ -243,9 +555,9 @@
  },
  "timestamps": {
   "first_seen": "2026-11-13T10:48:35.930446+00:00",
-  "last_checked": "2026-11-15T10:39:30.127543+00:00",
+  "last_checked": "2026-11-17T11:40:34.858321+00:00",
   "last_changed": "2026-11-14T10:03:56.404377+00:00"
  },
- "generated_at": "2026-11-16T10:56:12+00:00",
- "sha": "8aa015454aacbb86"
+ "generated_at": "2026-11-17T11:40:36+00:00",
+ "sha": "3d1ff4145d068093"
 }
