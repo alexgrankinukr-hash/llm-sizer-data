@@ -67,7 +67,7 @@
   "accel_dspark_repo": null,
   "conventional_assumed": true,
   "source": "config",
-  "config_sha": "3301fd3fffc7a4d2",
+  "config_sha": "9105b0faf4a8a606",
   "notes": [
    "expert size taken from intermediate_size"
   ],
@@ -555,9 +555,9 @@
  },
  "timestamps": {
   "first_seen": "2026-11-13T10:48:35.930446+00:00",
-  "last_checked": "2026-11-17T11:40:34.858321+00:00",
+  "last_checked": "2026-11-19T11:26:15.953991+00:00",
   "last_changed": "2026-11-14T10:03:56.404377+00:00"
  },
- "generated_at": "2026-11-18T11:28:28+00:00",
- "sha": "ea17dd1f012e4731"
+ "generated_at": "2026-11-19T11:26:20+00:00",
+ "sha": "f6c121e77e3fab31"
 }

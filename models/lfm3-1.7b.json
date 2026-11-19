@@ -43,7 +43,8 @@
   "hi",
   "ru",
   "pl",
-  "eval-results"
+  "eval-results",
+  "endpoints_compatible"
  ],
  "featured": false,
  "tier": null,
@@ -246,10 +247,23 @@
    "first_seen": "2026-10-28"
   },
   {
+   "repo": "ggml-org/LFM3-1.7B-GGUF",
+   "url": "https://huggingface.co/ggml-org/LFM3-1.7B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 5.09,
+   "size_gb": 1.1,
+   "size_bytes": 1099627776,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-19"
+  },
+  {
    "repo": "bartowski/LFM3-1.7B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM3-1.7B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.16,
    "size_gb": 1.12,
    "size_bytes": 1115637312,
@@ -262,7 +276,7 @@
    "repo": "bartowski/LFM3-1.7B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM3-1.7B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.16,
    "size_gb": 1.12,
    "size_bytes": 1115637312,
@@ -389,6 +403,19 @@
    "first_seen": "2026-10-28"
   },
   {
+   "repo": "ggml-org/LFM3-1.7B-GGUF",
+   "url": "https://huggingface.co/ggml-org/LFM3-1.7B-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.54,
+   "size_gb": 1.85,
+   "size_bytes": 1846238464,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-19"
+  },
+  {
    "repo": "bartowski/LFM3-1.7B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM3-1.7B-GGUF",
    "format": "gguf",
@@ -413,6 +440,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-10-28"
+  },
+  {
+   "repo": "ggml-org/LFM3-1.7B-GGUF",
+   "url": "https://huggingface.co/ggml-org/LFM3-1.7B-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 16.04,
+   "size_gb": 3.47,
+   "size_bytes": 3466626304,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-19"
   },
   {
    "repo": "bartowski/LFM3-1.7B-GGUF",
@@ -450,9 +490,9 @@
  },
  "timestamps": {
   "first_seen": "2026-10-28T09:32:12.960547+00:00",
-  "last_checked": "2026-10-29T09:46:13.212632+00:00",
+  "last_checked": "2026-11-19T11:26:07.207739+00:00",
   "last_changed": "2026-10-28T09:32:12.960547+00:00"
  },
- "generated_at": "2026-11-18T11:28:28+00:00",
- "sha": "c1926f46539121df"
+ "generated_at": "2026-11-19T11:26:20+00:00",
+ "sha": "550a540a40b8548b"
 }
