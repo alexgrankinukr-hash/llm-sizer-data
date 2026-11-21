@@ -377,7 +377,7 @@
    "repo": "bartowski/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 4.97,
    "size_gb": 368.98,
    "size_bytes": 368981566496,
@@ -390,7 +390,7 @@
    "repo": "bartowski/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 4.97,
    "size_gb": 368.98,
    "size_bytes": 368981566496,
@@ -429,14 +429,14 @@
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "UD-Q8_K_XL",
+   "label": "Q8_0",
    "bits": 5.21,
    "size_gb": 386.51,
    "size_bytes": 386510105504,
    "quantizer": "unsloth",
    "file_count": 9,
    "qat": false,
-   "first_seen": "2026-11-13"
+   "first_seen": "2026-11-21"
   },
   {
    "repo": "thinkingmachines/Inkling-2-Small",
@@ -481,7 +481,7 @@
    "repo": "unsloth/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "BF16",
+   "label": "UD-Q8_K_XL",
    "bits": 6.52,
    "size_gb": 484.38,
    "size_bytes": 484382366720,
@@ -536,7 +536,7 @@
    "label": "Q4_K_M"
   },
   "q8": {
-   "repo": "bartowski/Inkling-2-Small-GGUF",
+   "repo": "unsloth/Inkling-2-Small-GGUF",
    "label": "Q8_0"
   },
   "mlx4": {
@@ -555,9 +555,9 @@
  },
  "timestamps": {
   "first_seen": "2026-11-13T10:48:35.930446+00:00",
-  "last_checked": "2026-11-20T11:15:58.798913+00:00",
+  "last_checked": "2026-11-21T10:52:58.242444+00:00",
   "last_changed": "2026-11-14T10:03:56.404377+00:00"
  },
- "generated_at": "2026-11-20T11:16:00+00:00",
- "sha": "42379e28b223c9c1"
+ "generated_at": "2026-11-21T11:00:51+00:00",
+ "sha": "8d9612c09b4d9e9e"
 }
