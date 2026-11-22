@@ -397,19 +397,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "meta-models/Muse-Glimmer-30B-GGUF",
-   "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_M",
-   "bits": 4.5,
-   "size_gb": 16.76,
-   "size_bytes": 16756683904,
-   "quantizer": "official",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "lmstudio-community/Muse-Glimmer-30B-GGUF",
    "url": "https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF",
    "format": "gguf",
@@ -418,6 +405,19 @@
    "size_gb": 16.76,
    "size_bytes": 16756683904,
    "quantizer": "lmstudio-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "meta-models/Muse-Glimmer-30B-GGUF",
+   "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_M",
+   "bits": 4.5,
+   "size_gb": 16.76,
+   "size_bytes": 16756683904,
+   "quantizer": "official",
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -494,7 +494,7 @@
    "label": "Q4_K_M",
    "bits": 5.17,
    "size_gb": 19.25,
-   "size_bytes": 19246214464,
+   "size_bytes": 19246215104,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -702,7 +702,7 @@
    "label": "Q8_0",
    "bits": 7.96,
    "size_gb": 29.61,
-   "size_bytes": 29612961088,
+   "size_bytes": 29612961728,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -780,7 +780,7 @@
    "label": "BF16",
    "bits": 14.97,
    "size_gb": 55.73,
-   "size_bytes": 55725514048,
+   "size_bytes": 55725514688,
    "quantizer": "ggml-org",
    "file_count": 1,
    "qat": false,
@@ -838,9 +838,9 @@
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:27:49.678978+00:00",
-  "last_checked": "2026-11-21T11:00:34.773614+00:00",
+  "last_checked": "2026-11-22T11:00:33.881423+00:00",
   "last_changed": "2026-09-02T20:27:49.678978+00:00"
  },
- "generated_at": "2026-11-21T11:00:51+00:00",
- "sha": "9a74aab0061527e6"
+ "generated_at": "2026-11-22T11:01:19+00:00",
+ "sha": "4a6fd073b66719d1"
 }

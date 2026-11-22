@@ -1,0 +1,153 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "tml-d24-varloop-research",
+ "name": "TML-d24-varloop-research",
+ "provider": "thinkingmachines",
+ "hf_repo": "thinkingmachines/TML-d24-varloop-research",
+ "url": "https://huggingface.co/thinkingmachines/TML-d24-varloop-research",
+ "variant": "instruct",
+ "released": "2026-11-18",
+ "params_total": 26388646440,
+ "params_active": 3456289320,
+ "params_active_source": "estimated",
+ "context_max": null,
+ "native_bits": 16.0,
+ "license": {
+  "name": "apache-2.0",
+  "url": null,
+  "commercial": true,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "inkling2_loop",
+  "image-text-to-text",
+  "conversational",
+  "moe",
+  "endpoints_compatible",
+  "8-bit",
+  "modelopt"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [
+  "architecture read from config, but the model family is unfamiliar — treat cache math as approximate"
+ ],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "inkling2_loop_text",
+  "attention": "gqa",
+  "layers": 24,
+  "kv_layers": 24,
+  "sliding_layers": 0,
+  "linear_layers": 0,
+  "kv_heads": 8,
+  "head_dim": 128,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 49152,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 0,
+  "hidden_size": 2304,
+  "experts_total": 128,
+  "experts_active": 8,
+  "experts_shared": 0,
+  "moe_intermediate": 1152,
+  "moe_layers": 24,
+  "accel_mtp": false,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": true,
+  "source": "config",
+  "config_sha": "506037c2c9d5861b",
+  "notes": [
+   "expert size taken from intermediate_size"
+  ],
+  "kv_cache_gb_at_128k_8bit": 6.44
+ },
+ "quants": [
+  {
+   "repo": "ggml-org/TML-d24-varloop-research-GGUF",
+   "url": "https://huggingface.co/ggml-org/TML-d24-varloop-research-GGUF",
+   "format": "gguf",
+   "label": "IQ4_NL",
+   "bits": 5.34,
+   "size_gb": 17.63,
+   "size_bytes": 17627940800,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-22"
+  },
+  {
+   "repo": "thinkingmachines/TML-d24-varloop-research",
+   "url": "https://huggingface.co/thinkingmachines/TML-d24-varloop-research",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 6.11,
+   "size_gb": 20.16,
+   "size_bytes": 20161820584,
+   "quantizer": "official",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-11-22"
+  },
+  {
+   "repo": "ggml-org/TML-d24-varloop-research-GGUF",
+   "url": "https://huggingface.co/ggml-org/TML-d24-varloop-research-GGUF",
+   "format": "gguf",
+   "label": "Q8_0",
+   "bits": 8.43,
+   "size_gb": 27.82,
+   "size_bytes": 27820099264,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-22"
+  },
+  {
+   "repo": "ggml-org/TML-d24-varloop-research-GGUF",
+   "url": "https://huggingface.co/ggml-org/TML-d24-varloop-research-GGUF",
+   "format": "gguf",
+   "label": "BF16",
+   "bits": 15.83,
+   "size_gb": 52.23,
+   "size_bytes": 52226509504,
+   "quantizer": "ggml-org",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-22"
+  }
+ ],
+ "reference": {
+  "q4": null,
+  "q8": {
+   "repo": "ggml-org/TML-d24-varloop-research-GGUF",
+   "label": "Q8_0"
+  },
+  "mlx4": null,
+  "native": {
+   "repo": "thinkingmachines/TML-d24-varloop-research",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-22T11:01:16.451581+00:00",
+  "last_checked": "2026-11-22T11:01:16.451581+00:00",
+  "last_changed": "2026-11-22T11:01:16.451581+00:00"
+ },
+ "generated_at": "2026-11-22T11:01:19+00:00",
+ "sha": "947c8c39e76cf23d"
+}
