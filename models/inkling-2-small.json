@@ -377,7 +377,7 @@
    "repo": "bartowski/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 4.97,
    "size_gb": 368.98,
    "size_bytes": 368981566496,
@@ -390,7 +390,7 @@
    "repo": "bartowski/Inkling-2-Small-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Small-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 4.97,
    "size_gb": 368.98,
    "size_bytes": 368981566496,
@@ -558,6 +558,6 @@
   "last_checked": "2026-11-21T10:52:58.242444+00:00",
   "last_changed": "2026-11-14T10:03:56.404377+00:00"
  },
- "generated_at": "2026-11-22T11:01:19+00:00",
- "sha": "d12c3ebc25394a3a"
+ "generated_at": "2026-11-23T12:10:55+00:00",
+ "sha": "0b43bee69b39cd85"
 }

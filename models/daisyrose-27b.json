@@ -268,7 +268,7 @@
    "repo": "bartowski/RadixArk_DaisyRose-27B-GGUF",
    "url": "https://huggingface.co/bartowski/RadixArk_DaisyRose-27B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 4.99,
    "size_gb": 17.33,
    "size_bytes": 17325372224,
@@ -281,7 +281,7 @@
    "repo": "bartowski/RadixArk_DaisyRose-27B-GGUF",
    "url": "https://huggingface.co/bartowski/RadixArk_DaisyRose-27B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 4.99,
    "size_gb": 17.33,
    "size_bytes": 17325372224,
@@ -449,6 +449,6 @@
   "last_checked": "2026-11-21T10:52:40.565001+00:00",
   "last_changed": "2026-11-21T10:52:40.565001+00:00"
  },
- "generated_at": "2026-11-22T11:01:19+00:00",
- "sha": "b7856c23e35e17bd"
+ "generated_at": "2026-11-23T12:10:55+00:00",
+ "sha": "ab2a4f3debefda2f"
 }
