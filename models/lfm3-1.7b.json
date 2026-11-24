@@ -263,7 +263,7 @@
    "repo": "bartowski/LFM3-1.7B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM3-1.7B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.16,
    "size_gb": 1.12,
    "size_bytes": 1115637312,
@@ -276,7 +276,7 @@
    "repo": "bartowski/LFM3-1.7B-GGUF",
    "url": "https://huggingface.co/bartowski/LFM3-1.7B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.16,
    "size_gb": 1.12,
    "size_bytes": 1115637312,
@@ -493,6 +493,6 @@
   "last_checked": "2026-11-22T11:00:56.091871+00:00",
   "last_changed": "2026-10-28T09:32:12.960547+00:00"
  },
- "generated_at": "2026-11-23T12:10:55+00:00",
- "sha": "c5da7e62ce8e15eb"
+ "generated_at": "2026-11-24T13:30:56+00:00",
+ "sha": "2451c8835969298f"
 }
