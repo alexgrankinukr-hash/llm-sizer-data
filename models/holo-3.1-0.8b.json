@@ -1,0 +1,173 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "holo-3.1-0.8b",
+ "name": "Holo-3.1-0.8B",
+ "provider": "Hcompany",
+ "hf_repo": "Hcompany/Holo-3.1-0.8B",
+ "url": "https://huggingface.co/Hcompany/Holo-3.1-0.8B",
+ "variant": "instruct",
+ "released": "2026-05-29",
+ "params_total": 1107265600,
+ "params_active": 1107265600,
+ "params_active_source": "dense",
+ "context_max": 262144,
+ "native_bits": 32.0,
+ "license": {
+  "name": "apache-2.0",
+  "url": null,
+  "commercial": true,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "qwen3_5",
+  "image-text-to-text",
+  "multimodal",
+  "action",
+  "agent",
+  "pytorch",
+  "computer use",
+  "gui agents",
+  "moe",
+  "conversational",
+  "en",
+  "endpoints_compatible"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "qwen3_5_text",
+  "attention": "gqa",
+  "layers": 24,
+  "kv_layers": 6,
+  "sliding_layers": 0,
+  "linear_layers": 18,
+  "kv_heads": 2,
+  "head_dim": 256,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 6144,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 9437184,
+  "hidden_size": 1024,
+  "experts_total": null,
+  "experts_active": null,
+  "experts_shared": null,
+  "moe_intermediate": null,
+  "moe_layers": null,
+  "accel_mtp": false,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": false,
+  "source": "config",
+  "config_sha": "18c46fce1c0e9725",
+  "notes": [],
+  "kv_cache_gb_at_128k_8bit": 0.81
+ },
+ "quants": [
+  {
+   "repo": "mlx-community/Holo-3.1-0.8B-4bit",
+   "url": "https://huggingface.co/mlx-community/Holo-3.1-0.8B-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.52,
+   "size_gb": 0.63,
+   "size_bytes": 625228929,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo-3.1-0.8B-mxfp8",
+   "url": "https://huggingface.co/mlx-community/Holo-3.1-0.8B-mxfp8",
+   "format": "mlx",
+   "label": "MLX-MXFP8",
+   "bits": 7.06,
+   "size_gb": 0.98,
+   "size_bytes": 977655222,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo-3.1-0.8B-8bit",
+   "url": "https://huggingface.co/mlx-community/Holo-3.1-0.8B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 7.23,
+   "size_gb": 1.0,
+   "size_bytes": 1001176400,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo-3.1-0.8B-bf16",
+   "url": "https://huggingface.co/mlx-community/Holo-3.1-0.8B-bf16",
+   "format": "mlx",
+   "label": "MLX-BF16",
+   "bits": 12.33,
+   "size_gb": 1.71,
+   "size_bytes": 1706030126,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "Hcompany/Holo-3.1-0.8B",
+   "url": "https://huggingface.co/Hcompany/Holo-3.1-0.8B",
+   "format": "safetensors",
+   "label": "F32",
+   "bits": 16.0,
+   "size_gb": 2.21,
+   "size_bytes": 2214629376,
+   "quantizer": "official",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  }
+ ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/Holo-3.1-0.8B-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": {
+   "repo": "mlx-community/Holo-3.1-0.8B-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Holo-3.1-0.8B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Hcompany/Holo-3.1-0.8B",
+   "label": "F32"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-25T12:31:51.390558+00:00",
+  "last_checked": "2026-11-25T12:31:51.390558+00:00",
+  "last_changed": "2026-11-25T12:31:51.390558+00:00"
+ },
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "682844df795ffef9"
+}

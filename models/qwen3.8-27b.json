@@ -63,7 +63,7 @@
   "moe_layers": null,
   "accel_mtp": true,
   "accel_dflash_repo": "z-lab/Qwen3.8-27B-DFlash2-GGUF",
-  "accel_dspark_repo": "RadixArk/Qwen3.8-27B-DSpark",
+  "accel_dspark_repo": "Doopeworld/Qwen3.8-27B-DSpark-vLLM",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "f4086622d4e465bf",
@@ -1055,13 +1055,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Qwen3.8-27B-DFlash2-GGUF",
-  "dspark": "RadixArk/Qwen3.8-27B-DSpark"
+  "dspark": "Doopeworld/Qwen3.8-27B-DSpark-vLLM"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:18:39.014131+00:00",
-  "last_checked": "2026-11-24T13:30:10.079645+00:00",
+  "last_checked": "2026-11-25T12:31:34.750741+00:00",
   "last_changed": "2026-09-02T20:18:39.014131+00:00"
  },
- "generated_at": "2026-11-24T13:30:56+00:00",
- "sha": "c2d859241a25ec86"
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "82d30fec20eaef9d"
 }

@@ -1,0 +1,142 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "holo4-27b",
+ "name": "Holo4-27B",
+ "provider": "Hcompany",
+ "hf_repo": "Hcompany/Holo4-27B",
+ "url": "https://huggingface.co/Hcompany/Holo4-27B",
+ "variant": "instruct",
+ "released": "2026-09-24",
+ "params_total": 27356728560,
+ "params_active": 27356728560,
+ "params_active_source": "dense",
+ "context_max": 262144,
+ "native_bits": 16.0,
+ "license": {
+  "name": "cc-by-nc-4.0",
+  "url": null,
+  "commercial": false,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "qwen3_5",
+  "image-text-to-text",
+  "multimodal",
+  "computer-use",
+  "agent",
+  "conversational",
+  "endpoints_compatible"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "qwen3_5_text",
+  "attention": "gqa",
+  "layers": 64,
+  "kv_layers": 16,
+  "sliding_layers": 0,
+  "linear_layers": 48,
+  "kv_heads": 4,
+  "head_dim": 256,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 32768,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 75497472,
+  "hidden_size": 5120,
+  "experts_total": null,
+  "experts_active": null,
+  "experts_shared": null,
+  "moe_intermediate": null,
+  "moe_layers": null,
+  "accel_mtp": true,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": false,
+  "source": "config",
+  "config_sha": "cd7df016eec33b77",
+  "notes": [],
+  "kv_cache_gb_at_128k_8bit": 4.37
+ },
+ "quants": [
+  {
+   "repo": "mlx-community/Holo4-27B-4bit",
+   "url": "https://huggingface.co/mlx-community/Holo4-27B-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.69,
+   "size_gb": 16.05,
+   "size_bytes": 16054541349,
+   "quantizer": "mlx-community",
+   "file_count": 3,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo4-27B-8bit",
+   "url": "https://huggingface.co/mlx-community/Holo4-27B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 8.63,
+   "size_gb": 29.5,
+   "size_bytes": 29501218479,
+   "quantizer": "mlx-community",
+   "file_count": 6,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "Hcompany/Holo4-27B",
+   "url": "https://huggingface.co/Hcompany/Holo4-27B",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.0,
+   "size_gb": 54.71,
+   "size_bytes": 54713606360,
+   "quantizer": "official",
+   "file_count": 18,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  }
+ ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/Holo4-27B-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": {
+   "repo": "mlx-community/Holo4-27B-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Holo4-27B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Hcompany/Holo4-27B",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-25T12:31:55.932831+00:00",
+  "last_checked": "2026-11-25T12:31:55.932831+00:00",
+  "last_changed": "2026-11-25T12:31:55.932831+00:00"
+ },
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "771abc5d064748b8"
+}

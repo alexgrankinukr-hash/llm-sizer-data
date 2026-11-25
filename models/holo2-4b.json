@@ -1,0 +1,163 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "holo2-4b",
+ "name": "Holo2-4B",
+ "provider": "Hcompany",
+ "hf_repo": "Hcompany/Holo2-4B",
+ "url": "https://huggingface.co/Hcompany/Holo2-4B",
+ "variant": "instruct",
+ "released": "2025-11-10",
+ "params_total": 4437815808,
+ "params_active": 4437815808,
+ "params_active_source": "dense",
+ "context_max": 262144,
+ "native_bits": 16.0,
+ "license": {
+  "name": "apache-2.0",
+  "url": null,
+  "commercial": true,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "qwen3_vl",
+  "image-text-to-text",
+  "multimodal",
+  "action",
+  "agent",
+  "pytorch",
+  "computer use",
+  "gui agents",
+  "conversational",
+  "en",
+  "eval-results",
+  "endpoints_compatible",
+  "deploy:azure"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [
+  "architecture read from config, but the model family is unfamiliar — treat cache math as approximate"
+ ],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "qwen3_vl_text",
+  "attention": "gqa",
+  "layers": 36,
+  "kv_layers": 36,
+  "sliding_layers": 0,
+  "linear_layers": 0,
+  "kv_heads": 8,
+  "head_dim": 128,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 73728,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 0,
+  "hidden_size": 2560,
+  "experts_total": null,
+  "experts_active": null,
+  "experts_shared": null,
+  "moe_intermediate": null,
+  "moe_layers": null,
+  "accel_mtp": false,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": true,
+  "source": "config",
+  "config_sha": "71068a5128315523",
+  "notes": [],
+  "kv_cache_gb_at_128k_8bit": 9.66
+ },
+ "quants": [
+  {
+   "repo": "mlx-community/Holo2-4B-4bit",
+   "url": "https://huggingface.co/mlx-community/Holo2-4B-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 5.58,
+   "size_gb": 3.09,
+   "size_bytes": 3093767283,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo2-4B-8bit",
+   "url": "https://huggingface.co/mlx-community/Holo2-4B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 9.2,
+   "size_gb": 5.1,
+   "size_bytes": 5104903799,
+   "quantizer": "mlx-community",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "mlx-community/Holo2-4B-bf16",
+   "url": "https://huggingface.co/mlx-community/Holo2-4B-bf16",
+   "format": "mlx",
+   "label": "MLX-BF16",
+   "bits": 16.0,
+   "size_gb": 8.88,
+   "size_bytes": 8875719213,
+   "quantizer": "mlx-community",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "Hcompany/Holo2-4B",
+   "url": "https://huggingface.co/Hcompany/Holo2-4B",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 17.4,
+   "size_gb": 9.65,
+   "size_bytes": 9653631840,
+   "quantizer": "official",
+   "file_count": 2,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  }
+ ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/Holo2-4B-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": {
+   "repo": "mlx-community/Holo2-4B-8bit",
+   "label": "MLX-8bit"
+  },
+  "mlx4": {
+   "repo": "mlx-community/Holo2-4B-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Hcompany/Holo2-4B",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-25T12:31:54.534296+00:00",
+  "last_checked": "2026-11-25T12:31:54.534296+00:00",
+  "last_changed": "2026-11-25T12:31:54.534296+00:00"
+ },
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "b40f554eeb304819"
+}

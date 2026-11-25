@@ -61,7 +61,7 @@
   "moe_layers": 40,
   "accel_mtp": true,
   "accel_dflash_repo": "z-lab/Qwen3.6-35B-A3B-DFlash",
-  "accel_dspark_repo": "Anbeeld/Qwen3.6-35B-A3B-DSpark-GGUF",
+  "accel_dspark_repo": "williamliao/Qwen3.6-35B-A3B-DSPARK-GGUF",
   "conventional_assumed": false,
   "source": "config",
   "config_sha": "5b6bd108a56ad8cb",
@@ -421,19 +421,6 @@
    "first_seen": "2026-09-02"
   },
   {
-   "repo": "lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
-   "url": "https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
-   "format": "mlx",
-   "label": "MLX-4bit",
-   "bits": 4.54,
-   "size_gb": 20.4,
-   "size_bytes": 20402204271,
-   "quantizer": "lmstudio-community",
-   "file_count": 4,
-   "qat": false,
-   "first_seen": "2026-09-02"
-  },
-  {
    "repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
    "url": "https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit",
    "format": "mlx",
@@ -442,6 +429,19 @@
    "size_gb": 20.4,
    "size_bytes": 20402204271,
    "quantizer": "mlx-community",
+   "file_count": 4,
+   "qat": false,
+   "first_seen": "2026-09-02"
+  },
+  {
+   "repo": "lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
+   "url": "https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.54,
+   "size_gb": 20.4,
+   "size_bytes": 20402204271,
+   "quantizer": "lmstudio-community",
    "file_count": 4,
    "qat": false,
    "first_seen": "2026-09-02"
@@ -1027,13 +1027,13 @@
  "special_builds": [],
  "drafts": {
   "dflash": "z-lab/Qwen3.6-35B-A3B-DFlash",
-  "dspark": "Anbeeld/Qwen3.6-35B-A3B-DSpark-GGUF"
+  "dspark": "williamliao/Qwen3.6-35B-A3B-DSPARK-GGUF"
  },
  "timestamps": {
   "first_seen": "2026-09-02T20:23:54.503541+00:00",
-  "last_checked": "2026-11-24T13:30:08.765666+00:00",
+  "last_checked": "2026-11-25T12:31:33.947813+00:00",
   "last_changed": "2026-09-02T20:23:54.503541+00:00"
  },
- "generated_at": "2026-11-24T13:30:56+00:00",
- "sha": "03b3c1d2b352bcbe"
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "46711dd13ef4d13e"
 }

@@ -1,0 +1,130 @@
+{
+ "schema": "llm-sizer/models v1",
+ "id": "clairic-flash",
+ "name": "clairic-flash",
+ "provider": "Cloudflare",
+ "hf_repo": "Cloudflare/clairic-flash",
+ "url": "https://huggingface.co/Cloudflare/clairic-flash",
+ "variant": "instruct",
+ "released": "2026-11-12",
+ "params_total": 9653104368,
+ "params_active": 9653104368,
+ "params_active_source": "dense",
+ "context_max": 262144,
+ "native_bits": 16.0,
+ "license": {
+  "name": "apache-2.0",
+  "url": null,
+  "commercial": true,
+  "note": null
+ },
+ "tags": [
+  "transformers",
+  "safetensors",
+  "qwen3_5",
+  "image-text-to-text",
+  "clairic",
+  "cloudflare",
+  "systemone",
+  "multimodal",
+  "structured-output",
+  "information-extraction",
+  "custom-code",
+  "conversational",
+  "endpoints_compatible"
+ ],
+ "featured": false,
+ "tier": null,
+ "rank": null,
+ "gated": "false",
+ "status": "active",
+ "superseded_by": null,
+ "notes": [],
+ "four_bit_native": false,
+ "architecture": {
+  "model_type": "qwen3_5_text",
+  "attention": "gqa",
+  "layers": 32,
+  "kv_layers": 8,
+  "sliding_layers": 0,
+  "linear_layers": 24,
+  "kv_heads": 4,
+  "head_dim": 256,
+  "k_eq_v": false,
+  "kv_lora_rank": null,
+  "rope_dim": null,
+  "window_size": null,
+  "full_bytes_per_token_8bit": 16384,
+  "sliding_bytes_per_token_8bit": 0,
+  "linear_state_bytes": 25165824,
+  "hidden_size": 4096,
+  "experts_total": null,
+  "experts_active": null,
+  "experts_shared": null,
+  "moe_intermediate": null,
+  "moe_layers": null,
+  "accel_mtp": false,
+  "accel_dflash_repo": null,
+  "accel_dspark_repo": null,
+  "conventional_assumed": false,
+  "source": "config",
+  "config_sha": "b0a09516e9617768",
+  "notes": [],
+  "kv_cache_gb_at_128k_8bit": 2.17
+ },
+ "quants": [
+  {
+   "repo": "mlx-community/clairic-flash-4bit",
+   "url": "https://huggingface.co/mlx-community/clairic-flash-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 5.16,
+   "size_gb": 6.22,
+   "size_bytes": 6221276369,
+   "quantizer": "mlx-community",
+   "file_count": 3,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
+   "repo": "Cloudflare/clairic-flash",
+   "url": "https://huggingface.co/Cloudflare/clairic-flash",
+   "format": "safetensors",
+   "label": "BF16",
+   "bits": 16.22,
+   "size_gb": 19.57,
+   "size_bytes": 19567796564,
+   "quantizer": "official",
+   "file_count": 5,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  }
+ ],
+ "reference": {
+  "q4": {
+   "repo": "mlx-community/clairic-flash-4bit",
+   "label": "MLX-4bit"
+  },
+  "q8": null,
+  "mlx4": {
+   "repo": "mlx-community/clairic-flash-4bit",
+   "label": "MLX-4bit"
+  },
+  "native": {
+   "repo": "Cloudflare/clairic-flash",
+   "label": "BF16"
+  }
+ },
+ "special_builds": [],
+ "drafts": {
+  "dflash": null,
+  "dspark": null
+ },
+ "timestamps": {
+  "first_seen": "2026-11-25T12:31:50.483289+00:00",
+  "last_checked": "2026-11-25T12:31:50.483289+00:00",
+  "last_changed": "2026-11-25T12:31:50.483289+00:00"
+ },
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "cede53bdc6499bb2"
+}

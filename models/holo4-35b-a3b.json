@@ -151,7 +151,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "Q3_K_S",
+   "label": "IQ3_XS",
    "bits": 3.72,
    "size_gb": 16.32,
    "size_bytes": 16318692032,
@@ -164,7 +164,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "IQ3_XS",
+   "label": "Q3_K_S",
    "bits": 3.72,
    "size_gb": 16.32,
    "size_bytes": 16318692032,
@@ -239,6 +239,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "repo": "mlx-community/Holo4-35B-A3B-4bit",
+   "url": "https://huggingface.co/mlx-community/Holo4-35B-A3B-4bit",
+   "format": "mlx",
+   "label": "MLX-4bit",
+   "bits": 4.65,
+   "size_gb": 20.4,
+   "size_bytes": 20402204301,
+   "quantizer": "mlx-community",
+   "file_count": 4,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
@@ -268,7 +281,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.09,
    "size_gb": 22.32,
    "size_bytes": 22318512832,
@@ -281,7 +294,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.09,
    "size_gb": 22.32,
    "size_bytes": 22318512832,
@@ -382,6 +395,19 @@
    "first_seen": "2026-10-04"
   },
   {
+   "repo": "mlx-community/Holo4-35B-A3B-8bit",
+   "url": "https://huggingface.co/mlx-community/Holo4-35B-A3B-8bit",
+   "format": "mlx",
+   "label": "MLX-8bit",
+   "bits": 8.6,
+   "size_gb": 37.72,
+   "size_bytes": 37721402856,
+   "quantizer": "mlx-community",
+   "file_count": 8,
+   "qat": false,
+   "first_seen": "2026-11-25"
+  },
+  {
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
@@ -417,7 +443,10 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "label": "Q8_0"
   },
-  "mlx4": null,
+  "mlx4": {
+   "repo": "mlx-community/Holo4-35B-A3B-4bit",
+   "label": "MLX-4bit"
+  },
   "native": {
    "repo": "Hcompany/Holo4-35B-A3B",
    "label": "BF16"
@@ -430,9 +459,9 @@
  },
  "timestamps": {
   "first_seen": "2026-10-04T09:36:55.736861+00:00",
-  "last_checked": "2026-10-04T09:36:55.736861+00:00",
+  "last_checked": "2026-11-25T12:31:57.032820+00:00",
   "last_changed": "2026-10-04T09:36:55.736861+00:00"
  },
- "generated_at": "2026-11-24T13:30:56+00:00",
- "sha": "840a6f226eabbd87"
+ "generated_at": "2026-11-25T12:32:09+00:00",
+ "sha": "c61e31712d0083f0"
 }
