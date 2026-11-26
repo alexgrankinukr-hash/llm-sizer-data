@@ -175,7 +175,7 @@
    "repo": "bartowski/Nex-N2.6-GGUF",
    "url": "https://huggingface.co/bartowski/Nex-N2.6-GGUF",
    "format": "gguf",
-   "label": "IQ3_XS",
+   "label": "Q3_K_S",
    "bits": 3.67,
    "size_gb": 147.36,
    "size_bytes": 147357148288,
@@ -188,7 +188,7 @@
    "repo": "bartowski/Nex-N2.6-GGUF",
    "url": "https://huggingface.co/bartowski/Nex-N2.6-GGUF",
    "format": "gguf",
-   "label": "Q3_K_S",
+   "label": "IQ3_XS",
    "bits": 3.67,
    "size_gb": 147.36,
    "size_bytes": 147357148288,
@@ -418,6 +418,6 @@
   "last_checked": "2026-11-17T11:40:33.084711+00:00",
   "last_changed": "2026-11-17T11:40:33.084711+00:00"
  },
- "generated_at": "2026-11-25T12:32:09+00:00",
- "sha": "99cf2c70d9992544"
+ "generated_at": "2026-11-26T12:11:21+00:00",
+ "sha": "c29a52ce9e84d14a"
 }
