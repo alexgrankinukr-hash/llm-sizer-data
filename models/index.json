@@ -1,6 +1,6 @@
 {
  "schema": "llm-sizer/models v1",
- "generated_at": "2026-11-26T12:11:21+00:00",
+ "generated_at": "2026-11-27T11:59:16+00:00",
  "count": 147,
  "featured_count": 23,
  "models": [
@@ -44,7 +44,7 @@
    "quant_count": 74,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "720ed115e050d0cd"
+   "detail_sha": "4ed7a2d7ed7ead1c"
   },
   {
    "id": "qwen3.6-35b-a3b",
@@ -86,7 +86,7 @@
    "quant_count": 72,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "05b230c226100db5"
+   "detail_sha": "a7382c59d4579f16"
   },
   {
    "id": "gemma-4-12b",
@@ -128,7 +128,7 @@
    "quant_count": 70,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "904dc253ab367941"
+   "detail_sha": "cbc7ceabe303a8ce"
   },
   {
    "id": "gemma-4-26b-a4b",
@@ -170,7 +170,7 @@
    "quant_count": 73,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "be115db27beddd60"
+   "detail_sha": "a36107de4ed731f7"
   },
   {
    "id": "gemma-4-e4b",
@@ -212,7 +212,7 @@
    "quant_count": 69,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "89f0efe7ea6dc35d"
+   "detail_sha": "48cde18f6be07077"
   },
   {
    "id": "gpt-oss-20b",
@@ -254,7 +254,7 @@
    "quant_count": 49,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "78c8fed45566aece"
+   "detail_sha": "b678da92e81f1047"
   },
   {
    "id": "muse-glimmer-30b",
@@ -296,7 +296,7 @@
    "quant_count": 57,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0cb2ad39a2c04a27"
+   "detail_sha": "d244c2d0502e90d3"
   },
   {
    "id": "gemma-4-31b",
@@ -338,7 +338,7 @@
    "quant_count": 75,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "1be2adc0d894759d"
+   "detail_sha": "cd345eb107213531"
   },
   {
    "id": "qwen3-coder-next",
@@ -380,7 +380,7 @@
    "quant_count": 88,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "b9adfb5835904d46"
+   "detail_sha": "ccbd665b0e2d4525"
   },
   {
    "id": "gpt-oss-120b",
@@ -422,7 +422,7 @@
    "quant_count": 40,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "2f69ac3c0ebfedd9"
+   "detail_sha": "ccfac20a08366ab6"
   },
   {
    "id": "mistral-small-4-119b-2603",
@@ -464,7 +464,7 @@
    "quant_count": 60,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "f4456a9edb542e0a"
+   "detail_sha": "90a0b83a24b3d245"
   },
   {
    "id": "nvidia-nemotron-3-super-120b-a12b",
@@ -506,7 +506,7 @@
    "quant_count": 62,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "ccb085fda72018ed"
+   "detail_sha": "683a61a892435bfd"
   },
   {
    "id": "mistral-medium-3.5-128b",
@@ -548,7 +548,7 @@
    "quant_count": 54,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0eb6505655cf877e"
+   "detail_sha": "7c2e58bbaaf53708"
   },
   {
    "id": "qwen3.8-flash-next",
@@ -590,7 +590,7 @@
    "quant_count": 51,
    "four_bit_native": false,
    "has_special_build": true,
-   "detail_sha": "58b707a1810b187d"
+   "detail_sha": "83a5fb4d5599c6b4"
   },
   {
    "id": "deepseek-v4-flash-0731",
@@ -631,7 +631,7 @@
    "quant_count": 19,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0da3c765ed63f3f2"
+   "detail_sha": "6bf127787e445c08"
   },
   {
    "id": "glm-5.3-flash",
@@ -673,7 +673,7 @@
    "quant_count": 19,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "b9d797df04dbad25"
+   "detail_sha": "41d3c8e03b44d4cf"
   },
   {
    "id": "qwen3.5-397b-a17b",
@@ -715,7 +715,7 @@
    "quant_count": 71,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "b94f0acb3fb30919"
+   "detail_sha": "83f5fe0584381f21"
   },
   {
    "id": "minimax-m3",
@@ -757,7 +757,7 @@
    "quant_count": 50,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "e2c3a65e2dd81272"
+   "detail_sha": "d115277257b54b2c"
   },
   {
    "id": "nvidia-nemotron-3-ultra-550b-a55b",
@@ -798,7 +798,7 @@
    "quant_count": 25,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "db5144aeeab5ed28"
+   "detail_sha": "c62e20c5cda36feb"
   },
   {
    "id": "glm-5.2",
@@ -840,7 +840,7 @@
    "quant_count": 28,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "98862f578a5f9352"
+   "detail_sha": "33782cdf981e0cea"
   },
   {
    "id": "kimi-k2.6",
@@ -881,7 +881,7 @@
    "quant_count": 21,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "3bc1d75caf1a8345"
+   "detail_sha": "93b10d9615b0c3fb"
   },
   {
    "id": "deepseek-v4-pro-0813",
@@ -922,7 +922,7 @@
    "quant_count": 3,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "8a2614cb5bd4945b"
+   "detail_sha": "2930162261e28639"
   },
   {
    "id": "kimi-k3",
@@ -963,7 +963,7 @@
    "quant_count": 8,
    "four_bit_native": true,
    "has_special_build": false,
-   "detail_sha": "17c180fe2073a34c"
+   "detail_sha": "59c63a476d95d9e1"
   },
   {
    "id": "apex-35b-v1.0",
@@ -1004,7 +1004,7 @@
    "quant_count": 26,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "fdac20ae6045e89b"
+   "detail_sha": "acfaea1ff91ce052"
   },
   {
    "id": "arete-27b",
@@ -1664,7 +1664,7 @@
    "quant_count": 30,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "7bbc95a08a718f9c"
+   "detail_sha": "bba22452f8975328"
   },
   {
    "id": "deepseek-v4-flash-vision-exp",
@@ -1746,7 +1746,7 @@
    "quant_count": 4,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "569ff35ef319736a"
+   "detail_sha": "291b38cc36d8efc3"
   },
   {
    "id": "deepseek-v4-pro-qwen3.5-9b",
@@ -1829,7 +1829,7 @@
    "quant_count": 65,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "9ae77616d434d355"
+   "detail_sha": "de12b9f26cdca9e9"
   },
   {
    "id": "flint",
@@ -1994,7 +1994,7 @@
    "quant_count": 7,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "8e09337433b32edb"
+   "detail_sha": "804b4f6ac785f385"
   },
   {
    "id": "glide-9b",
@@ -2571,7 +2571,7 @@
    "quant_count": 69,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "819664d43f36302c"
+   "detail_sha": "4fa076b22936400f"
   },
   {
    "id": "inkling-2-mini-unbound",
@@ -2654,7 +2654,7 @@
    "quant_count": 35,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "0b43bee69b39cd85"
+   "detail_sha": "d12c3ebc25394a3a"
   },
   {
    "id": "jevk5",
@@ -3232,7 +3232,7 @@
    "quant_count": 62,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "46ea2ec4262fde81"
+   "detail_sha": "d2b7c76e6523209b"
   },
   {
    "id": "lfm3-1.7b",
@@ -3725,7 +3725,7 @@
    "quant_count": 31,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "207ade1bbf2d4273"
+   "detail_sha": "b967f01cd38f5c37"
   },
   {
    "id": "lunar-huntress-0.1",
@@ -4713,7 +4713,7 @@
    "quant_count": 39,
    "four_bit_native": false,
    "has_special_build": false,
-   "detail_sha": "ab27cfd24509f0cb"
+   "detail_sha": "6620e89bef9c2c7e"
   },
   {
    "id": "nvidia-nemotron-3.5-lightning-30b-a3b",
@@ -6070,5 +6070,5 @@
    "detail_sha": "abb6a9128fad5895"
   }
  ],
- "sha": "b0e028577bf8d3f5"
+ "sha": "c082d0f37582f080"
 }

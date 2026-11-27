@@ -244,19 +244,6 @@
    "first_seen": "2026-11-21"
   },
   {
-   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "IQ3_XXS",
-   "bits": 4.03,
-   "size_gb": 13.31,
-   "size_bytes": 13306328128,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-21"
-  },
-  {
    "repo": "bartowski/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -268,6 +255,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-24"
+  },
+  {
+   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XXS",
+   "bits": 4.03,
+   "size_gb": 13.31,
+   "size_bytes": 13306328128,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-21"
   },
   {
    "repo": "bartowski/Inkling-2-Mini-GGUF",
@@ -309,19 +309,6 @@
    "first_seen": "2026-11-21"
   },
   {
-   "repo": "bartowski/Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "IQ3_XS",
-   "bits": 4.17,
-   "size_gb": 13.77,
-   "size_bytes": 13765229632,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-24"
-  },
-  {
    "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -333,6 +320,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-21"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "IQ3_XS",
+   "bits": 4.17,
+   "size_gb": 13.77,
+   "size_bytes": 13765229632,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-24"
   },
   {
    "repo": "bartowski/Inkling-2-Mini-GGUF",
@@ -387,19 +387,6 @@
    "first_seen": "2026-11-24"
   },
   {
-   "repo": "bartowski/Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "IQ4_XS",
-   "bits": 4.57,
-   "size_gb": 15.09,
-   "size_bytes": 15085532224,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-24"
-  },
-  {
    "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -411,6 +398,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-21"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "IQ4_XS",
+   "bits": 4.57,
+   "size_gb": 15.09,
+   "size_bytes": 15085532224,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-24"
   },
   {
    "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
@@ -712,19 +712,6 @@
    "first_seen": "2026-11-24"
   },
   {
-   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "Q4_K_L",
-   "bits": 5.98,
-   "size_gb": 19.72,
-   "size_bytes": 19719779392,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-21"
-  },
-  {
    "repo": "bartowski/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -736,6 +723,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-24"
+  },
+  {
+   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "Q4_K_L",
+   "bits": 5.98,
+   "size_gb": 19.72,
+   "size_bytes": 19719779392,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-21"
   },
   {
    "repo": "thinkingmachines/Inkling-2-Mini",
@@ -751,19 +751,6 @@
    "first_seen": "2026-11-21"
   },
   {
-   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "Q5_K_M",
-   "bits": 6.43,
-   "size_gb": 21.22,
-   "size_bytes": 21216752704,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-21"
-  },
-  {
    "repo": "bartowski/Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -775,6 +762,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-24"
+  },
+  {
+   "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "Q5_K_M",
+   "bits": 6.43,
+   "size_gb": 21.22,
+   "size_bytes": 21216752704,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-21"
   },
   {
    "repo": "unsloth/Inkling-2-Mini-GGUF",
@@ -855,19 +855,6 @@
    "first_seen": "2026-11-24"
   },
   {
-   "repo": "bartowski/Inkling-2-Mini-GGUF",
-   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
-   "format": "gguf",
-   "label": "Q6_K_L",
-   "bits": 7.69,
-   "size_gb": 25.36,
-   "size_bytes": 25357317184,
-   "quantizer": "bartowski",
-   "file_count": 1,
-   "qat": false,
-   "first_seen": "2026-11-24"
-  },
-  {
    "repo": "bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "url": "https://huggingface.co/bartowski/thinkingmachines_Inkling-2-Mini-GGUF",
    "format": "gguf",
@@ -879,6 +866,19 @@
    "file_count": 1,
    "qat": false,
    "first_seen": "2026-11-21"
+  },
+  {
+   "repo": "bartowski/Inkling-2-Mini-GGUF",
+   "url": "https://huggingface.co/bartowski/Inkling-2-Mini-GGUF",
+   "format": "gguf",
+   "label": "Q6_K_L",
+   "bits": 7.69,
+   "size_gb": 25.36,
+   "size_bytes": 25357317184,
+   "quantizer": "bartowski",
+   "file_count": 1,
+   "qat": false,
+   "first_seen": "2026-11-24"
   },
   {
    "repo": "lmstudio-community/Inkling-2-Mini-GGUF",
@@ -1000,6 +1000,6 @@
   "last_checked": "2026-11-26T12:11:17.687859+00:00",
   "last_changed": "2026-11-21T10:52:51.960357+00:00"
  },
- "generated_at": "2026-11-26T12:11:21+00:00",
- "sha": "819664d43f36302c"
+ "generated_at": "2026-11-27T11:59:16+00:00",
+ "sha": "4fa076b22936400f"
 }
