@@ -281,7 +281,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "Q4_K_M",
+   "label": "IQ4_NL",
    "bits": 5.09,
    "size_gb": 22.32,
    "size_bytes": 22318512832,
@@ -294,7 +294,7 @@
    "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "url": "https://huggingface.co/bartowski/Hcompany_Holo4-35B-A3B-GGUF",
    "format": "gguf",
-   "label": "IQ4_NL",
+   "label": "Q4_K_M",
    "bits": 5.09,
    "size_gb": 22.32,
    "size_bytes": 22318512832,
@@ -462,6 +462,6 @@
   "last_checked": "2026-11-25T12:31:57.032820+00:00",
   "last_changed": "2026-10-04T09:36:55.736861+00:00"
  },
- "generated_at": "2026-11-27T11:59:16+00:00",
- "sha": "72e9feb0369768cb"
+ "generated_at": "2026-11-28T11:35:56+00:00",
+ "sha": "c61e31712d0083f0"
 }
